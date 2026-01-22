@@ -46,7 +46,8 @@ const Card = ({ title, desc, image }) => (
         whileHover={{ scale: 1.02 }}
         className="
       relative rounded-3xl border border-neutral-200 h-full
-      bg-white overflow-hidden
+      bg-white/80 backdrop-blur-sm
+      overflow-hidden
       transition-all duration-300
       min-h-[420px]
       group
@@ -64,7 +65,7 @@ const Card = ({ title, desc, image }) => (
                 alt={title}
                 className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-500/70 to-white/80" />
+            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/70 to-white/70" />
         </div>
 
         {/* 🔹 CONTENT */}
@@ -85,12 +86,40 @@ const Card = ({ title, desc, image }) => (
 
 const Services = () => {
     return (
-        <section className="py-28">
+
+        <section className="py-28 relative overflow-hidden bg-transparent">
+
+
+            {/* 🔵 BLUE ELLIPSE BACKGROUND */}
+            <div className="absolute inset-0 -z-10 pointer-events-none">
+
+                <div className="
+    absolute top-1/2 -left-[35%]
+    w-[900px] h-[420px]
+    bg-blue-600
+    opacity-60
+    blur-[80px]
+    rounded-full
+    -translate-y-1/2
+  " />
+
+                <div className="
+    absolute top-1/2 -right-[35%]
+    w-[900px] h-[420px]
+    bg-blue-600
+    opacity-60
+    blur-[80px]
+    rounded-full
+    -translate-y-1/2
+  " />
+
+            </div>
+
+
             <div className="max-w-7xl mx-auto px-6">
 
                 {/* 🔹 TOP SECTION */}
-                <div className="grid lg:grid-cols-3 gap-8 ">
-
+                <div className="grid lg:grid-cols-3">
 
                     {/* LEFT TEXT */}
                     <div className="lg:col-span-1 flex flex-col justify-center">
@@ -102,36 +131,33 @@ const Services = () => {
                             Comprehensive IT and cybersecurity services designed to secure,
                             optimize, and scale your business with confidence.
                         </p>
-
                     </div>
 
                     {/* RIGHT TWO BOXES */}
-                    <div className="lg:col-span-2 grid sm:grid-cols-2 gap-8">
+                    <div className="lg:col-span-2 grid sm:grid-cols-2">
                         <Card {...services[0]} />
                         <Card {...services[1]} />
                     </div>
                 </div>
 
                 {/* 🔹 BOTTOM GRID */}
-                {/* 🔹 BOTTOM GRID */}
-                <div className="grid gap-8">
+                <div className="grid">
 
-                    {/* ROW 1 – THREE EQUAL HEIGHT CARDS */}
-                    <div className="grid lg:grid-cols-3 gap-8">
-                        <Card {...services[2]} />  {/* Security Consulting */}
-                        <Card {...services[4]} />  {/* Compliance */}
-                        <Card {...services[5]} />  {/* Training */}
+                    {/* ROW 1 */}
+                    <div className="grid lg:grid-cols-3">
+                        <Card {...services[2]} />
+                        <Card {...services[4]} />
+                        <Card {...services[5]} />
                     </div>
 
-                    {/* ROW 2 – ONLY ONE CARD (LEFT SIDE) */}
-                    <div className="grid lg:grid-cols-3 gap-8">
-                        <Card {...services[3]} />  {/* Application Security */}
-                        <div /> {/* empty placeholder */}
-                        <div /> {/* empty placeholder */}
+                    {/* ROW 2 */}
+                    <div className="grid lg:grid-cols-3">
+                        <Card {...services[3]} />
+                        <div />
+                        <div />
                     </div>
 
                 </div>
-
 
             </div>
         </section>
