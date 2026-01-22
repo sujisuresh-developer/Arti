@@ -1,0 +1,31 @@
+.octagon-frame {
+  width: 360px;
+  height: 360px;
+  position: relative;
+}
+
+.octagon-border {
+  width: 100%;
+  height: 100%;
+  padding: 6px;
+  background: linear-gradient(135deg, rgb(208, 207, 195));
+  clip-path: polygon(
+    18% 0%,
+    82% 0%,
+    100% 18%,
+    100% 82%,
+    82% 100%,
+    18% 100%,
+    0% 82%,
+    0% 18%
+  );
+}
+
+.octagon-inner {
+  width: 100%;
+  height: 100%;
+  background: white;
+  clip-path: inherit;
+  overflow: hidden;
+  position: relative;
+}

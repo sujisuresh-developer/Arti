@@ -1,0 +1,23 @@
+.hero {
+  background: #f4f4f4;
+}
+
+/* Original halftone */
+.halftone-layer {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(0, 0, 0, 0.35) 1px,
+    transparent 1px
+  );
+  background-size: 4px 4px;
+  z-index: 0;
+}
+
+/* Canvas */
+.hero-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
