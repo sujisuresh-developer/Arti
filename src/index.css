@@ -1,3 +1,10 @@
 *{
     font-family: articulat-cf, sans-serif;
 }
+/* Add this to your main CSS file (e.g., index.css) */
+
+
+/* Custom blur filter for the glowing effect */
+.filter-custom-blur {
+  filter: blur(100px); /* Adjust the blur intensity as needed */
+}
