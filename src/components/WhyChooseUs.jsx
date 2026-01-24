@@ -177,10 +177,12 @@ export default function WhyChooseUs() {
   });
 
   return (
-    <section className="relative bg-[#f2f1e8] py-30 mb-32">
-     <h1 className="flex justify-center items-center text-4xl font-semibold -mt-30 py-5">
+    <>
+     <h1 className="flex justify-center items-center text-4xl font-semibold -mt-10 py-5">
   Why Choose Us
 </h1>
+    <section className="relative bg-[#f2f1e8] py-20 mb-32">
+    
 
       <div className="max-w-7xl mx-auto px-6">
 
@@ -278,7 +280,7 @@ export default function WhyChooseUs() {
       </div>
     </section>
 
-
+</>
   );
 }
 

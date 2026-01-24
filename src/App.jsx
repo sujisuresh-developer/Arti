@@ -4,6 +4,8 @@ import Home from './pages/Home'
 import AboutUsSection from './components/AboutUsSection'
 import Contact from './components/Contact'
 import ScrollToTop from './components/ScrollToTop'
+import FAQ from './pages/FAQ'
+import InfrastructureSolutions from './pages/InfrastructureSolutions'
 
 function App() {
 
@@ -14,7 +16,9 @@ function App() {
     <Routes>
        <Route path="/" element={<Home />} />
        <Route path='/about' element={<AboutUsSection/>}/>
+       <Route path="/infrastructure-solutions" element={<InfrastructureSolutions />} />
        <Route path='/contact' element={<Contact/>}/>
+       <Route path='/faq' element={<FAQ/>}/>
 
     </Routes>
       
