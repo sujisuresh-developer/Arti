@@ -2,6 +2,7 @@ import Footer from "./Footer";
 import Header from "./Header";
 import HeroSection from "./HeroSection";
 import OurPromiseVideo from "./OurPromiseVideo";
+import TextGenerateEffectDemo from "./text-generate-effect-demo";
 
 const AboutUsSection = () => {
 
@@ -13,20 +14,10 @@ const AboutUsSection = () => {
                 <div className="max-w-7xl mx-auto">
 
                     {/* TOP PROMISE */}
-                    <div className="mb-24">
-                        <p className="text-sm font-semibold tracking-widest text-blue-900 mb-6">
-                            OUR PROMISE
-                        </p>
-
-                        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-light leading-tight text-neutral-900 max-w-5xl">
-                            Comprehensive security for modern businesses
-                            built on  clarity, control, and trust.
-                        </h2>
-
-                    </div>
+                   <TextGenerateEffectDemo/>
 
                     {/* VISION + MISSION */}
-                    <div className="grid md:grid-cols-2 gap-16">
+                    <div className="grid md:grid-cols-2 gap-16 mt-20">
 
                         {/* OUR VISION */}
                         <div>

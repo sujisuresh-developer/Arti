@@ -16,8 +16,9 @@ function InfrastructureSolutions() {
     "Protect Your Business",
   ]}
 />
-<LogoScroll/>
+
 <InfraExplain/>
+<LogoScroll/>
 <Footer/>
 
     </>

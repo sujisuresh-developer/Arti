@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection = () => {
     return (
         // Main container with black background and relative positioning
-        <div className="relative bg-black text-white min-h-screen flex items-center justify-start overflow-hidden mb-32">
+        <div className="relative bg-black text-white min-h-screen flex items-center justify-start overflow-visible mb-32">
 
             {/* The diagonal yellow light effect element */}
             <div className="absolute top-0 left-0 w-full h-full">

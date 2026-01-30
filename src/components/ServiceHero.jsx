@@ -17,7 +17,7 @@ const ServiceHero = ({
     <section className="relative overflow-hidden rounded-3xl mx-6 my-12 mt-25">
 
       {/* BACKGROUND */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-500" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-blue-900 to-blue-300" />
 
       {/* HEX / HALFTONE PATTERN */}
       <div

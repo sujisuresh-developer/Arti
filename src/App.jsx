@@ -6,6 +6,7 @@ import Contact from './components/Contact'
 import ScrollToTop from './components/ScrollToTop'
 import FAQ from './pages/FAQ'
 import InfrastructureSolutions from './pages/InfrastructureSolutions'
+import Page from './pages/Page'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
        <Route path="/infrastructure-solutions" element={<InfrastructureSolutions />} />
        <Route path='/contact' element={<Contact/>}/>
        <Route path='/faq' element={<FAQ/>}/>
+       <Route path='/page' element={<Page/>}/>
 
     </Routes>
       

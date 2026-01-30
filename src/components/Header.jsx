@@ -1,22 +1,37 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
-import logo from "../assets/logo.png"
+import logo from "../assets/final.png"
+import ContactModal from "./ContactModal"
+import ContactButton from "./ContactButton";
+
 
 const Header = () => {
   const [mobileOpen, setMobileOpen] = useState(false)
   const [servicesOpen, setServicesOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "auto";
+  }, [open]);
+
+
 
   return (
-    <header className="fixed top-1 left-0 w-full z-50">
+    <>
+     <ContactModal open={open} onClose={() => setOpen(false)} />
+    <header className="fixed top-0 left-0 w-full z-50 mt-5">
+      <ContactModal open={open} onClose={() => setOpen(false)} />
+
 
       {/* ===== DESKTOP FLOATING NAV ===== */}
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="bg-gradient-to-r from-blue-300 via-[#fdfdfd] to-blue-200 backdrop-blur-xl rounded-full shadow-xl border border-blue-100">
+      <div className="w-full px-25 ">
+        <div className="bg-gray-100 backdrop-blur-xl w-full rounded-full  shadow-xl border border-blue-100">
           <div className="flex items-center justify-between px-4 py-2">
 
             {/* LOGO */}
             <Link to="/" className="flex items-center">
-              <img src={logo} alt="Artiflex IT" className="h-16 md:h-18" />
+              <img src={logo} alt="Artiflex IT" className="h-20 md:h-10 ms-4" />
             </Link>
 
             {/* DESKTOP NAV */}
@@ -52,12 +67,16 @@ const Header = () => {
 
               <Link to="/faq" className="hover:text-blue-600 transition">FAQ</Link>
 
-              <Link
-                to="/contact"
-                className="ml-4 px-6 py-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold shadow-lg hover:opacity-90 transition"
-              >
-                Contact
-              </Link>
+              <ContactButton onClick={() => setOpen(true)} />
+
+
+
+
+
+
+
+
+
             </nav>
 
             {/* MOBILE BUTTON */}
@@ -146,6 +165,7 @@ const Header = () => {
         </div>
       )}
     </header>
+    </>
   )
 }
 
