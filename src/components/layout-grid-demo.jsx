@@ -5,7 +5,7 @@ import { Server, Shield, Lock, Cloud, Settings, Headphones } from "lucide-react"
 
 export default function LayoutGridDemo() {
   return (
-    <section className="min-h-screen py-20 w-full bg-background">
+    <section className="min-h-screen py-20 w-full bg-background mt-40">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground">
@@ -29,7 +29,7 @@ const SkeletonOne = () => {
     <div>
       <div className="flex items-center gap-2 mb-2">
         <Server className="w-6 h-6 text-white" />
-        <p className="font-bold md:text-4xl text-xl text-white">
+        <p className=" font-bold md:text-4xl text-xl text-white">
           Infrastructure Solutions
         </p>
       </div>
@@ -125,8 +125,10 @@ const cards = [
     id: 1,
     content: <SkeletonOne />,
     className: "md:col-span-2",
+    
     thumbnail:
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=3534&auto=format&fit=crop",
+      
   },
   {
     id: 2,
