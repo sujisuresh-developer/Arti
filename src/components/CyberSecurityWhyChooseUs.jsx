@@ -4,34 +4,35 @@ import "./hexagon.css";
 
 const data = [
   {
-    role: "IT Infrastructure",
+    role: "Ethical Hacking & Penetration Testing",
     text:
-      "Artiflex IT designs and manages secure, high-performance infrastructure tailored to your business needs.",
+      "Proactively identify vulnerabilities through ethical hacking and penetration testing before attackers can exploit them.",
   },
   {
-    role: "Enterprise Networking",
+    role: "Cloud, Network & Web Security",
     text:
-      "Enterprise-grade networking solutions built for reliability, security, and seamless connectivity.",
+      "Comprehensive security controls to protect cloud environments, enterprise networks, and web applications from modern threats.",
   },
   {
-    role: "Server & Data Center Management",
+    role: "Threat Detection & SIEM",
     text:
-      "Robust server and data center management ensuring uptime, performance, and scalability.",
+      "Advanced SIEM, PAM, NDR, and DMARC implementations to monitor, detect, and respond to threats in real time.",
   },
   {
-    role: "High Availability & Scalability",
+    role: "Data Protection & Privacy",
     text:
-      "Infrastructure designed to scale effortlessly while maintaining high availability.",
+      "Robust data leak prevention initiatives and privacy controls to safeguard sensitive business and customer data.",
   },
   {
-    role: "Proactive Monitoring",
+    role: "Security Awareness & Training",
     text:
-      "Continuous monitoring and maintenance to detect and resolve issues before they impact operations.",
+      "Employee security training programs that strengthen human resilience against phishing, social engineering, and insider threats.",
   },
 ];
 
 
-export default function InfraExplain() {
+
+export default function CyberSecurityWhyChooseUs() {
   const [index, setIndex] = useState(0);
   const nextIndex = (index + 1) % data.length;
 
@@ -39,13 +40,13 @@ export default function InfraExplain() {
     <section className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
-       <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
-  Choose the Best <span className="font-semibold">Infrastructure Solutions</span>
+         <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
+  Choose the Best <span className="font-semibold">Cyber Security Solutions</span>
 </h2>
 
 <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-  Our Infrastructure Solutions elevate your IT environment through secure,
-  scalable, and high-performance systems.
+  Comprehensive security services designed to protect your business from
+  modern cyber threats while reducing long-term risk and maintenance costs.
 </p>
 
 

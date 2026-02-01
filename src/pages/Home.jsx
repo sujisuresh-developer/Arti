@@ -10,9 +10,10 @@ import WhyChooseUs from '../components/WhyChooseUs'
 
 //import IndustriesWeServe from '../components/IndustriesWeServe'
 import LayoutGridDemo from '../components/layout-grid-demo'
-import InfiniteMovingCardsDemo from '../components/Infinite-moving-cards-demo'
+//import InfiniteMovingCardsDemo from '../components/Infinite-moving-cards-demo'
 import GlowSection from '../components/GlowSection'
 import { FocusCards } from '../components/ui/focus-cards'
+import TrustedSection from '../components/TrustedSection'
 import {
   Zap,
   Building2,
@@ -36,13 +37,13 @@ const industries = [
   {
     title: "Healthcare",
     desc: "HIPAA-compliant systems ensuring patient data security and seamless healthcare delivery.",
-    image: "https://images.unsplash.com/photo-1758691462848-ba1e929da259?w=600&auto=format&fit=crop&q=60",
+    image: "https://images.unsplash.com/photo-1584982751601-97dcc096659c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhlYWx0aGNhcmV8ZW58MHx8MHx8fDA%3D",
     icon: Heart,
   },
   {
     title: "Enterprise & SaaS",
     desc: "Scalable cloud architecture and DevOps for high-growth technology companies.",
-    image: "https://media.istockphoto.com/id/1302546439/photo/cloud-computing-data-center-server-rack.jpg",
+    image: "https://media.istockphoto.com/id/1193382680/photo/group-of-successful-real-estate-agents-standing-in-building-in-construction-process-and.jpg?s=612x612&w=0&k=20&c=_wHDLkSWl57reV90aC5t14Sk7ENl51uq09cwOJpfWFE=",
     icon: TrendingUp,
   },
 ];
@@ -54,23 +55,41 @@ const industries = [
 
 
 
-function Home() {
+function Home({openContact}) {
   return (
     <>
-    <Header/>
-    <Hero/>
-    <GlowSection/>
-    <section className="relative z-20 pointer-events-auto">
+     <Header openContact={openContact} />
+      <Hero />
+      <GlowSection />
+      <section className="relative z-20 pointer-events-auto">
         <LayoutGridDemo />
       </section>
-  
-   
-    <WhyChooseUs/>
-    <FocusCards cards={industries} />
-   
-    <InfiniteMovingCardsDemo/>
-     <LogoScroll/>
-    <Footer/>
+
+
+      <WhyChooseUs />
+      <section className="relative z-30 bg-white py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          {/* HEADING */}
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+              Industries We Serve
+            </h2>
+            <p className="mt-4 text-gray-600">
+              Deep expertise across critical sectors, delivering industry-specific
+              solutions that meet regulatory and operational demands.
+            </p>
+          </div>
+
+          {/* CARDS */}
+          <FocusCards cards={industries} />
+        </div>
+      </section>
+      <TrustedSection/>
+
+
+     
+      <LogoScroll />
+     <Footer openContact={openContact} />
     </>
   )
 }

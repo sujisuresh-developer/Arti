@@ -4,34 +4,36 @@ import "./hexagon.css";
 
 const data = [
   {
-    role: "IT Infrastructure",
+    role: "Proactive Maintenance",
     text:
-      "Artiflex IT designs and manages secure, high-performance infrastructure tailored to your business needs.",
+      "Scheduled preventive maintenance to ensure system stability and performance.",
   },
   {
-    role: "Enterprise Networking",
+    role: "24/7 Support Coverage",
     text:
-      "Enterprise-grade networking solutions built for reliability, security, and seamless connectivity.",
+      "Round-the-clock technical support to resolve issues without disruption.",
   },
   {
-    role: "Server & Data Center Management",
+    role: "System Health Monitoring",
     text:
-      "Robust server and data center management ensuring uptime, performance, and scalability.",
+      "Continuous monitoring to detect and fix problems before downtime occurs.",
   },
   {
-    role: "High Availability & Scalability",
+    role: "Patch & Update Management",
     text:
-      "Infrastructure designed to scale effortlessly while maintaining high availability.",
+      "Timely updates and security patches to keep systems protected and current.",
   },
   {
-    role: "Proactive Monitoring",
+    role: "Reduced Operational Costs",
     text:
-      "Continuous monitoring and maintenance to detect and resolve issues before they impact operations.",
+      "Lower long-term IT costs through predictable and efficient maintenance services.",
   },
 ];
 
 
-export default function InfraExplain() {
+
+
+export default function CyberSecurityWhyChooseUs() {
   const [index, setIndex] = useState(0);
   const nextIndex = (index + 1) % data.length;
 
@@ -39,13 +41,14 @@ export default function InfraExplain() {
     <section className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
-       <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
-  Choose the Best <span className="font-semibold">Infrastructure Solutions</span>
+         <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
+  Choose the Best <span className="font-semibold">AMC Services</span>
+
 </h2>
 
 <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-  Our Infrastructure Solutions elevate your IT environment through secure,
-  scalable, and high-performance systems.
+  Reliable annual maintenance services that keep your IT infrastructure running smoothly year-round.
+
 </p>
 
 

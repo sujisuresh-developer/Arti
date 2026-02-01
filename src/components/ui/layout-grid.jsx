@@ -38,6 +38,16 @@ export const LayoutGrid = ({ cards }) => {
               {selected?.id === card.id && <SelectedCard selected={selected} />}
             </AnimatePresence>
             <ImageComponent card={card} />
+
+            {/* SERVICE NAME ON IMAGE (REMOVED WHEN CLICKED) */}
+            {selected?.id !== card.id && (
+              <div className="absolute bottom-4 left-4 z-20">
+                <p className="text-white font-bold text-lg">
+                  {card.title}
+                </p>
+              </div>
+            )}
+
           </motion.div>
         </div>
       ))}

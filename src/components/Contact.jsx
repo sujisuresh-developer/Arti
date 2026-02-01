@@ -1,175 +1,110 @@
-
-import React from "react"
-import Header from "./Header"
-import Footer from "./Footer"
+import { useEffect } from "react";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const Contact = () => {
-    return (
-        <>
-            <Header />
+  // Ensure scroll is enabled on page load
+  useEffect(() => {
+    document.body.style.overflow = "auto";
+  }, []);
 
-            {/* FLOATING CONTACT CARD */}
-            <section className="mt-30 relative z-10 mb-32">
-                <div className="max-w-7xl mx-auto px-6">
+  return (
+    <>
+      <Header />
 
-                    <div className="grid lg:grid-cols-2 rounded-3xl overflow-hidden shadow-2xl bg-[#f2f1e8]">
+      {/* PAGE BACKGROUND */}
+      <section className="min-h-screen bg-[#F2F7FF] flex justify-center px-4 py-28">
+        {/* CONTENT WRAPPER */}
+        <div className="w-full max-w-5xl">
 
-                        {/* LEFT – INFO PANEL */}
-                        {/* LEFT – INFO PANEL */}
-                        <div className="relative p-10">
+          {/* CONTACT BOX */}
+          <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
 
-                            {/* HALFTONE WRAPPER (LEFT SIDE ONLY) */}
-                            <div className="absolute inset-0 overflow-hidden rounded-l-xl">
+              {/* LEFT */}
+              <div>
+                <h2 className="text-3xl md:text-5xl font-bold text-black">
+                  Let’s Talk
+                </h2>
 
-                                {/* Halftone pattern */}
-                                <div className="absolute inset-0 
-      bg-[radial-gradient(#00000033_1px,transparent_1px)] 
-      [background-size:6px_6px]" />
+                <p className="mt-4 md:mt-5 text-gray-700 leading-relaxed text-sm md:text-base">
+                  Have some big idea or business to develop and need help?
+                  Then reach out we’d love to hear about your project and provide help
+                </p>
 
-                                {/* Image centered inside halftone */}
-                                <div
-                                    className="absolute inset-2 bg-cover bg-center blur-sm opacity-50 rounded-2xl"
-                                    style={{
-                                        backgroundImage:
-                                            "url('https://images.unsplash.com/photo-1519389950473-47ba0277781c')",
-                                    }}
-                                />
-
-                                {/* Soft color wash (yellow/blue style) */}
-                                <div className="absolute inset-0 bg-blue-200/60" />
-                            </div>
-
-                            {/* CONTENT */}
-                            <div className="relative z-10 space-y-6 text-neutral-900">
-
-                                <h2 className="text-4xl font-light leading-tight">
-                                    Get absolute <br />
-                                    clarity within <span className="font-semibold">72 hours</span>
-                                </h2>
-
-                                <p className="max-w-md">
-                                    We understand that growing businesses can’t afford to be in the dark.
-                                </p>
-
-                                {/* TIMELINE */}
-                                <div className="space-y-3 max-w-md">
-
-                                    <div className="bg-white/80 rounded-lg px-4 py-3 flex gap-4">
-                                        <span className="text-xs font-semibold whitespace-nowrap">
-                                            24 HOURS
-                                        </span>
-                                        <p className="text-sm">
-                                            A tailored report highlighting your top cyber risks and vulnerabilities.
-                                        </p>
-                                    </div>
-
-                                    <div className="bg-white/80 rounded-lg px-4 py-3 flex gap-4">
-                                        <span className="text-xs font-semibold whitespace-nowrap">
-                                            48 HOURS
-                                        </span>
-                                        <p className="text-sm">
-                                            Clear, jargon-free recommendations aligned to your business needs.
-                                        </p>
-                                    </div>
-
-                                    <div className="bg-white/80 rounded-lg px-4 py-3 flex gap-4">
-                                        <span className="text-xs font-semibold whitespace-nowrap">
-                                            72 HOURS
-                                        </span>
-                                        <p className="text-sm">
-                                            A roadmap showing exactly what to do next to protect your business.
-                                        </p>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        {/* RIGHT – FORM */}
-                        <div className="relative p-10">
-
-                            {/* Halftone behind form (middle visible like reference) */}
-                            <div className="absolute inset-0 bg-[radial-gradient(#0000001a_1px,transparent_1px)] [background-size:6px_6px]" />
-
-                            <div className="relative z-10">
-                                <form className="space-y-10">
-
-                                    <div className="grid sm:grid-cols-2 gap-10">
-                                        <div>
-                                            <label className="text-sm">First Name *</label>
-                                            <input className="w-full bg-transparent border-b border-neutral-400 focus:outline-none py-2" />
-                                        </div>
-
-                                        <div>
-                                            <label className="text-sm">Last Name *</label>
-                                            <input className="w-full bg-transparent border-b border-neutral-400 focus:outline-none py-2" />
-                                        </div>
-                                    </div>
-
-                                    <div className="grid sm:grid-cols-2 gap-10">
-                                        <div>
-                                            <label className="text-sm">Email *</label>
-                                            <input className="w-full bg-transparent border-b border-neutral-400 focus:outline-none py-2" />
-                                        </div>
-
-                                        <div>
-                                            <label className="text-sm">Select Service</label>
-                                            <select className="w-full bg-transparent border-b border-neutral-400 focus:outline-none py-2">
-                                               
-
-                                                
-                                                <option>Infrastructure Solutions</option>
-                                                <option>Cyber Security</option>
-                                                <option>Application Security</option>
-                                                <option>Cloud Solutions</option>
-                                                <option>Managed Services</option>
-                                                <option>AMC Services</option>
-
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div className="grid sm:grid-cols-2 gap-10">
-                                        <div>
-                                            <label className="text-sm">No. of Employees</label>
-                                            <input className="w-full bg-transparent border-b border-neutral-400 focus:outline-none py-2" />
-                                        </div>
-
-                                        <div>
-                                            <label className="text-sm">Phone</label>
-                                            <input className="w-full bg-transparent border-b border-neutral-400 focus:outline-none py-2" />
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <label className="text-sm">Company *</label>
-                                        <input className="w-full bg-transparent border-b border-neutral-400 focus:outline-none py-2" />
-                                    </div>
-
-                                    <div>
-                                        <label className="text-sm">Message</label>
-                                        <input className="w-full bg-transparent border-b border-neutral-400 focus:outline-none py-2"/>
-                                            
-                                      
-                                    </div>
-
-                                    <button className="w-full bg-black text-blue-400   py-4 rounded-full font-semibold flex items-center justify-center gap-2">
-                                        Submit →
-                                    </button>
-
-                                </form>
-                            </div>
-                        </div>
-
-                    </div>
+                <div className="mt-6 md:mt-8">
+                  <h4 className="font-bold">Email</h4>
+                  <p className="text-gray-700">info@artiflex.com</p>
                 </div>
-            </section>
 
+                <div className="mt-5 md:mt-6">
+                  <h4 className="font-bold">Socials</h4>
+                  <ul className="mt-2 space-y-1 underline text-gray-700">
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                  </ul>
+                </div>
+              </div>
 
-            <Footer />
-        </>
-    )
-}
+              {/* RIGHT */}
+              <form className="space-y-3 md:space-y-4">
+                <div>
+                  <label className="text-sm font-medium">Name</label>
+                  <input
+                    className="mt-1 w-full bg-gray-100 px-4 py-2.5 rounded-lg outline-none"
+                    placeholder="Your name"
+                  />
+                </div>
 
-export default Contact
+                <div>
+                  <label className="text-sm font-medium">Email</label>
+                  <input
+                    className="mt-1 w-full bg-gray-100 px-4 py-2.5 rounded-lg outline-none"
+                    placeholder="you@example.com"
+                  />
+                </div>
+
+                <div>
+                  <label className="text-sm font-medium">
+                    What service are you interested in
+                  </label>
+                  <select className="mt-1 w-full bg-gray-100 px-4 py-2.5 rounded-lg outline-none">
+                    <option>Select project type</option>
+                    <option>Infrastructure Solutions</option>
+                    <option>Cyber Security</option>
+                    <option>Application Security</option>
+                    <option>Cloud Solutions</option>
+                    <option>Managed Services</option>
+                    <option>AMC Services</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="text-sm font-medium">Message</label>
+                  <textarea
+                    rows="3"
+                    className="mt-1 w-full bg-gray-100 px-4 py-2.5 rounded-lg outline-none"
+                    placeholder="Tell us about your project..."
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full mt-3 py-3 rounded-full bg-[#02AEEC] text-white font-semibold hover:opacity-90 transition"
+                >
+                  Connect With Us
+                </button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+    </>
+  );
+};
+
+export default Contact;

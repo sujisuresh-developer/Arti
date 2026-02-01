@@ -4,34 +4,37 @@ import "./hexagon.css";
 
 const data = [
   {
-    role: "IT Infrastructure",
+    role: "24/7 IT Operations Management",
     text:
-      "Artiflex IT designs and manages secure, high-performance infrastructure tailored to your business needs.",
+      "Continuous monitoring and management of your IT environment.",
   },
   {
-    role: "Enterprise Networking",
+    role: "Incident & Problem Management",
     text:
-      "Enterprise-grade networking solutions built for reliability, security, and seamless connectivity.",
+      "Rapid issue resolution to minimize downtime and business impact.",
   },
   {
-    role: "Server & Data Center Management",
+    role: "Infrastructure & Security Management",
     text:
-      "Robust server and data center management ensuring uptime, performance, and scalability.",
+      "Unified management of infrastructure and security operations.",
   },
   {
-    role: "High Availability & Scalability",
+    role: "Scalable Support Models",
     text:
-      "Infrastructure designed to scale effortlessly while maintaining high availability.",
+      "Flexible service models that scale with your business growth.",
   },
   {
-    role: "Proactive Monitoring",
+    role: "Strategic IT Partnership",
     text:
-      "Continuous monitoring and maintenance to detect and resolve issues before they impact operations.",
+      "A trusted technology partner focused on long-term business success.",
   },
 ];
 
 
-export default function InfraExplain() {
+
+
+
+export default function ManageExplain() {
   const [index, setIndex] = useState(0);
   const nextIndex = (index + 1) % data.length;
 
@@ -39,13 +42,16 @@ export default function InfraExplain() {
     <section className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
-       <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
-  Choose the Best <span className="font-semibold">Infrastructure Solutions</span>
+         <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
+ Choose the Best <span className="font-semibold">Managed IT Services</span>
+
+
 </h2>
 
 <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-  Our Infrastructure Solutions elevate your IT environment through secure,
-  scalable, and high-performance systems.
+ End-to-end managed services that allow you to focus on your core business while we handle IT.
+
+
 </p>
 
 

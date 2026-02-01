@@ -1,6 +1,7 @@
 *{
     font-family: Inter, sans-serif;
 }
+
 /* Add this to your main CSS file (e.g., index.css) */
 
 
@@ -16,4 +17,28 @@
 .no-scrollbar {
   -ms-overflow-style: none;  /* IE & Edge */
   scrollbar-width: none;     /* Firefox */
+}
+@keyframes vendors-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-vendors {
+  animation: vendors-scroll 22s linear infinite;
+}
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-logo-scroll {
+  animation: logo-scroll 25s linear infinite;
 }

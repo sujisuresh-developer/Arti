@@ -10,7 +10,7 @@ const ContactModal = ({ open, onClose }) => {
 
   return (
     // bg-black/40 backdrop-blur-sm
-    <div className="fixed inset-0 z-[60] flex justify-center ">
+    <div className="fixed inset-0 z-[60] flex justify-center mt-2 ">
 
       {/* Wrapper (below header) */}
       <div
@@ -32,8 +32,8 @@ const ContactModal = ({ open, onClose }) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
 
             {/* LEFT */}
-            <div className="-mt-7">
-              <h2 className="text-3xl md:text-5xl font-bold text-black">
+            <div className="-mt-4">
+              <h2 className="text-3xl md:text-5xl font-bold text-black ">
                 Let’s Talk
               </h2>
 
@@ -75,6 +75,12 @@ const ContactModal = ({ open, onClose }) => {
                 </label>
                 <select className="mt-1 w-full bg-gray-100 px-4 py-2.5 rounded-lg outline-none">
                   <option>Select project type</option>
+                  <option>Infrastructure Solutions</option>
+                  <option>Cyber Security</option>
+                  <option>Application Security</option>
+                   <option>Cloud Solutions</option>
+                    <option>Managed Services</option>
+                     <option>Amc Services</option>
                 </select>
               </div>
 
@@ -90,7 +96,7 @@ const ContactModal = ({ open, onClose }) => {
                 type="submit"
                 className="w-full mt-3 py-3 rounded-full bg-[#02AEEC] text-white font-semibold"
               >
-                Submit
+                Connect With Us
               </button>
             </form>
 

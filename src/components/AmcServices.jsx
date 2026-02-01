@@ -3,24 +3,25 @@
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import InfraExplain from "../components/InfraExplain";
 import PixelBlast from "../components/PixelBlast";
 import TextGenerateEffectDemo from "../components/text-generate-effect-demo";
+import AmcExplain from "../components/AmcExplain"
 
-function InfrastructureSolutions() {
+
+function AmcServices() {
   return (
     <>
       <Header />
 
       {/* HERO SECTION */}
-      <section className="relative w-full h-[600px] bg-black overflow-hidden ">
+      <section className="relative w-full h-[600px] bg-black overflow-hidden">
 
         {/* PIXEL BLAST BACKGROUND */}
         <div className="absolute inset-0 z-0">
           <PixelBlast
             variant="square"
             pixelSize={4}
-            color="#7a53fa"
+            color="#f7f1f1"
             patternScale={2}
             patternDensity={1}
             pixelSizeJitter={0}
@@ -42,38 +43,39 @@ function InfrastructureSolutions() {
         <div className="absolute inset-0 bg-black/50 z-10" />
 
         {/* HERO CONTENT */}
-        <div className="relative z-20 h-full flex flex-col items-center justify-center px-6 text-center mt-18">
+        <div className="relative z-20 h-full flex flex-col items-center justify-center px-6 text-center">
 
           {/* TEXT GENERATE HEADING */}
-          <h1 className="text-white font-bold leading-tight max-w-4xl
-            text-3xl
-            sm:text-4xl
-            md:text-5xl
-            lg:text-6xl
-            xl:text-7xl"
+          <h1
+            className="text-white font-bold leading-tight max-w-4xl
+              text-3xl
+              sm:text-4xl
+              md:text-5xl
+              lg:text-6xl
+              xl:text-7xl"
           >
             <TextGenerateEffectDemo
-              words="Infrastructure Solutions Built for Scale. Secured for Growth."
+              words="Keeping Your IT Running Without Disruption."
             />
           </h1>
 
           {/* SUBTITLE */}
-          <p className="mt-8 max-w-2xl text-sm sm:text-base text-gray-300">
-            We design and implement secure, scalable IT infrastructure — from
-            network setup and server deployment to data center management —
-            providing a solid foundation for your digital operations.
+          <p className="mt-8 max-w-3xl text-sm sm:text-base text-gray-300">
+          Proactive maintenance, monitoring, and support that ensures uptime,
+stability, and predictable IT operations.
+
           </p>
         </div>
 
-       
+    
+      
       </section>
 
-      {/* CONTENT */}
-      <InfraExplain />
+     <AmcExplain/>
 
       <Footer />
     </>
   );
 }
 
-export default InfrastructureSolutions;
+export default AmcServices;

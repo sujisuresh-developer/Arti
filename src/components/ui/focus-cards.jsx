@@ -24,19 +24,14 @@ const Card = React.memo(
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* ALWAYS VISIBLE TITLE (HIDES ON HOVER) */}
+        {/* ALWAYS VISIBLE TITLE (BLACK, HIDES ON HOVER) */}
         <div
           className={cn(
             "absolute bottom-4 left-4 z-10 transition-opacity duration-300",
             isHovered ? "opacity-0" : "opacity-100"
           )}
         >
-          <h3
-            className={cn(
-              "text-lg font-semibold drop-shadow",
-              isHovered ? "text-white" : "text-black fontWeight-600"
-            )}
-          >
+          <h3 className="text-black text-lg font-semibold drop-shadow">
             {card.title}
           </h3>
         </div>
@@ -53,7 +48,7 @@ const Card = React.memo(
             <Icon className="text-[#1E5BFF]" size={20} />
           </div>
 
-          {/* TITLE (ONLY ON HOVER) */}
+          {/* TITLE (WHITE, ONLY ON HOVER) */}
           <h3 className="text-white text-xl font-semibold">
             {card.title}
           </h3>

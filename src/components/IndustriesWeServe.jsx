@@ -6,6 +6,7 @@ import {
 } from "lucide-react";
 import { FocusCards } from "../components/ui/focus-cards";
 
+
 const industries = [
   {
     title: "Energy & Utilities",
@@ -32,7 +33,7 @@ const industries = [
     title: "Enterprise & SaaS",
     desc: "Scalable cloud architecture and DevOps for high-growth technology companies.",
     image:
-      "https://media.istockphoto.com/id/2252195072/photo/digital-business-solution-with-ai-and-data-infrastructure-concept-3d-rendering.jpg?s=612x612&w=0&k=20&c=JaRinxhAxzWPNAZuXhec950mHknQueua9iKRBCTdzV0=",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JFyVMUGB2hCmAhFXOdCydqzgsCHd2BAzEA&s",
     icon: TrendingUp,
   },
 ];
@@ -54,7 +55,7 @@ const IndustriesWeServe = () => {
         </div>
 
         {/* FOCUS CARDS */}
-        <div className="mt-16">
+        <div className="mt-30">
           <FocusCards cards={industries} />
         </div>
 

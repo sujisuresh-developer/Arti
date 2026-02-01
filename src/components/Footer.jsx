@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom"
-import logo from "../assets/logo.png"
+import logo from "../assets/final.png"
 
 const Footer = () => {
   return (
-    <footer className="relative overflow-hidden bg-gradient-to-br from-[#0A2A5A]/30 via-[#1E40AF] to-[#38BDF8]">
+    <footer className="relative overflow-hidden bg-black">
 
       {/* INLINE LOGO SHAKE ANIMATION */}
       <style>{`
@@ -23,12 +23,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-14 text-white">
 
           {/* LOGO + TAGLINE */}
-          <div className="flex flex-col items-center md:items-start text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start text-center md:text-left mt-0">
             <Link to="/">
               <img
                 src={logo}
                 alt="Artiflex IT"
-                className="h-20 mb-4 drop-shadow-xl "
+                className="h-25 mb-10 drop-shadow-xl "
                 style={{ animation: "logoShake 3.5s ease-in-out infinite" }}
               />
             </Link>

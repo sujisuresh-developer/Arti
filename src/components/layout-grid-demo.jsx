@@ -24,114 +24,106 @@ export default function LayoutGridDemo() {
   );
 }
 
-const SkeletonOne = () => {
-  return (
-    <div>
-      <div className="flex items-center gap-2 mb-2">
-        <Server className="w-6 h-6 text-white" />
-        <p className=" font-bold md:text-4xl text-xl text-white">
-          Infrastructure Solutions
-        </p>
-      </div>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Build robust, scalable network architectures that power your enterprise operations with reliability.
-      </p>
-    </div>
-  );
-};
+/* ===== CONTENT ===== */
 
-const SkeletonTwo = () => {
-  return (
-    <div>
-      <div className="flex items-center gap-2 mb-2">
-        <Shield className="w-6 h-6 text-white" />
-        <p className="font-bold md:text-4xl text-xl text-white">
-          Cyber Security Solutions
-        </p>
-      </div>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Comprehensive threat protection, monitoring, and incident response to safeguard your business.
+const SkeletonOne = () => (
+  <div>
+    <div className="flex items-center gap-2 mb-2">
+      <Server className="w-6 h-6 text-white" />
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Infrastructure Solutions
       </p>
     </div>
-  );
-};
+    <p className="text-neutral-200">
+      Build robust, scalable network architectures that power enterprise operations.
+    </p>
+  </div>
+);
 
-const SkeletonThree = () => {
-  return (
-    <div>
-      <div className="flex items-center gap-2 mb-2">
-        <Lock className="w-6 h-6 text-white" />
-        <p className="font-bold md:text-4xl text-xl text-white">
-          Application Security
-        </p>
-      </div>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        End-to-end security for your applications, from development to deployment and beyond.
+const SkeletonTwo = () => (
+  <div>
+    <div className="flex items-center gap-2 mb-2">
+      <Shield className="w-6 h-6 text-white" />
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Cyber Security Solutions
       </p>
     </div>
-  );
-};
+    <p className="text-neutral-200">
+      Comprehensive threat protection and monitoring.
+    </p>
+  </div>
+);
 
-const SkeletonFour = () => {
-  return (
-    <div>
-      <div className="flex items-center gap-2 mb-2">
-        <Cloud className="w-6 h-6 text-white" />
-        <p className="font-bold md:text-4xl text-xl text-white">
-          Cloud Solutions
-        </p>
-      </div>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Seamless cloud migration, optimization, and management across IaaS, PaaS, SaaS, and VPS platforms.
+const SkeletonThree = () => (
+  <div>
+    <div className="flex items-center gap-2 mb-2">
+      <Lock className="w-6 h-6 text-white" />
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Application Security
       </p>
     </div>
-  );
-};
+    <p className="text-neutral-200">
+      End-to-end security for applications.
+    </p>
+  </div>
+);
 
-const SkeletonFive = () => {
-  return (
-    <div>
-      <div className="flex items-center gap-2 mb-2">
-        <Settings className="w-6 h-6 text-white" />
-        <p className="font-bold md:text-4xl text-xl text-white">
-          AMC Services
-        </p>
-      </div>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        Proactive annual maintenance contracts ensuring your IT systems run smoothly year-round.
+const SkeletonFour = () => (
+  <div>
+    <div className="flex items-center gap-2 mb-2">
+      <Cloud className="w-6 h-6 text-white" />
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Cloud Solutions
       </p>
     </div>
-  );
-};
+    <p className="text-neutral-200">
+      Cloud migration and optimization services.
+    </p>
+  </div>
+);
 
-const SkeletonSix = () => {
-  return (
-    <div>
-      <div className="flex items-center gap-2 mb-2">
-        <Headphones className="w-6 h-6 text-white" />
-        <p className="font-bold md:text-4xl text-xl text-white">
-          Managed Services
-        </p>
-      </div>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
-        24/7 IT support and optimization so you can focus on growing your core business.
+const SkeletonFive = () => (
+  <div>
+    <div className="flex items-center gap-2 mb-2">
+      <Settings className="w-6 h-6 text-white" />
+      <p className="font-bold md:text-4xl text-xl text-white">
+        AMC Services
       </p>
     </div>
-  );
-};
+    <p className="text-neutral-200">
+      Proactive annual maintenance services.
+    </p>
+  </div>
+);
+
+const SkeletonSix = () => (
+  <div>
+    <div className="flex items-center gap-2 mb-2">
+      <Headphones className="w-6 h-6 text-white" />
+      <p className="font-bold md:text-4xl text-xl text-white">
+        Managed Services
+      </p>
+    </div>
+    <p className="text-neutral-200">
+      24/7 IT support and monitoring.
+    </p>
+  </div>
+);
+
+/* ===== CARDS DATA ===== */
 
 const cards = [
   {
     id: 1,
+    title: "Infrastructure Solutions",
     content: <SkeletonOne />,
     className: "md:col-span-2",
-    
     thumbnail:
       "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=3534&auto=format&fit=crop",
-      
   },
   {
     id: 2,
+    title: "Cyber Security Solutions",
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
@@ -139,6 +131,7 @@ const cards = [
   },
   {
     id: 3,
+    title: "Application Security",
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
@@ -146,6 +139,7 @@ const cards = [
   },
   {
     id: 4,
+    title: "Cloud Solutions",
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
@@ -153,6 +147,7 @@ const cards = [
   },
   {
     id: 5,
+    title: "AMC Services",
     content: <SkeletonFive />,
     className: "md:col-span-2",
     thumbnail:
@@ -160,6 +155,7 @@ const cards = [
   },
   {
     id: 6,
+    title: "Managed Services",
     content: <SkeletonSix />,
     className: "col-span-1",
     thumbnail:

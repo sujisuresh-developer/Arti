@@ -92,7 +92,7 @@ const FAQ = () => {
       </section>
 
       {/* FAQ SECTION */}
-      <section className="relative py-28 overflow-hidden bg-[#f2f1e8]">
+      <section className="relative py-28 overflow-hidden bg-[#F2F7FF]">
 
         {/* EMOJI BACKGROUND */}
         

@@ -4,34 +4,36 @@ import "./hexagon.css";
 
 const data = [
   {
-    role: "IT Infrastructure",
+    role: "Secure Application Design",
     text:
-      "Artiflex IT designs and manages secure, high-performance infrastructure tailored to your business needs.",
+      "Security-first application architecture that minimizes attack surfaces from the design stage itself.",
   },
   {
-    role: "Enterprise Networking",
+    role: "Code Review & Vulnerability Assessment",
     text:
-      "Enterprise-grade networking solutions built for reliability, security, and seamless connectivity.",
+      "In-depth source code analysis and vulnerability scanning to identify security flaws early.",
   },
   {
-    role: "Server & Data Center Management",
+    role: "Web & API Security",
     text:
-      "Robust server and data center management ensuring uptime, performance, and scalability.",
+      "Protection against OWASP Top 10 threats, API abuse, and unauthorized access attempts.",
   },
   {
-    role: "High Availability & Scalability",
+    role: "DevSecOps Integration",
     text:
-      "Infrastructure designed to scale effortlessly while maintaining high availability.",
+      "Embedding security into CI/CD pipelines to ensure safe and compliant application delivery.",
   },
   {
-    role: "Proactive Monitoring",
+    role: "Continuous Security Monitoring",
     text:
-      "Continuous monitoring and maintenance to detect and resolve issues before they impact operations.",
+      "Ongoing monitoring to detect application threats and prevent breaches in real time.",
   },
 ];
 
 
-export default function InfraExplain() {
+
+
+export default function AppliExplain() {
   const [index, setIndex] = useState(0);
   const nextIndex = (index + 1) % data.length;
 
@@ -39,13 +41,14 @@ export default function InfraExplain() {
     <section className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
-       <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
-  Choose the Best <span className="font-semibold">Infrastructure Solutions</span>
+         <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
+ Choose the Best <span className="font-semibold">Application Security Solutions</span>
+
 </h2>
 
 <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-  Our Infrastructure Solutions elevate your IT environment through secure,
-  scalable, and high-performance systems.
+ End-to-end application security services that protect your software from evolving threats and vulnerabilities.
+
 </p>
 
 

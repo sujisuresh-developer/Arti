@@ -4,34 +4,37 @@ import "./hexagon.css";
 
 const data = [
   {
-    role: "IT Infrastructure",
+    role: "Cloud Strategy & Architecture",
     text:
-      "Artiflex IT designs and manages secure, high-performance infrastructure tailored to your business needs.",
+      "Designing secure, scalable cloud architectures tailored to your business objectives.",
   },
   {
-    role: "Enterprise Networking",
+    role: "Hybrid & Multi-Cloud Enablement",
     text:
-      "Enterprise-grade networking solutions built for reliability, security, and seamless connectivity.",
+      "Seamless integration across on-prem, hybrid, and multi-cloud environments.",
   },
   {
-    role: "Server & Data Center Management",
+    role: "Cloud Security & Compliance",
     text:
-      "Robust server and data center management ensuring uptime, performance, and scalability.",
+      "Ensuring data protection, access control, and compliance across cloud platforms.",
   },
   {
-    role: "High Availability & Scalability",
+    role: "Cloud Optimization",
     text:
-      "Infrastructure designed to scale effortlessly while maintaining high availability.",
+      "Performance tuning and cost optimization to maximize cloud efficiency.",
   },
   {
-    role: "Proactive Monitoring",
+    role: "Managed Cloud Services",
     text:
-      "Continuous monitoring and maintenance to detect and resolve issues before they impact operations.",
+      "End-to-end cloud management with proactive monitoring and support.",
   },
 ];
 
 
-export default function InfraExplain() {
+
+
+
+export default function CloudExplain() {
   const [index, setIndex] = useState(0);
   const nextIndex = (index + 1) % data.length;
 
@@ -39,13 +42,16 @@ export default function InfraExplain() {
     <section className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
-       <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
-  Choose the Best <span className="font-semibold">Infrastructure Solutions</span>
+         <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
+Choose the Best <span className="font-semibold">Cloud Solutions</span>
+
+
 </h2>
 
 <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">
-  Our Infrastructure Solutions elevate your IT environment through secure,
-  scalable, and high-performance systems.
+ Secure, scalable, and cost-effective cloud solutions built for agility and growth.
+
+
 </p>
 
 

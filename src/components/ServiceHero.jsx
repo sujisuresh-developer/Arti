@@ -55,20 +55,7 @@ const ServiceHero = ({
           </div>
         </div>
 
-        {/* RIGHT CTA CARD */}
-        <div className="flex justify-end items-start">
-          <div className="bg-black text-white rounded-2xl p-6 w-[300px] shadow-xl">
-            <p className="text-lg leading-relaxed mb-6">
-              Contact us to gain clarity on your security posture — delivered within{" "}
-              <span className="font-semibold">72 hours</span> .
-            </p>
-
-            <Link to={'/Contact'} className="w-full flex items-center justify-between px-5 py-3 rounded-full bg-blue-200 text-black font-semibold hover:bg-blue-300 transition">
-              Contact Us
-              <span>→</span>
-            </Link>
-          </div>
-        </div>
+      
       </div>
     </section>
     </>

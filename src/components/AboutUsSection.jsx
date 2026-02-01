@@ -1,177 +1,78 @@
-import Footer from "./Footer";
+"use client";
+
 import Header from "./Header";
-import HeroSection from "./HeroSection";
-import OurPromiseVideo from "./OurPromiseVideo";
+import Footer from "./Footer";
+import Beams from "./Beams";
 import TextGenerateEffectDemo from "./text-generate-effect-demo";
+import AboutContentSection from "./AboutContentSection";
 
 const AboutUsSection = () => {
+  return (
+    <>
+      <Header />
 
-    return (
-        <>
-            <Header />
+      {/* HERO SECTION */}
+      <section className="relative w-full min-h-[700px] md:h-[600px] overflow-hidden bg-black">
 
-            <section className="bg-[#f2f1e8] py-28 px-6 ">
-                <div className="max-w-7xl mx-auto">
+        {/* BEAMS BACKGROUND */}
+        <div className="absolute inset-0 z-0">
+          <Beams
+            beamWidth={3}
+            beamHeight={30}
+            beamNumber={20}
+            lightColor="#ffffff"
+            speed={2}
+            noiseIntensity={1.75}
+            scale={0.2}
+            rotation={30}
+          />
+        </div>
 
-                    {/* TOP PROMISE */}
-                   <TextGenerateEffectDemo/>
+        {/* DARK OVERLAY */}
+        <div className="absolute inset-0 bg-black/30 z-10" />
 
-                    {/* VISION + MISSION */}
-                    <div className="grid md:grid-cols-2 gap-16 mt-20">
+        {/* CONTENT */}
+        <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center">
+          <h1 className="text-white font-bold leading-tight max-w-4xl
+            text-3xl
+            sm:text-4xl
+            md:text-5xl
+            lg:text-6xl
+            xl:text-7xl
+            2xl:text-8xl"
+          >
+            <TextGenerateEffectDemo
+              words="About ArtiflexIT your technology innovation partner."
+            />
+          </h1>
 
-                        {/* OUR VISION */}
-                        <div>
-                            <h3 className="text-3xl font-semibold mb-4 text-blue-900">
-                                Our Vision
-                            </h3>
-                            <p className="text-gray-600 leading-relaxed text-lg max-w-xl">
-                                Empowering businesses with trust through cyber resilience.
-                            </p>
-                        </div>
+          <p className="mt-6 sm:mt-8 max-w-xl sm:max-w-2xl text-xs sm:text-sm md:text-base text-gray-300">
+            From infrastructure to cybersecurity, cloud to managed services —
+            Artiflex IT delivers innovative, secure, and scalable technology
+            for businesses of all sizes.
+          </p>
+        </div>
 
-                        {/* OUR MISSION */}
-                        <div>
-                            <h3 className="text-3xl font-semibold mb-4 text-blue-900">
-                                Our Mission
-                            </h3>
-                            <p className="text-gray-600 leading-relaxed text-lg max-w-xl">
-                                To deliver customized, secure, and scalable IT solutions that empower
-                                industries from energy to fintech to operate efficiently and grow
-                                confidently.
-                            </p>
-                        </div>
+        {/* BOTTOM GRADIENT FADE */}
+        <div className="absolute bottom-0 left-0 w-full h-32 sm:h-40 bg-gradient-to-t from-white to-transparent z-30" />
+      </section>
 
-                    </div>
-                </div>
-            </section>
-            <OurPromiseVideo />
+      {/* LIGHT CONTENT SECTION */}
+      <section className="bg-white pt-10 pb-14 sm:pt-12 sm:pb-16 -mt-1">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <p className="text-xs sm:text-sm md:text-base text-neutral-700">
+            From infrastructure to cybersecurity, cloud to managed services —
+            Artiflex IT delivers innovative, secure, and scalable technology
+            for businesses of all sizes.
+          </p>
+        </div>
+      </section>
 
+      <AboutContentSection />
 
-            <section className="relative overflow-hidden bg-[#f2f1e8] py-50">
-
-                {/* 🔵 RIGHT SIDE CURVED BLUE GLOW */}
-                <div className="absolute inset-0 pointer-events-none overflow-hidden">
-
-                    {/* RIGHT EDGE BLUE ELLIPSE */}
-                    <div
-                        className="
-      absolute
-      top-1/2
-      -translate-y-1/2
-      -right-[25%]
-      w-[520px]
-      h-[300px]
-      bg-blue-700
-      opacity-60
-      blur-[60px]
-      rounded-full
-    "
-                    />
-
-                    {/* LEFT EDGE BLUE ELLIPSE */}
-                    <div
-                        className="
-      absolute
-      top-1/2
-      -translate-y-1/2
-      -left-[25%]
-      w-[520px]
-      h-[300px]
-      bg-blue-700
-      opacity-50
-      blur-[60px]
-      rounded-full
-    "
-                    />
-
-                </div>
-
-
-
-                <div className="max-w-7xl mx-auto px-6 relative z-10">
-
-                    {/* HEADING */}
-                    <h2 className="text-4xl sm:text-5xl font-light mb-20">
-                        <span className="font-normal"> Our Core Values</span> that guide our actions
-                    </h2>
-
-                    {/* VALUES GRID */}
-                    <div className="grid sm:grid-cols-2 gap-x-24 gap-y-16 max-w-3xl">
-
-                        {/* VALUE 1 */}
-                        <div>
-                            <div className="w-6 h-6 mb-4 rounded-full border border-blue-600 flex items-center justify-center">
-                                <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                            </div>
-                            <h4 className="text-xl font-semibold mb-2">Client Success</h4>
-                            <p className="text-gray-600 leading-relaxed">
-                                We prioritize understanding our clients’ goals and delivering solutions
-                                that ensure measurable success.
-                            </p>
-                        </div>
-
-                        {/* VALUE 2 */}
-                        <div>
-                            <div className="w-6 h-6 mb-4 rounded-full border border-blue-600 flex items-center justify-center">
-                                <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                            </div>
-                            <h4 className="text-xl font-semibold mb-2"> Innovation</h4>
-                            <p className="text-gray-600 leading-relaxed">
-                                We embrace the latest technologies and approaches to keep our solutions
-                                forward-thinking and effective.
-                            </p>
-                        </div>
-
-                        {/* VALUE 3 */}
-                        <div>
-                            <div className="w-6 h-6 mb-4 rounded-full border border-blue-600 flex items-center justify-center">
-                                <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                            </div>
-                            <h4 className="text-xl font-semibold mb-2">Quality Program</h4>
-                            <p className="text-gray-600 leading-relaxed">
-                                Every project we undertake is driven by a strong commitment to quality
-                                and continuous improvement.
-                            </p>
-                        </div>
-
-                        {/* VALUE 4 */}
-                        <div>
-                            <div className="w-6 h-6 mb-4 rounded-full border border-blue-600 flex items-center justify-center">
-                                <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                            </div>
-                            <h4 className="text-xl font-semibold mb-2">Teamwork</h4>
-                            <p className="text-gray-600 leading-relaxed">
-                               Collaboration and mutual respect guide how we work with our clients and
-                  within our teams.
-                            </p>
-                        </div>
-
-                        {/* VALUE 5 */}
-                        <div>
-                            <div className="w-6 h-6 mb-4 rounded-full border border-blue-600 flex items-center justify-center">
-                                <span className="w-2 h-2 bg-blue-600 rounded-full"></span>
-                            </div>
-                            <h4 className="text-xl font-semibold mb-2">Ready for what’s next</h4>
-                            <p className="text-gray-600 leading-relaxed">
-                                We help you stay prepared for what’s ahead,
-                                adapting as your business and threats evolve.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-
-            <HeroSection/>
-
-            <Footer />
-
-
-
-        </>
-    );
+      <Footer />
+    </>
+  );
 };
-
 
 export default AboutUsSection;

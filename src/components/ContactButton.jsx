@@ -102,7 +102,7 @@ const CheckIcon = () => (
     "
   />
 
-  <span className="relative z-10">Send message</span>
+  <span className="relative z-10">Connect With Us</span>
 </motion.button>
 
   );
