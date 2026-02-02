@@ -2,10 +2,11 @@
 
 import Header from "./Header";
 import Footer from "./Footer";
-import Beams from "./Beams";
+
 import TextGenerateEffectDemo from "./text-generate-effect-demo";
 import AboutContentSection from "./AboutContentSection";
 import VendorsAutoScroll from "./VendorsAutoScroll";
+import FloatingLines from "./FloatingLines";
 
 const AboutUsSection = () => {
   return (
@@ -14,20 +15,19 @@ const AboutUsSection = () => {
 
       {/* HERO SECTION */}
       <section className="relative w-full min-h-[700px] md:h-[600px] overflow-hidden bg-black">
-
-        {/* BEAMS BACKGROUND */}
         <div className="absolute inset-0 z-0">
-          <Beams
-            beamWidth={3}
-            beamHeight={30}
-            beamNumber={20}
-            lightColor="#4747ed"
-            speed={2}
-            noiseIntensity={1.75}
-            scale={0.2}
-            rotation={30}
+          <FloatingLines
+            linesGradient={["#4f6cff", "#2F4BC0", "#0008fa"]}
+            animationSpeed={1}
+            interactive
+            bendRadius={5}
+            bendStrength={-0.5}
+            mouseDamping={0.05}
+            parallax
+            parallaxStrength={0.2}
           />
         </div>
+
 
         {/* DARK OVERLAY */}
         <div className="absolute inset-0 bg-black/30 z-10" />
@@ -70,7 +70,7 @@ const AboutUsSection = () => {
       </section>
 
       <AboutContentSection />
-      <VendorsAutoScroll/>
+      <VendorsAutoScroll />
 
       <Footer />
     </>

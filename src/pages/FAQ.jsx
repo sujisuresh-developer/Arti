@@ -8,6 +8,8 @@ import appli from "../assets/appli.jpg"
 import cloud from "../assets/cloud.jpg"
 import manage from "../assets/manage.jpg"
 import amc from "../assets/amc.jpg"
+import FloatingLines from "../components/FloatingLines"
+import TextGenerateEffectDemo from "../components/text-generate-effect-demo"
 
 
 
@@ -78,17 +80,41 @@ const FAQ = () => {
       <Header />
 
       {/* HERO */}
-      <section
-        className="relative h-[300px] flex items-center justify-center bg-cover bg-center "
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a')"
-        }}
-      >
-        <div className="absolute inset-0 bg-blue-900/70" />
-        <h1 className="relative text-white text-5xl font-bold text-center mt-10">
-          Frequently Asked Questions
-        </h1>
+     
+       
+      <section className="relative w-full min-h-[700px] md:h-[600px] overflow-hidden bg-black">
+         <div className="absolute inset-0 z-0">
+                <FloatingLines
+                  linesGradient={["#4f6cff", "#2F4BC0", "#0008fa"]}
+                  animationSpeed={1}
+                  interactive
+                  bendRadius={5}
+                  bendStrength={-0.5}
+                  mouseDamping={0.05}
+                  parallax
+                  parallaxStrength={0.2}
+                />
+              </div>
+               <div className="absolute inset-0 bg-black/30 z-10" />
+              
+                      {/* CONTENT */}
+                      <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center">
+                        <h1 className="text-white font-bold leading-tight max-w-4xl
+                          text-3xl
+                          sm:text-4xl
+                          md:text-5xl
+                          lg:text-6xl
+                          xl:text-7xl
+                          2xl:text-8xl"
+                        >
+                          <TextGenerateEffectDemo
+                            words=" Frequently Asked Questions."
+                          />
+                        </h1>
+                        </div>
+                         <div className="absolute bottom-0 left-0 w-full h-32 sm:h-40 bg-gradient-to-t from-white to-transparent z-30" />
+              
+              
       </section>
 
       {/* FAQ SECTION */}
