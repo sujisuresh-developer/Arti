@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Beams from "./Beams";
 import TextGenerateEffectDemo from "./text-generate-effect-demo";
 import AboutContentSection from "./AboutContentSection";
+import VendorsAutoScroll from "./VendorsAutoScroll";
 
 const AboutUsSection = () => {
   return (
@@ -20,7 +21,7 @@ const AboutUsSection = () => {
             beamWidth={3}
             beamHeight={30}
             beamNumber={20}
-            lightColor="#ffffff"
+            lightColor="#4747ed"
             speed={2}
             noiseIntensity={1.75}
             scale={0.2}
@@ -69,6 +70,7 @@ const AboutUsSection = () => {
       </section>
 
       <AboutContentSection />
+      <VendorsAutoScroll/>
 
       <Footer />
     </>

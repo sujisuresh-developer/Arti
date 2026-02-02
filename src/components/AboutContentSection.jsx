@@ -11,24 +11,27 @@ export default function AboutContentSection() {
             About ArtiflexIT
           </h2>
           <p className="mt-6 text-neutral-600 leading-relaxed text-base md:text-lg">
-            <strong>ArtiflexIT</strong> is a leading IT solutions company serving businesses
-            across Dubai, Abu Dhabi, Sharjah, and the UAE. With over
-            <strong> 30 years of expertise</strong>, we deliver advanced IT services
-            and integrated service management to help organizations overcome
-            challenges and achieve sustainable growth.
+            At <strong>Artiflex</strong>, we are committed to delivering high quality, innovative
+            IT solutions that fuel business growth and long-term success. With
+            over <strong>15 years</strong> of industry experience, we have established
+            ourselves as a trusted technology partner to organizations around
+            the world.
+            We specialize in crafting custom software and IT solutions tailored
+            to meet the unique needs of each client. Our focus on efficiency,
+            scalability, and security ensures that your technology is not only
+            robust today but ready for the future.
           </p>
 
           <p className="mt-6 text-neutral-600 leading-relaxed text-base md:text-lg">
-            Our certified professionals deliver tailored solutions — from
-            on-premises infrastructure to hybrid and multi-cloud platforms —
-            ensuring cost-effective, scalable, and future-ready systems.
-          </p>
+            Backed by a team of 20+ certified full time professionals, we have
+            successfully completed over 500 projects across various
+            industries. Our global presence, with offices in four countries,
+            allows us to <strong>support clients with agility and local insight</strong>.          </p>
 
           <p className="mt-6 text-neutral-600 leading-relaxed text-base md:text-lg">
-            As an <strong>ISO, TRA, SIRA, and MCC certified company</strong>, we uphold
-            the highest standards of quality, security, and compliance. Our
-            proven delivery framework ensures consistent excellence, making us
-            a trusted technology partner for enterprises.
+            We operate multiple branches across the region, including <strong>Artiflex Manchi</strong> in
+            Oman, <strong>Artiflex Metal World</strong> in Saudi Arabia, and our Dubai branch, now
+            operating as Artiflex Information Technology.
           </p>
         </div>
 
@@ -49,8 +52,8 @@ export default function AboutContentSection() {
               Our Vision
             </h3>
             <p className="mt-4 text-neutral-600 leading-relaxed text-base md:text-lg">
-              Empowering businesses with trust through 
-cyber resilienc.
+              Empowering businesses with trust through
+              cyber resilienc.
             </p>
           </div>
         </div>
@@ -63,10 +66,10 @@ cyber resilienc.
               Our Mission
             </h3>
             <p className="mt-4 text-neutral-600 leading-relaxed text-base md:text-lg">
-              To deliver customized, secure, and scalable IT 
-solutions that empower industries from energy 
-to fintech to operate efficiently and grow 
-confidently.
+              To deliver customized, secure, and scalable IT
+              solutions that empower industries from energy
+              to fintech to operate efficiently and grow
+              confidently.
             </p>
           </div>
 

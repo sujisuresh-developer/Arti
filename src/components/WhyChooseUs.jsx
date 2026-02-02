@@ -4,6 +4,7 @@ import {
   Users,
   Award
 } from "lucide-react";
+import { motion } from "framer-motion";
 
 const features = [
   {
@@ -44,33 +45,77 @@ const WhyChooseUs = () => {
           </p>
         </div>
 
+        {/* 🔵 BLUE BLOCK LINE */}
+       <div className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] mt-14">
+  <div className="h-[30px] bg-[#2563eb]" />
+</div>
+
         {/* Cards */}
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-          {features.map((item, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-8 shadow-md border border-gray-100 flex gap-6"
-            >
-              {/* Icon */}
-              <div className="w-18 h-12 rounded-xl bg-[#1E5BFF] flex items-center justify-center text-white">
-                <item.icon size={26} strokeWidth={2} />
-              </div>
+  {features.map((item, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.6,
+        delay: index * 0.15,
+        ease: "easeOut",
+      }}
+      whileHover={{
+        y: -6,
+        boxShadow: "0 20px 40px rgba(37, 99, 235, 0.15)",
+      }}
+      className="
+        bg-white
+        rounded-2xl
+        p-8
+        border
+        border-gray-100
+        flex
+        gap-6
+        transition-all
+        duration-300
+      "
+    >
+      {/* Icon */}
+      <motion.div
+        whileHover={{ rotate: 6, scale: 1.05 }}
+        transition={{ type: "spring", stiffness: 300 }}
+        className="
+          w-18 h-12
+          rounded-xl
+          bg-[#1E5BFF]
+          flex
+          items-center
+          justify-center
+          text-white
+          shadow-md
+        "
+      >
+        <item.icon size={26} strokeWidth={2} />
+      </motion.div>
 
-              {/* Content */}
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900">
-                  {item.title}
-                </h3>
-                <p className="mt-2 text-sm text-gray-600 leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* Content */}
+      <div>
+        <h3 className="text-lg font-semibold text-gray-900">
+          {item.title}
+        </h3>
+        <p className="mt-2 text-sm text-gray-600 leading-relaxed">
+          {item.desc}
+        </p>
+      </div>
+    </motion.div>
+  ))}
+</div>
+
 
       </div>
     </section>
+
+
+
   );
 };
 

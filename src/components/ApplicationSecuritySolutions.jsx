@@ -7,8 +7,9 @@ import PixelBlast from "../components/PixelBlast";
 import TextGenerateEffectDemo from "../components/text-generate-effect-demo";
 
 import AppliExplain from "./AppliExplain";
+import Logos from "../components/Logos";
 
-function CyberSecuritySolutions() {
+function ApplicationSecuritySolutions() {
     return (
         <>
             <Header />
@@ -21,7 +22,7 @@ function CyberSecuritySolutions() {
                     <PixelBlast
                         variant="square"
                         pixelSize={4}
-                        color="#f7f1f1"
+                        color="#7a53fa"
                         patternScale={2}
                         patternDensity={1}
                         pixelSizeJitter={0}
@@ -65,16 +66,18 @@ function CyberSecuritySolutions() {
                         while ensuring performance and compliance.
                     </p>
                 </div>
+                <div className="absolute bottom-0 left-0 w-full h-42 sm:h-40 bg-gradient-to-t from-white via-black/50 to-transparent z-10 pointer-events-none" />
 
 
 
             </section>
 
             <AppliExplain />
+            <Logos/>
 
             <Footer />
         </>
     );
 }
 
-export default CyberSecuritySolutions;
+export default ApplicationSecuritySolutions;

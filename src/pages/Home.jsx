@@ -14,12 +14,15 @@ import LayoutGridDemo from '../components/layout-grid-demo'
 import GlowSection from '../components/GlowSection'
 import { FocusCards } from '../components/ui/focus-cards'
 import TrustedSection from '../components/TrustedSection'
+import QuotePage from '../components/QuotePage'
+
 import {
   Zap,
   Building2,
   Heart,
   TrendingUp
 } from "lucide-react";
+import Connect from '../components/Connect'
 
 const industries = [
   {
@@ -61,12 +64,14 @@ function Home({openContact}) {
      <Header openContact={openContact} />
       <Hero />
       <GlowSection />
+      <WhyChooseUs />
+      <QuotePage />
       <section className="relative z-20 pointer-events-auto">
         <LayoutGridDemo />
       </section>
 
 
-      <WhyChooseUs />
+      
       <section className="relative z-30 bg-white py-24">
         <div className="max-w-7xl mx-auto px-6">
           {/* HEADING */}
@@ -85,6 +90,7 @@ function Home({openContact}) {
         </div>
       </section>
       <TrustedSection/>
+<Connect/>
 
 
      

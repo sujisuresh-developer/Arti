@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PixelBlast from "../components/PixelBlast";
 import TextGenerateEffectDemo from "../components/text-generate-effect-demo";
+import Logos from "../components/Logos";
 
 
 
@@ -23,7 +24,7 @@ function ManagedServices() {
                     <PixelBlast
                         variant="square"
                         pixelSize={4}
-                        color="#f7f1f1"
+                        color="#7a53fa"
                         patternScale={2}
                         patternDensity={1}
                         pixelSizeJitter={0}
@@ -71,12 +72,13 @@ while maximizing reliability and performance.
 
                     </p>
                 </div>
-
+<div className="absolute bottom-0 left-0 w-full h-42 sm:h-40 bg-gradient-to-t from-white via-black/50 to-transparent z-10 pointer-events-none" />
 
 
             </section>
 
             <ManageExplain />
+            <Logos/>
 
             <Footer />
         </>
