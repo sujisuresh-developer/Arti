@@ -6,7 +6,7 @@ import InfiniteMovingCardsDemo from "./Infinite-moving-cards-demo";
 
 export default function TrustedSection() {
   return (
-    <section className="mt-10" >
+    <section className="mt-40" >
       {/* 🔹 TOP HEADING */}
       <div className="text-center max-w-3xl mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 -mt-6">

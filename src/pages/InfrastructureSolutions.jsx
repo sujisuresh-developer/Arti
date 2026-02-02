@@ -65,7 +65,7 @@ function InfrastructureSolutions() {
             providing a solid foundation for your digital operations.
           </p>
         </div>
-        <div className="absolute bottom-0 left-0 w-full h-42 sm:h-40 bg-gradient-to-t from-white via-black/50 to-transparent z-10 pointer-events-none" />
+      
 
        
       </section>

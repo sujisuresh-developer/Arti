@@ -3,7 +3,7 @@ import React from 'react'
 function Connect() {
   return (
     <>
-    <section className="min-h-screen bg-[#F2F7FF] flex justify-center px-4 py-28">
+    <section className="min-h-screen bg-[black] flex justify-center px-4 py-28">
         {/* CONTENT WRAPPER */}
         <div className="w-full max-w-5xl">
 
@@ -60,7 +60,7 @@ function Connect() {
                     What service are you interested in
                   </label>
                   <select className="mt-1 w-full bg-gray-100 px-4 py-2.5 rounded-lg outline-none">
-                    <option>Select project type</option>
+                    <option>Select a Service</option>
                     <option>Infrastructure Solutions</option>
                     <option>Cyber Security</option>
                     <option>Application Security</option>

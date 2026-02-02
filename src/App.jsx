@@ -12,7 +12,7 @@ import Page from './pages/Page'
 import CloudSolutions from './components/CloudSolutions'
 import ManagedServices from './components/ManagedServices'
 import AmcServices from './components/AmcServices'
-import ServiceDetails from './pages/ServiceDetails'
+
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
        <Route path='/contact' element={<Contact/>}/>
        <Route path='/faq' element={<FAQ/>}/>
        <Route path='/page' element={<Page/>}/>
-       <Route path="/services" element={<ServiceDetails />} />
+       
 
     </Routes>
       

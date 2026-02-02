@@ -47,27 +47,15 @@ const AboutUsSection = () => {
             />
           </h1>
 
-          <p className="mt-6 sm:mt-8 max-w-xl sm:max-w-2xl text-xs sm:text-sm md:text-base text-gray-300">
-            From infrastructure to cybersecurity, cloud to managed services —
-            Artiflex IT delivers innovative, secure, and scalable technology
-            for businesses of all sizes.
-          </p>
+         
         </div>
 
         {/* BOTTOM GRADIENT FADE */}
-        <div className="absolute bottom-0 left-0 w-full h-32 sm:h-40 bg-gradient-to-t from-white to-transparent z-30" />
+        
       </section>
 
       {/* LIGHT CONTENT SECTION */}
-      <section className="bg-white pt-10 pb-14 sm:pt-12 sm:pb-16 -mt-1">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-xs sm:text-sm md:text-base text-neutral-700">
-            From infrastructure to cybersecurity, cloud to managed services —
-            Artiflex IT delivers innovative, secure, and scalable technology
-            for businesses of all sizes.
-          </p>
-        </div>
-      </section>
+     
 
       <AboutContentSection />
       <VendorsAutoScroll />

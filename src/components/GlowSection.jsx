@@ -42,11 +42,12 @@ const GlowSection = () => {
             className="
               w-[260px]
               sm:w-[340px]
-              lg:w-[420px]
+              lg:w-[450px]
               translate-y-32
               transition-transform duration-700 ease-out
               hover:scale-105
               animate-floatSlow
+              h-380px
             "
           />
         </div>

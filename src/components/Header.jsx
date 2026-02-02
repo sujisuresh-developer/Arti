@@ -37,7 +37,7 @@ const Header = () => {
                 <img
                   src={logo}
                   alt="Artiflex IT"
-                  className="h-10 md:h-10 ms-2 md:ms-4"
+                  className="h-10 md:h-14 ms-2 md:ms-4"
                 />
               </Link>
 
@@ -48,12 +48,12 @@ const Header = () => {
 
                 {/* SERVICES */}
                 <div className="relative group">
-                  <Link
-                    to="/services"
+                  <button
+                   
                     className="flex items-center gap-1 hover:text-blue-600 transition"
                   >
                     Services <span className="text-xs">▼</span>
-                  </Link>
+                  </button>
 
 
                   <div className="absolute top-10 left-0 w-72 rounded-xl bg-gradient-to-br from-blue-50 via-white to-blue-100 shadow-2xl border border-blue-100 py-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">

@@ -36,52 +36,66 @@ export default function AboutContentSection() {
         </div>
 
         {/* ================= VISION ================= */}
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Image */}
-          <div className="overflow-hidden rounded-2xl group">
-            <img
-              src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1600&auto=format&fit=crop"
-              alt="Vision"
-              className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
-            />
-          </div>
+       <div className="grid   items-center">
+  {/* Image + Overlay */}
+  <div className="relative overflow-hidden rounded-2xl group h-[420px] md:h-[350px]">
+    <img
+      src="https://images.unsplash.com/photo-1492724441997-5dc865305da7?q=80&w=1600&auto=format&fit=crop"
+      alt="Vision"
+      className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+    />
 
-          {/* Text */}
-          <div>
-            <h3 className="text-3xl font-bold text-neutral-900">
-              Our Vision
-            </h3>
-            <p className="mt-4 text-neutral-600 leading-relaxed text-base md:text-lg">
-              Empowering businesses with trust through
-              cyber resilienc.
-            </p>
-          </div>
-        </div>
+    {/* DARK OVERLAY */}
+    <div className="absolute inset-0 bg-black/40" />
+
+    {/* CENTERED CONTENT */}
+    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10">
+      <h3 className="text-3xl md:text-4xl font-bold text-white font-serif">
+        Our Vision
+      </h3>
+      <p className="mt-4 max-w-md text-white/90 leading-relaxed text-base md:text-lg">
+        Empowering businesses with trust through
+        cyber resilienc.
+      </p>
+    </div>
+  </div>
+
+  {/* EMPTY COLUMN (kept for layout balance, not removed) */}
+  <div className="hidden md:block" />
+</div>
+
 
         {/* ================= MISSION ================= */}
-        <div className="grid md:grid-cols-2 gap-12 items-center md:flex-row-reverse">
-          {/* Text */}
-          <div>
-            <h3 className="text-3xl font-bold text-neutral-900">
-              Our Mission
-            </h3>
-            <p className="mt-4 text-neutral-600 leading-relaxed text-base md:text-lg">
-              To deliver customized, secure, and scalable IT
-              solutions that empower industries from energy
-              to fintech to operate efficiently and grow
-              confidently.
-            </p>
-          </div>
+        <div className="grid  items-center md:flex-row-reverse">
+  {/* EMPTY COLUMN */}
+  <div className="hidden md:block" />
 
-          {/* Image */}
-          <div className="overflow-hidden rounded-2xl group">
-            <img
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop"
-              alt="Mission"
-              className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
-            />
-          </div>
-        </div>
+  {/* Image + Overlay */}
+  <div className="relative overflow-hidden rounded-2xl group h-[420px] md:h-[350px]">
+    <img
+      src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop"
+      alt="Mission"
+      className="absolute inset-0 w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110"
+    />
+
+    {/* DARK OVERLAY */}
+    <div className="absolute inset-0 bg-black/40" />
+
+    {/* CENTERED CONTENT */}
+    <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10">
+      <h3 className="text-3xl md:text-4xl font-bold text-white font-serif">
+        Our Mission
+      </h3>
+      <p className="mt-4 max-w-md text-white/90 leading-relaxed text-base md:text-lg">
+        To deliver customized, secure, and scalable IT
+        solutions that empower industries from energy
+        to fintech to operate efficiently and grow
+        confidently.
+      </p>
+    </div>
+  </div>
+</div>
+
 
         {/* ================= COMMITMENT ================= */}
         <div className="max-w-4xl mx-auto text-center">

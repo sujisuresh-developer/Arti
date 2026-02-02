@@ -25,14 +25,16 @@ const QuotePage = () => {
           {/* Blue Divider */}
           <div className="mx-auto mb-8 h-[4px] w-24 bg-[#2563eb] rounded-full" />
 
-          <blockquote className="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 leading-snug">
-            “Our role isn’t to push products, but to enable smarter,
-            scalable decisions through software.”
-          </blockquote>
+         <blockquote className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-snug font-serif">
+  <span className="inline-block text-6xl md:text-7xl lg:text-8xl align-top text-[#2563eb] mr-1">
+    “
+  </span>
+  Our role isn’t to push products, but to enable smarter,
+  scalable decisions through software.
+</blockquote>
 
-          <p className="mt-8 text-sm uppercase tracking-widest text-gray-600">
-            — Artiflex IT Philosophy
-          </p>
+
+         
 
         </div>
       </section>

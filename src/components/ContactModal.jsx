@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-
 import Meteors from "./ui/meteors";
 
 const ContactModal = ({ open, onClose }) => {
@@ -13,49 +12,49 @@ const ContactModal = ({ open, onClose }) => {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[60] flex justify-center mt-2 bg-black/30 backdrop-blur-md transition-all duration-300">
-
+    <div className="fixed inset-0 z-[60] flex justify-center mt-2">
       {/* WRAPPER */}
       <div
         className="relative w-full max-w-5xl px-4"
         style={{ marginTop: "88px" }}
       >
+        {/* ===== MODAL ===== */}
+        <div className="relative bg-black rounded-2xl shadow-2xl p-6 md:p-10 border border-white/10 overflow-hidden">
 
-        {/* ===== METEORS BACKGROUND ===== */}
-      
+          {/* 🔹 METEORS BACKGROUND (BEHIND CONTENT) */}
+          <div className="absolute inset-0 z-0 pointer-events-none">
+            <Meteors number={25} className="opacity-60" />
+          </div>
 
-        {/* ===== MODAL CONTENT ===== */}
-        <div className="relative bg-black rounded-2xl shadow-2xl p-6 md:p-10 border border-white/10">
-        <Meteors number={25} className="opacity-60" />
-
-          {/* CLOSE */}
+          {/* 🔹 CLOSE BUTTON (TOP MOST) */}
           <button
             onClick={onClose}
-            className="absolute top-3 right-4 md:top-2 md:right-6 z-50 text-2xl font-semibold text-white hover:opacity-70"
+            className="absolute top-4 right-4 md:top-2 md:right-6 z-[100] text-2xl font-semibold text-white hover:opacity-70"
             aria-label="Close modal"
           >
             ✕
           </button>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+          {/* 🔹 CONTENT LAYER */}
+          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
 
             {/* LEFT */}
-            <div className="-mt-4 text-white">
-              <h2 className="text-3xl md:text-5xl font-bold">
+            <div className="text-white">
+              <h2 className="text-3xl md:text-5xl font-bold font-serif">
                 Let’s Talk
               </h2>
 
-              <p className="mt-4 md:mt-5 text-gray-300 leading-relaxed text-sm md:text-base">
+              <p className="mt-4 text-gray-300 text-sm md:text-base leading-relaxed">
                 Have some big idea or business to develop and need help?
                 Then reach out — we’d love to hear about your project.
               </p>
 
-              <div className="mt-6 md:mt-8">
+              <div className="mt-6">
                 <h4 className="font-bold">Email</h4>
                 <p className="text-gray-300">info@artiflex.com</p>
               </div>
 
-              <div className="mt-5 md:mt-6">
+              <div className="mt-5">
                 <h4 className="font-bold">Socials</h4>
                 <ul className="mt-2 space-y-1 underline text-gray-300">
                   <li>Instagram</li>
@@ -66,8 +65,7 @@ const ContactModal = ({ open, onClose }) => {
             </div>
 
             {/* RIGHT FORM */}
-            <form className="space-y-3 md:space-y-3 -mt-7">
-
+            <form className="space-y-3 -mt-6">
               <div>
                 <label className="text-sm font-medium text-white">Name</label>
                 <input className="mt-1 w-full bg-white px-4 py-2.5 rounded-lg outline-none text-black" />
@@ -83,7 +81,7 @@ const ContactModal = ({ open, onClose }) => {
                   What service are you interested in
                 </label>
                 <select className="mt-1 w-full bg-white px-4 py-2.5 rounded-lg outline-none text-black">
-                  <option>Select project type</option>
+                  <option>Select a Service</option>
                   <option>Infrastructure Solutions</option>
                   <option>Cyber Security</option>
                   <option>Application Security</option>

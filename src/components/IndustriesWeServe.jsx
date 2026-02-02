@@ -1,8 +1,8 @@
 import {
-  Zap,
-  Building2,
-  Heart,
-  TrendingUp,
+  Target,
+  Layers,
+  Users,
+  Award
 } from "lucide-react";
 import { FocusCards } from "../components/ui/focus-cards";
 

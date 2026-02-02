@@ -31,7 +31,7 @@ const Card = React.memo(
             isHovered ? "opacity-0" : "opacity-100"
           )}
         >
-          <h3 className="text-black  text-lg font-bold drop-shadow">
+          <h3 className="text-white  text-lg font-bold drop-shadow">
             {card.title}
           </h3>
         </div>

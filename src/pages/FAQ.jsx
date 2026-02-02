@@ -14,6 +14,7 @@ import TextGenerateEffectDemo from "../components/text-generate-effect-demo"
 
 
 
+
 const faqData = [
   {
     title: "IT Infrastructure Optimization",
@@ -98,7 +99,7 @@ const FAQ = () => {
                <div className="absolute inset-0 bg-black/30 z-10" />
               
                       {/* CONTENT */}
-                      <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center">
+                      <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center -mt-15">
                         <h1 className="text-white font-bold leading-tight max-w-4xl
                           text-3xl
                           sm:text-4xl
@@ -112,7 +113,7 @@ const FAQ = () => {
                           />
                         </h1>
                         </div>
-                         <div className="absolute bottom-0 left-0 w-full h-32 sm:h-40 bg-gradient-to-t from-white to-transparent z-30" />
+                        
               
               
       </section>
@@ -121,7 +122,7 @@ const FAQ = () => {
       <section className="relative py-28 overflow-hidden bg-[#F2F7FF]">
 
         {/* EMOJI BACKGROUND */}
-        
+       
 
         {/* WHITE SOFT OVERLAY */}
         <div className="absolute inset-0  backdrop-blur-[1px]" />
@@ -140,18 +141,14 @@ const FAQ = () => {
             >
 
               {/* IMAGE */}
-              <motion.div
-                initial={{ opacity: 0, x: i % 2 === 0 ? -60 : 60 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.9 }}
-                className="rounded-2xl overflow-hidden shadow-xl"
-              >
-                <img
-                  src={section.image}
-                  alt={section.title}
-                  className="w-full h-[320px] object-cover"
-                />
-              </motion.div>
+             <div className="rounded-2xl overflow-hidden shadow-xl">
+  <img
+    src={section.image}
+    alt={section.title}
+    className="w-full h-[320px] object-cover"
+  />
+</div>
+
 
               {/* TEXT */}
               <div>
