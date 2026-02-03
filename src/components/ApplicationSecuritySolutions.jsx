@@ -15,7 +15,7 @@ function ApplicationSecuritySolutions() {
             <Header />
 
             {/* HERO SECTION */}
-            <section className="relative w-full h-[600px] bg-black overflow-hidden">
+            <section className="relative w-full min-h-screen bg-black overflow-hidden flex items-center justify-center">
 
                 {/* PIXEL BLAST BACKGROUND */}
                 <div className="absolute inset-0 z-0">
@@ -40,8 +40,7 @@ function ApplicationSecuritySolutions() {
                     />
                 </div>
 
-                {/* DARK OVERLAY */}
-                <div className="absolute inset-0 bg-black/50 z-10" />
+                
 
                 {/* HERO CONTENT */}
                 <div className="relative z-20 h-full flex flex-col items-center justify-center px-6 text-center">
@@ -66,7 +65,7 @@ function ApplicationSecuritySolutions() {
                         while ensuring performance and compliance.
                     </p>
                 </div>
-                <div className="absolute bottom-0 left-0 w-full h-42 sm:h-40 bg-gradient-to-t from-white via-black/50 to-transparent z-10 pointer-events-none" />
+               
 
 
 

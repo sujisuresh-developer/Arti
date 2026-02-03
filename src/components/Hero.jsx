@@ -242,8 +242,7 @@ const Hero = () => {
           "
         />
 
-        {/* ===== DARK OVERLAY ===== */}
-        <div className="absolute inset-0 z-[1] bg-black/60" />
+   
 
         {/* ===== HERO CONTENT ===== */}
         <div

@@ -12,51 +12,47 @@ const ContactModal = ({ open, onClose }) => {
   if (!open) return null;
 
   return (
-    <div className="fixed inset-0 z-[60] flex justify-center mt-2">
+    <div className="fixed inset-0 z-[60] flex items-center justify-center px-4">
       {/* WRAPPER */}
-      <div
-        className="relative w-full max-w-5xl px-4"
-        style={{ marginTop: "88px" }}
-      >
-        {/* ===== MODAL ===== */}
-        <div className="relative bg-black rounded-2xl shadow-2xl p-6 md:p-10 border border-white/10 overflow-hidden">
+      <div className="relative w-full max-w-5xl mt-[88px]">
+        {/* MODAL */}
+        <div className="relative bg-black rounded-2xl shadow-2xl border border-white/10 p-5 md:p-8">
 
-          {/* 🔹 METEORS BACKGROUND (BEHIND CONTENT) */}
+          {/* METEORS */}
           <div className="absolute inset-0 z-0 pointer-events-none">
-            <Meteors number={25} className="opacity-60" />
+            <Meteors number={18} className="opacity-50" />
           </div>
 
-          {/* 🔹 CLOSE BUTTON (TOP MOST) */}
+          {/* CLOSE */}
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 md:top-2 md:right-6 z-[100] text-2xl font-semibold text-white hover:opacity-70"
-            aria-label="Close modal"
+            className="absolute top-3 right-4 z-[100] text-xl font-semibold text-white hover:opacity-70"
           >
             ✕
           </button>
 
-          {/* 🔹 CONTENT LAYER */}
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+          {/* CONTENT */}
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-6">
 
             {/* LEFT */}
             <div className="text-white">
-              <h2 className="text-3xl md:text-5xl font-bold font-serif">
+              <h2 className="text-xl sm:text-2xl md:text-4xl font-['Playfair_Display',serif] font-semibold">
                 Let’s Talk
               </h2>
 
-              <p className="mt-4 text-gray-300 text-sm md:text-base leading-relaxed">
+              <p className="mt-3 text-gray-300 text-xs sm:text-sm leading-relaxed">
                 Have some big idea or business to develop and need help?
-                Then reach out — we’d love to hear about your project.
+                Reach out — we’d love to hear about your project.
               </p>
 
-              <div className="mt-6">
-                <h4 className="font-bold">Email</h4>
+              <div className="mt-4 text-sm">
+                <h4 className="font-semibold">Email</h4>
                 <p className="text-gray-300">info@artiflex.com</p>
               </div>
 
-              <div className="mt-5">
-                <h4 className="font-bold">Socials</h4>
-                <ul className="mt-2 space-y-1 underline text-gray-300">
+              <div className="mt-3 text-sm">
+                <h4 className="font-semibold">Socials</h4>
+                <ul className="mt-1 space-y-0.5 underline text-gray-300">
                   <li>Instagram</li>
                   <li>Twitter</li>
                   <li>Facebook</li>
@@ -64,44 +60,73 @@ const ContactModal = ({ open, onClose }) => {
               </div>
             </div>
 
-            {/* RIGHT FORM */}
-            <form className="space-y-3 -mt-6">
+            {/* RIGHT */}
+            <form className="space-y-2 text-sm">
               <div>
-                <label className="text-sm font-medium text-white">Name</label>
-                <input className="mt-1 w-full bg-white px-4 py-2.5 rounded-lg outline-none text-black" />
+                <label className="text-white">Name</label>
+                <input className="mt-1 w-full bg-white px-3 py-2 rounded-md outline-none text-black" />
               </div>
 
               <div>
-                <label className="text-sm font-medium text-white">Email</label>
-                <input className="mt-1 w-full bg-white px-4 py-2.5 rounded-lg outline-none text-black" />
+                <label className="text-white">Email</label>
+                <input className="mt-1 w-full bg-white px-3 py-2 rounded-md outline-none text-black" />
               </div>
 
-              <div>
-                <label className="text-sm font-medium text-white">
-                  What service are you interested in
-                </label>
-                <select className="mt-1 w-full bg-white px-4 py-2.5 rounded-lg outline-none text-black">
-                  <option>Select a Service</option>
-                  <option>Infrastructure Solutions</option>
-                  <option>Cyber Security</option>
-                  <option>Application Security</option>
-                  <option>Cloud Solutions</option>
-                  <option>Managed Services</option>
-                  <option>AMC Services</option>
-                </select>
-              </div>
+        <div className="relative">
+  <label className="text-white">Service</label>
+
+  <select
+    className="
+      mt-1 w-full
+      bg-white
+      px-3 pr-10
+      py-2
+      rounded-md
+      outline-none
+      text-black
+      appearance-none
+    "
+  >
+    <option>Select a Service</option>
+    <option>Infrastructure Solutions</option>
+    <option>Cyber Security</option>
+    <option>Application Security</option>
+    <option>Cloud Solutions</option>
+    <option>Managed Services</option>
+    <option>AMC Services</option>
+  </select>
+
+  {/* CENTERED ARROW */}
+  <span
+    className="
+      pointer-events-none
+      absolute
+      right-3
+      top-1/2
+      -translate-y-1/150
+      -translate-x-0.5
+      text-gray-600
+      text-xs
+      leading-none
+    "
+  >
+    ▼
+  </span>
+</div>
+
+
 
               <div>
-                <label className="text-sm font-medium text-white">Message</label>
+                <label className="text-white">Message</label>
                 <textarea
-                  rows="3"
-                  className="mt-1 w-full bg-white px-4 py-2.5 rounded-lg outline-none text-black"
+                  rows="2"
+                  className="mt-1 w-full bg-white px-3 py-2 rounded-md outline-none text-black"
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full mt-3 py-3 rounded-full bg-[#02AEEC] text-white font-semibold hover:opacity-90 transition"
+                className="w-full mt-2 py-2.5 rounded-full bg-[#02AEEC] text-white font-semibold hover:opacity-90 transition"
               >
                 Connect With Us
               </button>

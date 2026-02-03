@@ -14,7 +14,7 @@ function InfrastructureSolutions() {
       <Header />
 
       {/* HERO SECTION */}
-      <section className="relative w-full h-[600px] bg-black overflow-hidden ">
+      <section className="relative w-full min-h-screen bg-black overflow-hidden flex items-center justify-center">
 
         {/* PIXEL BLAST BACKGROUND */}
         <div className="absolute inset-0 z-0">
@@ -40,39 +40,52 @@ function InfrastructureSolutions() {
         </div>
 
         {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-black/50 z-10" />
+        {/* <div className="absolute inset-0 bg-black/60 z-10" /> */}
 
         {/* HERO CONTENT */}
-        <div className="relative z-20 h-full flex flex-col items-center justify-center px-6 text-center mt-18">
+        <div className="relative z-20 flex flex-col items-center justify-center text-center px-5 max-w-5xl">
 
-          {/* TEXT GENERATE HEADING */}
-          <h1 className="text-white font-bold leading-tight max-w-4xl
-            text-3xl
-            sm:text-4xl
-            md:text-5xl
-            lg:text-6xl
-            xl:text-7xl"
+          {/* HEADING */}
+          <h1
+            className="
+              text-white font-bold
+              leading-snug
+              text-lg
+              sm:text-2xl
+              md:text-4xl
+              lg:text-5xl
+              xl:text-6xl
+              max-w-[95vw]
+              break-words
+              mt-5
+            "
           >
             <TextGenerateEffectDemo
-              words="Infrastructure Solutions Built for Scale. Secured for Growth."
+              words="Future-Ready Infrastructure Solutions."
             />
           </h1>
 
           {/* SUBTITLE */}
-          <p className="mt-8 max-w-2xl text-sm sm:text-base text-gray-300">
+          <p
+            className="
+              mt-4
+              text-[11px]
+              sm:text-sm
+              md:text-base
+              text-gray-300
+              max-w-xl
+            "
+          >
             We design and implement secure, scalable IT infrastructure — from
             network setup and server deployment to data center management —
             providing a solid foundation for your digital operations.
           </p>
         </div>
-      
-
-       
       </section>
 
       {/* CONTENT */}
       <InfraExplain />
-      <Logos/>
+      <Logos />
 
       <Footer />
     </>

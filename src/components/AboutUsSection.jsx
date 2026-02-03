@@ -14,7 +14,7 @@ const AboutUsSection = () => {
       <Header />
 
       {/* HERO SECTION */}
-      <section className="relative w-full min-h-[700px] md:h-[600px] overflow-hidden bg-black">
+     <section className="relative w-full min-h-screen bg-black overflow-hidden flex items-center justify-center">
         <div className="absolute inset-0 z-0">
           <FloatingLines
             linesGradient={["#4f6cff", "#2F4BC0", "#0008fa"]}
@@ -30,10 +30,10 @@ const AboutUsSection = () => {
 
 
         {/* DARK OVERLAY */}
-        <div className="absolute inset-0 bg-black/30 z-10" />
+        {/* <div className="absolute inset-0 bg-black/30 z-10" /> */}
 
         {/* CONTENT */}
-        <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center">
+        <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center ">
           <h1 className="text-white font-bold leading-tight max-w-4xl
             text-3xl
             sm:text-4xl

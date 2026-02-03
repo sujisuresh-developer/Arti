@@ -83,7 +83,7 @@ const FAQ = () => {
       {/* HERO */}
      
        
-      <section className="relative w-full min-h-[700px] md:h-[600px] overflow-hidden bg-black">
+      <section className="relative w-full min-h-screen bg-black overflow-hidden flex items-center justify-center">
          <div className="absolute inset-0 z-0">
                 <FloatingLines
                   linesGradient={["#4f6cff", "#2F4BC0", "#0008fa"]}
@@ -125,7 +125,7 @@ const FAQ = () => {
        
 
         {/* WHITE SOFT OVERLAY */}
-        <div className="absolute inset-0  backdrop-blur-[1px]" />
+        {/* <div className="absolute inset-0  backdrop-blur-[1px]" /> */}
 
         {/* CONTENT */}
         <div className="relative z-10 max-w-6xl mx-auto px-6 space-y-28">

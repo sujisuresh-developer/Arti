@@ -18,7 +18,7 @@ const Header = () => {
       <ContactModal open={open} onClose={() => setOpen(false)} />
 
       {/* HEADER */}
-      <header className="fixed top-0 left-0 w-full z-50 mt-2 md:mt-5">
+      <header className="fixed top-0 left-0 w-full z-50 mt-2 md:mt-2">
         {/* ===== NAV CONTAINER ===== */}
         <div className="w-full px-3 md:px-25">
           <div

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
 *{
     font-family: Inter, sans-serif;
 }
@@ -60,3 +62,12 @@
   animation: meteor 5s linear infinite;
 }
 
+.scrollbar-hide {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE & Edge */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;               /* Chrome, Safari */
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
