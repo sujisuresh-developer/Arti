@@ -14,19 +14,25 @@ const ContactModal = ({ open, onClose }) => {
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center px-4">
       {/* WRAPPER */}
-      <div className="relative w-full max-w-5xl mt-[88px]">
-        {/* MODAL */}
-        <div className="relative bg-black rounded-2xl shadow-2xl border border-white/10 p-5 md:p-8">
 
-          {/* METEORS */}
+  <div className="
+    relative bg-black rounded-2xl shadow-2xl border border-white/10
+    p-5 md:p-8 xl:p-12 2xl:p-14
+    overflow-hidden
+  ">
+
+        {/* MODAL */}
+        <div className="relative bg-black rounded-2xl shadow-2xl border border-white/10 p-5 md:p-8 overflow-hidden">
+
+          {/* 🌠 METEORS — MODAL BACKGROUND ONLY */}
           <div className="absolute inset-0 z-0 pointer-events-none">
-            <Meteors number={18} className="opacity-50" />
+            <Meteors number={20} className="opacity-60" />
           </div>
 
           {/* CLOSE */}
           <button
             onClick={onClose}
-            className="absolute top-3 right-4 z-[100] text-xl font-semibold text-white hover:opacity-70"
+            className="absolute top-3 right-4 z-[20] text-xl font-semibold text-white hover:opacity-70"
           >
             ✕
           </button>
@@ -72,49 +78,47 @@ const ContactModal = ({ open, onClose }) => {
                 <input className="mt-1 w-full bg-white px-3 py-2 rounded-md outline-none text-black" />
               </div>
 
-        <div className="relative">
-  <label className="text-white">Service</label>
+              {/* SERVICE */}
+              <div className="relative">
+                <label className="text-white">Service</label>
 
-  <select
-    className="
-      mt-1 w-full
-      bg-white
-      px-3 pr-10
-      py-2
-      rounded-md
-      outline-none
-      text-black
-      appearance-none
-    "
-  >
-    <option>Select a Service</option>
-    <option>Infrastructure Solutions</option>
-    <option>Cyber Security</option>
-    <option>Application Security</option>
-    <option>Cloud Solutions</option>
-    <option>Managed Services</option>
-    <option>AMC Services</option>
-  </select>
+                <select
+                  className="
+                    mt-1 w-full
+                    bg-white
+                    px-3 pr-10
+                    py-2
+                    rounded-md
+                    outline-none
+                    text-black
+                    appearance-none
+                  "
+                >
+                  <option>Select a Service</option>
+                  <option>Infrastructure Solutions</option>
+                  <option>Cyber Security</option>
+                  <option>Application Security</option>
+                  <option>Cloud Solutions</option>
+                  <option>Managed Services</option>
+                  <option>AMC Services</option>
+                </select>
 
-  {/* CENTERED ARROW */}
-  <span
-    className="
-      pointer-events-none
-      absolute
-      right-3
-      top-1/2
-      -translate-y-1/150
-      -translate-x-0.5
-      text-gray-600
-      text-xs
-      leading-none
-    "
-  >
-    ▼
-  </span>
-</div>
-
-
+                {/* CENTERED ARROW */}
+                <span
+                  className="
+                    pointer-events-none
+                    absolute
+                    right-3
+                    top-1/2
+                    -translate-y-1/2
+                    text-gray-600
+                    text-xs
+                    leading-none
+                  "
+                >
+                  ▼
+                </span>
+              </div>
 
               <div>
                 <label className="text-white">Message</label>

@@ -59,7 +59,7 @@ export default function IndustriesPlatformSection() {
   const industry = industries[active];
 
   return (
-    <section className="relative bg-black py-20 overflow-hidden">
+    <section className="relative bg-black py-20 overflow-hidden px-4 sm:px-6 lg:px-5">
         {/* SECTION HEADING */}
 <div className="text-center max-w-3xl mx-auto px-6 mb-14">
   <h2 className="text-4xl md:text-5xl font-bold text-white">

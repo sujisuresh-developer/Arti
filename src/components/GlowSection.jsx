@@ -1,6 +1,6 @@
 const GlowSection = () => {
   return (
-    <section className="relative bg-white overflow-hidden">
+    <section className="relative bg-white overflow-hidden -mt-10">
 
       {/* BACKGROUND LINES */}
       <div

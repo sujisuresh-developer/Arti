@@ -3,12 +3,12 @@ import React from 'react'
 function Connect() {
   return (
     <>
-    <section className="min-h-screen bg-[black] flex justify-center px-4 py-28">
+    <section className="min-h-screen bg-[black] flex justify-center  py-28">
         {/* CONTENT WRAPPER */}
-        <div className="w-full max-w-5xl">
+        <div className="w-full max-w-6xl  sm:-px-6 lg:-px-6">
 
           {/* CONTACT BOX */}
-          <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-10">
+          <div className="bg-white rounded-2xl shadow-2xl p-4 md:p-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
 
               {/* LEFT */}

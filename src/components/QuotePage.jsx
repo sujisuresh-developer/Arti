@@ -12,7 +12,7 @@ const QuotePage = () => {
           items-center
           justify-center
           overflow-hidden
-          mt-20
+          mt-25
           bg-cover
           bg-center
           bg-no-repeat

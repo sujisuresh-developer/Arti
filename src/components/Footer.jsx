@@ -32,7 +32,7 @@ const Footer = () => {
                 style={{ animation: "logoShake 3.5s ease-in-out infinite" }}
               />
             </Link>
-            <p className="text-sm text-blue-100 max-w-xs">
+            <p className="text-lg text-blue-100 max-w-xs">
               Secure, scalable & reliable IT solutions helping businesses
               transform infrastructure into uptime.
             </p>

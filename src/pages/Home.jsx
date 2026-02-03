@@ -34,7 +34,7 @@ function Home({openContact}) {
       <GlowSection />
       <WhyChooseUs />
       <QuotePage />
-      <section className="relative z-20 pointer-events-auto">
+      <section className="relative z-20 pointer-events-auto -mt-30 w-full">
         <LayoutGridDemo />
       </section>
       <IndustriesPlatformSection/>
