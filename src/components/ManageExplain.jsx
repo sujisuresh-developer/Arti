@@ -42,8 +42,8 @@ export default function ManageExplain() {
     <section className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
-         <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
- Choose the Best <span className="font-semibold">Managed IT Services</span>
+         <h2 className="text-4xl md:text-5xl font-bold text-black tracking-tight text-center mb-6">
+ Choose the Best <span className="font-extrabold">Managed IT Services</span>
 
 
 </h2>

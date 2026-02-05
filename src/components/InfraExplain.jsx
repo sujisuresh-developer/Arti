@@ -39,8 +39,8 @@ export default function InfraExplain() {
     <section className="py-32 bg-white">
       <div className="max-w-6xl mx-auto px-6">
 
-       <h2 className="text-3xl md:text-4xl font-light text-center mb-6">
-  Choose the Best <span className="font-semibold">Infrastructure Solutions</span>
+       <h2 className="text-4xl md:text-5xl font-bold text-black tracking-tight text-center mb-6">
+  Choose the Best <span className="font-extrabold">Infrastructure Solutions</span>
 </h2>
 
 <p className="text-center text-gray-600 max-w-3xl mx-auto mb-16">

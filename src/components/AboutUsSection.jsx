@@ -34,7 +34,7 @@ const AboutUsSection = () => {
 
         {/* CONTENT */}
         <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center ">
-          <h1 className="text-white font-bold leading-tight max-w-4xl
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight
             text-3xl
             sm:text-4xl
             md:text-5xl

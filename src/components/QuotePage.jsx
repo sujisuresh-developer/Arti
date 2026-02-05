@@ -33,14 +33,14 @@ const QuotePage = () => {
           {/* QUOTE */}
           <blockquote
             className="
-              text-3xl
+              text-5xl
               sm:text-4xl
               md:text-5xl
               lg:text-6xl
               font-bold
               leading-snug
               text-white
-              font-['Playfair_Display',serif]
+              font-['Imperial Script']
             "
           >
             <span className="inline-block text-5xl sm:text-6xl md:text-7xl lg:text-8xl align-top text-[white] mr-1">

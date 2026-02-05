@@ -8,10 +8,10 @@ export default function LayoutGridDemo() {
     <section className="min-h-screen py-20 w-full bg-background mt-40">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
             Core IT Solutions for <br /> Modern Enterprises
           </h2>
-          <p className="mt-4 text-muted-foreground">
+          <p className="mt-4 mt-6 text-lg text-slate-600 leading-relaxed">
             Comprehensive technology services designed to accelerate your digital
             transformation and secure your infrastructure.
           </p>
@@ -30,7 +30,7 @@ const SkeletonOne = () => (
   <div>
     <div className="flex items-center gap-2 mb-2">
       <Server className="w-6 h-6 text-white" />
-      <p className="font-bold md:text-4xl text-xl text-white">
+      <p className="font-extrabold md:text-4xl text-xl text-white">
         Infrastructure Solutions
       </p>
     </div>
@@ -119,7 +119,7 @@ const cards = [
     content: <SkeletonOne />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=3534&auto=format&fit=crop",
+      "https://www.aiib.org/en/news-events/media-center/blog/2020/_img/AIIB-blog-header_Infrastructure-Embracing-Technology-1200px.jpg",
   },
   {
     id: 2,
@@ -127,7 +127,7 @@ const cards = [
     content: <SkeletonTwo />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=3540&auto=format&fit=crop",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp5KSS9ryiLSKDG79C87kqweZg7PoDjtDsQ&s",
   },
   {
     id: 3,
@@ -135,7 +135,7 @@ const cards = [
     content: <SkeletonThree />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=3540&auto=format&fit=crop",
+      "https://www.fujitsu.com/us/imagesgig5/application-transformation-640x396_tcm127-4190627_tcm127-2750223-32.png",
   },
   {
     id: 4,
@@ -143,7 +143,7 @@ const cards = [
     content: <SkeletonFour />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=3544&auto=format&fit=crop",
+      "https://stl.tech/wp-content/uploads/2021/11/cloud-computing.jpg",
   },
   {
     id: 5,
@@ -151,7 +151,7 @@ const cards = [
     content: <SkeletonFive />,
     className: "md:col-span-2",
     thumbnail:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=3540&auto=format&fit=crop",
+      "https://www.pbctoday.co.uk/news/wp-content/uploads/2025/09/iStock-2205274485-scaled.jpg",
   },
   {
     id: 6,
@@ -159,6 +159,6 @@ const cards = [
     content: <SkeletonSix />,
     className: "col-span-1",
     thumbnail:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=3540&auto=format&fit=crop",
+      "https://lh3.googleusercontent.com/proxy/WVbavyo5JJh0L7Kme89VVYx0WrpiXLvmRRjs4wvfjpwaM0I4wI9O1uNqS0q77wdS62fKEDmh9jeLYWrlsbnIbqV5840uvgqRdPRHncnCl7KRN0vq7w2Y9ue4uBU",
   },
 ];

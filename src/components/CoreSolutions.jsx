@@ -47,7 +47,7 @@ const CoreSolutions = () => {
 
                 {/* Heading */}
                 <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+                    <h2 className="text-4xl md:text-5xl font-bold text-gray-900 font-['imperial script']">
                         Core IT Solutions for <br /> Modern Enterprises
                     </h2>
                     <p className="mt-4 text-gray-600">

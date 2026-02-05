@@ -13,7 +13,7 @@ function Connect() {
 
               {/* LEFT */}
               <div>
-                <h2 className="text-3xl md:text-5xl font-bold text-black">
+                <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
                   Let’s Talk
                 </h2>
 

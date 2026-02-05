@@ -18,11 +18,8 @@ const GlowSection = () => {
 
         {/* LEFT TEXT */}
         <div className="animate-fadeInUp">
-          <span className="inline-block mb-4 px-4 py-1 text-sm rounded-full border border-gray-300 text-gray-600 bg-white/80 backdrop-blur">
-            Introduction
-          </span>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-black leading-tight">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
             Glow your User
           </h2>
 

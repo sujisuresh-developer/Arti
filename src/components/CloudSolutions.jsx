@@ -48,7 +48,7 @@ function CloudSolutions() {
 
                     {/* TEXT GENERATE HEADING */}
                     <h1
-                        className="text-white font-bold leading-tight max-w-4xl
+                        className="text-white font-extrabold leading-tight max-w-4xl
               text-3xl
               sm:text-4xl
               md:text-5xl

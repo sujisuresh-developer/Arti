@@ -18,7 +18,7 @@ import TextGenerateEffectDemo from "../components/text-generate-effect-demo"
 const faqData = [
   {
     title: "IT Infrastructure Optimization",
-    image: infra
+    image: "https://ixpanseteknoloji.com/sites/default/files/styles/wide/public/2025-06/veri-merkezi-optimizasyonu-akilli-altyapilarla-maliyetleri-azaltin-verimliligi-artirin_0.jpg?itok=6DCYO-d_"
     ,
     desc: "Optimizing your IT infrastructure is key to ensuring seamless business operations.",
     faqs: [
@@ -28,7 +28,7 @@ const faqData = [
   },
   {
     title: "Cyber Security Solutions",
-    image: cyber,
+    image: "https://media.licdn.com/dms/image/v2/D5612AQFfb5T727sQZQ/article-cover_image-shrink_720_1280/B56ZrtmxZKLIAI-/0/1764922957321?e=2147483647&v=beta&t=I1qQhdFm5_hP-2TLGXrwKbtDPvrejpmjHpLHkzzSEcc",
     desc: "Cyber threats are constantly evolving—your defense strategy should too.",
     faqs: [
       { q: "How do Cyber Security Solutions protect my business?", a: "By identifying vulnerabilities, monitoring threats in real time, and implementing proactive controls." },
@@ -37,7 +37,7 @@ const faqData = [
   },
   {
     title: "Application Security",
-    image: appli,
+    image: "https://www.theclintoncourier.net/wp-content/uploads/2024/10/From-automation-to-data-analysis-learn-how-IT-optimization-boosts-efficiency-and-drives-success-in-the-digital-age.png",
     desc: "Applications are critical assets but also prime targets for cyber threats.",
     faqs: [
       { q: "How do you secure applications throughout development?", a: "We embed security into the development lifecycle using secure coding, testing, and monitoring." },
@@ -55,7 +55,7 @@ const faqData = [
   },
   {
     title: "Managed Services",
-    image: manage,
+    image: "https://nixsoftech.in/wp-content/uploads/2024/08/The-Future-of-IT-Managed-Services-Trends-and-Innovations-in-2024.jpeg",
     desc: "Expert guidance is essential for strategic growth and IT stability.",
     faqs: [
       { q: "How do Managed Services help growth?", a: "Through continuous IT oversight, planning, and expert support." },
@@ -64,7 +64,7 @@ const faqData = [
   },
   {
     title: "AMC Services",
-    image: amc,
+    image: "https://img.freepik.com/premium-photo/dynamic-logo-concept-showcasing-ais-influence-business_1222399-81198.jpg?semt=ais_hybrid&w=740&q=80",
     desc: "Comprehensive IT support and maintenance to ensure business continuity.",
     faqs: [
       { q: "What does AMC include?", a: "Monitoring, maintenance, updates, and disaster recovery." },
@@ -100,7 +100,7 @@ const FAQ = () => {
               
                       {/* CONTENT */}
                       <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center -mt-15">
-                        <h1 className="text-white font-bold leading-tight max-w-4xl
+                        <h1 className="text-white font-extrabold leading-tight max-w-4xl
                           text-3xl
                           sm:text-4xl
                           md:text-5xl
@@ -152,7 +152,7 @@ const FAQ = () => {
 
               {/* TEXT */}
               <div>
-                <h2 className="text-3xl font-bold mb-4">
+                <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight mb-4">
                   {section.title}
                 </h2>
                 <p className="text-gray-600 mb-8">

@@ -1,41 +1,45 @@
 import LaserFlow from "./LaserFlow";
 
 const vendors = [
-  { name: "Sophos", logo: "https://interworks.com/wp-content/uploads/2017/09/Sophos-ATC-LogoSQ.png" },
+  { name: "Sophos", logo: "https://interworks.com/wp-content/uploads/2017/09/Sophos-ATC-LogoSQ.png",size: "large" },
   { name: "Fortinet", logo: "https://www.proofpoint.com/sites/default/files/pr/Proofpoint-logo-reg-K.jpg" },
-  { name: "Check Point", logo: "https://www.eplus.com/images/default-source/authors/check-point-2024-logo-color.png?sfvrsn=69ac24b1_1" },
-  { name: "Aruba", logo: "https://interworks.com/wp-content/uploads/2017/09/Aruba.png" },
+  { name: "Check Point", logo: "https://www.eplus.com/images/default-source/authors/check-point-2024-logo-color.png?sfvrsn=69ac24b1_1",size: "large" },
+  { name: "Aruba", logo: "https://interworks.com/wp-content/uploads/2017/09/Aruba.png" ,size: "large"},
   { name: "Veeam", logo: "https://securityaffairs.com/wp-content/uploads/2023/03/veeam-software-vector-logo.png" },
   { name: "Trend Micro", logo: "https://upload.wikimedia.org/wikipedia/en/7/7f/Trend_Micro_Logo_2023.png" },
   { name: "Proofpoint", logo: "https://www.proofpoint.com/sites/default/files/pr/Proofpoint-logo-reg-K.jpg" },
   { name: "Mimecast", logo: "https://cybercompare.com/wp-content/uploads/2023/10/pd_mimecast_logo-1024x298.png" },
-  { name: "Hewlett Packard", logo: "https://www.infosys.com/content/dam/infosys-web/en/about/images/hpe-logo.jpg" },
-  { name: "VMware", logo: "https://generaltechnologies.co.in/assets/frontend/pages/img/brand_partner/vmware_1.png" },
-  { name: "Dell Technologies", logo: "https://www.boardinfinity.com/blog/content/images/2025/02/Company-Blog-Creatives----2025-02-25T180208.318.png" },
-  { name: "Microsoft", logo: "https://image.pitchbook.com/m3KpejK5fM5YbfW4TlFQw4MgQHh1707480684076_200x200" },
-  { name: "Palo Alto Networks", logo: "https://www.paloaltonetworks.com/content/dam/pan/en_US/images/logos/brand/primary-company-logo/Parent-logo.png?imwidth=480" },
+  { name: "Hewlett Packard", logo: "https://www.infosys.com/content/dam/infosys-web/en/about/images/hpe-logo.jpg",size: "large" },
+  { name: "VMware", logo: "https://generaltechnologies.co.in/assets/frontend/pages/img/brand_partner/vmware_1.png",size: "large" },
+  { name: "Dell Technologies", logo: "https://www.boardinfinity.com/blog/content/images/2025/02/Company-Blog-Creatives----2025-02-25T180208.318.png",size: "large" },
+  { name: "Microsoft", logo: "https://image.pitchbook.com/m3KpejK5fM5YbfW4TlFQw4MgQHh1707480684076_200x200",size: "large" },
+  { name: "Palo Alto Networks", logo: "https://www.paloaltonetworks.com/content/dam/pan/en_US/images/logos/brand/primary-company-logo/Parent-logo.png?imwidth=480",size: "large" },
   { name: "Acronis", logo: "https://www.codelattice.com/assets/img/acronis/acronis-og.jpg" },
-  { name: "SonicWall", logo: "https://www.advantage.tech/wp-content/uploads/2023/07/Sonicwall-Brand-Logo.png" },
-  { name: "3CX", logo: "https://www.commend.com/cMedia/temp/0/3/csm_logo-3cx-300x200_fd79e9f581.png" },
-  { name: "Huawei", logo: "https://media.business-humanrights.org/media/images/Huawei-Logo.2e16d0ba.fill-1200x630.png" },
-  { name: "Cisco", logo: "https://i0.wp.com/martinexsa.com/wp-content/uploads/2017/09/Cisco-logo.png?fit=271%2C190&ssl=1" },
-  { name: "Nutanix", logo: "https://generaltechnologies.co.in/assets/frontend/pages/img/brand_partner/nutanix_logo.png" },
-  { name: "ESET", logo: "https://interworks.com/wp-content/uploads/2017/09/ESET-Logo_Web_Transparent.png" },
-  { name: "Kaspersky", logo: "https://assets.dealmela.com/stores/kaspersky.png" },
+  { name: "SonicWall", logo: "https://www.advantage.tech/wp-content/uploads/2023/07/Sonicwall-Brand-Logo.png",size: "large" },
+  { name: "3CX", logo: "https://www.commend.com/cMedia/temp/0/3/csm_logo-3cx-300x200_fd79e9f581.png",size: "large" },
+  { name: "Huawei", logo: "https://media.business-humanrights.org/media/images/Huawei-Logo.2e16d0ba.fill-1200x630.png",size: "large" },
+  { name: "Cisco", logo: "https://i0.wp.com/martinexsa.com/wp-content/uploads/2017/09/Cisco-logo.png?fit=271%2C190&ssl=1",size: "large" },
+  { name: "Nutanix", logo: "https://generaltechnologies.co.in/assets/frontend/pages/img/brand_partner/nutanix_logo.png",size: "large" },
+  { name: "ESET", logo: "https://interworks.com/wp-content/uploads/2017/09/ESET-Logo_Web_Transparent.png",size: "large" },
+  { name: "Kaspersky", logo: "https://assets.dealmela.com/stores/kaspersky.png",size: "large" },
   { name: "F5", logo: "https://www.bdata.com.hk/uploads/f5.png" },
-  { name: "Microsoft Azure", logo: "https://miro.medium.com/v2/resize:fit:1200/1*nzsbJWmPOvKI9yeBGHe2uA.png" },
-  { name: "Ivanti", logo: "https://www.nutanix.com/partners/technology-alliances/ivanti/_jcr_content/root/container/componentContainer/container_mosaic_685/item0/2mosaic_1/image_copy.coreimg.png/1685443179376/logo-ivanti.png" },
+  { name: "Microsoft Azure", logo: "https://miro.medium.com/v2/resize:fit:1200/1*nzsbJWmPOvKI9yeBGHe2uA.png",size: "large" },
+  { name: "Ivanti", logo: "https://www.nutanix.com/partners/technology-alliances/ivanti/_jcr_content/root/container/componentContainer/container_mosaic_685/item0/2mosaic_1/image_copy.coreimg.png/1685443179376/logo-ivanti.png",size: "large" },
 ];
 const VendorScroll = () => (
   <section className="w-full bg-white py-8 overflow-hidden">
-    <div className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6">
+    <div className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max">
       {[...vendors, ...vendors].map((v, i) => (
         <img
-          key={i}
-          src={v.logo}
-          alt={v.name}
-          className="h-10 sm:h-12 object-contain opacity-90"
-        />
+  key={i}
+  src={v.logo}
+  alt={v.name}
+  className={`
+    object-contain opacity-90
+    ${v.size === "large" ? "h-20 sm:h-20 xl:h-24" : "h-10 sm:h-12"}
+  `}
+/>
+
       ))}
     </div>
   </section>
@@ -70,22 +74,23 @@ const Hero = () => {
         </div>
 
         {/* LASER FLOW (DESKTOP ONLY) */}
-        <div className="absolute inset-0 z-0 hidden sm:block">
+        {/* LASER FLOW (RESPONSIVE) */}
+        <div className="absolute inset-0 z-0 laserflow-container block sm:block">
           <LaserFlow
             horizontalBeamOffset={0.25}
             verticalBeamOffset={-0.5}
             color="#566feb"
             horizontalSizing={0.6}
-            verticalSizing={1.9}
+            verticalSizing={3}
             wispDensity={1}
             wispSpeed={15}
-            wispIntensity={5}
-            flowSpeed={0.35}
+            wispIntensity={25}
+            flowSpeed={0.25}
             flowStrength={0.25}
             fogIntensity={0.45}
-            fogScale={0.35}
+            fogScale={0.45}
             fogFallSpeed={0.6}
-            decay={1.1}
+            decay={2.1}
             falloffStart={1}
           />
         </div>

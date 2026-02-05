@@ -28,7 +28,7 @@ const VendorsAutoScroll = () => {
 
           {/* OPTIONAL HEADING */}
           <div className="text-center mb-20 px-6">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
               Technology Partners
             </h1>
             <p className="mt-4 text-gray-600">

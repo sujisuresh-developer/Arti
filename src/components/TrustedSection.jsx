@@ -9,7 +9,7 @@ export default function TrustedSection() {
     <section className="mt-40" >
       {/* 🔹 TOP HEADING */}
       <div className="text-center max-w-3xl mx-auto px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 -mt-6">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight -mt-6">
           Trusted by Industry Leaders
         </h2>
         <p className="mt-2 text-neutral-600 text-sm md:text-base">

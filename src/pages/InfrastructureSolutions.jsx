@@ -48,11 +48,11 @@ function InfrastructureSolutions() {
           {/* HEADING */}
           <h1
             className="
-              text-white font-bold
+              text-white font-extrabold
               leading-snug
               text-lg
-              sm:text-2xl
-              md:text-4xl
+              sm:text-4xl
+              md:text-5xl
               lg:text-5xl
               xl:text-6xl
               max-w-[95vw]

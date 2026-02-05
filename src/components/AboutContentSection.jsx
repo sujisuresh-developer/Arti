@@ -7,7 +7,7 @@ export default function AboutContentSection() {
 
         {/* ================= ABOUT TEXT ================= */}
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-neutral-900">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
             About ArtiflexIT
           </h2>
           <p className="mt-6 text-neutral-600 leading-relaxed text-base md:text-lg">
@@ -50,7 +50,7 @@ export default function AboutContentSection() {
 
     {/* CENTERED CONTENT */}
     <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10">
-      <h3 className="text-3xl md:text-4xl font-bold text-white font-serif">
+      <h3 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
         Our Vision
       </h3>
       <p className="mt-4 max-w-md text-white/90 leading-relaxed text-base md:text-lg">
@@ -83,7 +83,7 @@ export default function AboutContentSection() {
 
     {/* CENTERED CONTENT */}
     <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 z-10">
-      <h3 className="text-3xl md:text-4xl font-bold text-white font-serif">
+      <h3 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
         Our Mission
       </h3>
       <p className="mt-4 max-w-md text-white/90 leading-relaxed text-base md:text-lg">
@@ -99,7 +99,7 @@ export default function AboutContentSection() {
 
         {/* ================= COMMITMENT ================= */}
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-3xl font-bold text-neutral-900">
+          <h3 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
             Our Commitment
           </h3>
           <p className="mt-6 text-neutral-600 leading-relaxed text-base md:text-lg">
