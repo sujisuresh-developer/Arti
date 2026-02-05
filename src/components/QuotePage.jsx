@@ -18,7 +18,7 @@ const QuotePage = () => {
           bg-no-repeat
         "
         style={{
-          backgroundImage: "url('https://img.freepik.com/free-vector/background-realistic-abstract-technology-particle_23-2148431735.jpg?semt=ais_hybrid&w=740&q=80')",
+          backgroundImage: "url('https://img.freepik.com/premium-photo/png-dark-blue-colors-simple-paper-backgrounds-white-background-textured_53876-914469.jpg?semt=ais_hybrid&w=740&q=80')",
         }}
       >
         {/* DARK / LIGHT OVERLAY */}
@@ -28,7 +28,7 @@ const QuotePage = () => {
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
 
           {/* Blue Divider */}
-          <div className="mx-auto mb-8 h-[4px] w-24 bg-[#2563eb] rounded-full" />
+    
 
           {/* QUOTE */}
           <blockquote
