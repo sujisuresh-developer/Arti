@@ -6,6 +6,7 @@ import nbtc from "../assets/nbtc.png";
 import logo6 from "../assets/idMNWTiY7c_logos.png";
 import shaw from "../assets/shaw.jpeg";
 import logo8 from "../assets/LnW7oU12lP7gNmfZJtUdl05IXcB1736410981931_200x200.png";
+import sophos from "../assets/sophos.png";
 
 const logos = [
   dub,
@@ -16,6 +17,7 @@ const logos = [
   logo6,
   shaw,
   logo8,
+  sophos
 ];
 
 const LogoScroll = () => {

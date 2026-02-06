@@ -2,7 +2,7 @@
 
 
 const vendors = [
-  { name: "Sophos", logo: "https://interworks.com/wp-content/uploads/2017/09/Sophos-ATC-LogoSQ.png" },
+  { name: "Sophos", logo: "https://thewealthmosaic.s3.amazonaws.com/media/Logo_Sophos.png" },
   { name: "Fortinet", logo: "https://www.proofpoint.com/sites/default/files/pr/Proofpoint-logo-reg-K.jpg" },
   { name: "Check Point", logo: "https://www.eplus.com/images/default-source/authors/check-point-2024-logo-color.png?sfvrsn=69ac24b1_1" },
   { name: "Aruba", logo: "https://interworks.com/wp-content/uploads/2017/09/Aruba.png" },

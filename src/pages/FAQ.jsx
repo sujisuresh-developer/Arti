@@ -141,13 +141,18 @@ const FAQ = () => {
             >
 
               {/* IMAGE */}
-             <div className="rounded-2xl overflow-hidden shadow-xl">
+    <div className="group rounded-2xl overflow-hidden shadow-xl">
   <img
     src={section.image}
     alt={section.title}
-    className="w-full h-[320px] object-cover"
+    className="
+      w-full h-[320px] object-cover
+      transition-transform duration-700 ease-out
+      group-hover:scale-110
+    "
   />
 </div>
+
 
 
               {/* TEXT */}
