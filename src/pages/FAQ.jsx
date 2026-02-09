@@ -96,7 +96,7 @@ const FAQ = () => {
                   parallaxStrength={0.2}
                 />
               </div>
-               <div className="absolute inset-0 bg-black/30 z-10" />
+               
               
                       {/* CONTENT */}
                       <div className="relative z-20 h-full flex flex-col items-center justify-center px-4 sm:px-6 text-center -mt-15">

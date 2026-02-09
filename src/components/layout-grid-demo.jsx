@@ -3,6 +3,10 @@ import React from "react";
 import { LayoutGrid } from "./ui/layout-grid";
 import { Server, Shield, Lock, Cloud, Settings, Headphones } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import inf from "../assets/3d.jpg";
+import secure from "../assets/secure.jpg";
+import apps from "../assets/apps.jpg";
+import clouds from "../assets/clouds.jpg";
 
 
 
@@ -126,7 +130,7 @@ const cards = [
     className: "md:col-span-2",
      href: "/infrastructure-solutions",
     thumbnail:
-      "https://www.aiib.org/en/news-events/media-center/blog/2020/_img/AIIB-blog-header_Infrastructure-Embracing-Technology-1200px.jpg",
+      inf,
   },
   {
     id: 2,
@@ -135,7 +139,7 @@ const cards = [
     className: "col-span-1",
         href: "/cyber-security-solutions",
     thumbnail:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp5KSS9ryiLSKDG79C87kqweZg7PoDjtDsQ&s",
+      secure,
   },
   {
     id: 3,
@@ -144,7 +148,7 @@ const cards = [
     className: "col-span-1",
     href: "/application-security-solutions",
     thumbnail:
-      "https://www.fujitsu.com/us/imagesgig5/application-transformation-640x396_tcm127-4190627_tcm127-2750223-32.png",
+      apps,
   },
   {
     id: 4,
@@ -162,7 +166,7 @@ const cards = [
     className: "md:col-span-2",
     href: "/amc-services",
     thumbnail:
-      "https://www.pbctoday.co.uk/news/wp-content/uploads/2025/09/iStock-2205274485-scaled.jpg",
+      "https://media.istockphoto.com/id/2179880282/photo/businessman-hands-hold-global-hosting-technology-server-management-cloud-storage-uptime.jpg?s=612x612&w=0&k=20&c=HqlqJpsXHSXyb_1f5h236gFJg9UAfHqnGVmjTDMXMDA=",
   },
   {
     id: 6,

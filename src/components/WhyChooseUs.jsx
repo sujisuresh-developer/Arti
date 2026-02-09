@@ -8,25 +8,25 @@ const features = [
     icon: Target,
     title: "Tailored IT Solutions",
     desc: "Custom-built infrastructure and services designed specifically for your business size, industry, and growth objectives.",
-    image: "https://uplynksolutions.com/wp-content/uploads/2023/05/It-soln2.jpeg",
+    image: "https://media.istockphoto.com/id/502462262/photo/cloud-computing.jpg?s=612x612&w=0&k=20&c=mNq94Zu3RXr9QIsW7kUMe9BedXPV_62lmOxCcqJhI0s=",
   },
   {
     icon: Layers,
     title: "Secure & Scalable Frameworks",
     desc: "Future-ready architecture that grows with your business while maintaining the highest security standards.",
-    image: "https://www.bocasay.com/wp-content/uploads/2023/04/framework-dev-1024x1024.png",
+    image: "https://itbrief.com.au/uploads/story/2025/10/31/Samsung_Knox_Protect.webp",
   },
   {
     icon: Users,
     title: "Dedicated Technology Partner",
     desc: "A committed team working as an extension of your organization, understanding your unique challenges.",
-    image: "https://img.freepik.com/free-vector/polygonal-wireframe-handshake-abstract-blue-composition-as-symbol-friendship-business-partnership-vector-illustration_1284-30758.jpg?semt=ais_hybrid&w=740&q=80",
+    image: "https://microwaresolutions.com/wp-content/uploads/2024/11/OEM-Technology-Partners.jpg",
   },
   {
     icon: Award,
     title: "Proven Track Record",
     desc: "500+ successful implementations across global enterprises with 99.9% uptime and client satisfaction.",
-    image: "https://apploye.com/blog/content/images/2025/02/tracking-vs-monitoring.png",
+    image: "https://imarat.com.pk/wp-content/uploads/2024/08/Reviewing-Developer-Profiles-and-Track-Records-for-Real-Estate.jpg.webp",
   },
 ];
 
