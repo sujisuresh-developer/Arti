@@ -3,13 +3,21 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "../../lib/utils";
 
-export const LayoutGrid = ({ cards }) => {
+export const LayoutGrid = ({ cards,onCardClick }) => {
   const [selected, setSelected] = useState(null);
   const [lastSelected, setLastSelected] = useState(null);
 
   const handleClick = (card) => {
-    setLastSelected(selected);
-    setSelected(card);
+     if (selected?.id === card.id) {
+    if (onCardClick && card.href) {
+      onCardClick(card);
+    }
+    return;
+  }
+
+  // ✅ FIRST CLICK → expand card
+  setLastSelected(selected);
+  setSelected(card);
   };
 
   const handleOutsideClick = () => {

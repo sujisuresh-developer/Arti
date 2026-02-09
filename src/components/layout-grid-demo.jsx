@@ -2,8 +2,12 @@
 import React from "react";
 import { LayoutGrid } from "./ui/layout-grid";
 import { Server, Shield, Lock, Cloud, Settings, Headphones } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
+
 
 export default function LayoutGridDemo() {
+    const navigate = useNavigate();
   return (
     <section className="min-h-screen py-20 w-full bg-background mt-40">
       <div className="max-w-7xl mx-auto px-6">
@@ -17,7 +21,9 @@ export default function LayoutGridDemo() {
           </p>
         </div>
         <div className="mt-16">
-          <LayoutGrid cards={cards} />
+          <LayoutGrid cards={cards} 
+          onCardClick={(card) => navigate(card.href)}
+          />
         </div>
       </div>
     </section>
@@ -118,6 +124,7 @@ const cards = [
     title: "Infrastructure Solutions",
     content: <SkeletonOne />,
     className: "md:col-span-2",
+     href: "/infrastructure-solutions",
     thumbnail:
       "https://www.aiib.org/en/news-events/media-center/blog/2020/_img/AIIB-blog-header_Infrastructure-Embracing-Technology-1200px.jpg",
   },
@@ -126,6 +133,7 @@ const cards = [
     title: "Cyber Security Solutions",
     content: <SkeletonTwo />,
     className: "col-span-1",
+        href: "/cyber-security-solutions",
     thumbnail:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXp5KSS9ryiLSKDG79C87kqweZg7PoDjtDsQ&s",
   },
@@ -134,6 +142,7 @@ const cards = [
     title: "Application Security",
     content: <SkeletonThree />,
     className: "col-span-1",
+    href: "/application-security-solutions",
     thumbnail:
       "https://www.fujitsu.com/us/imagesgig5/application-transformation-640x396_tcm127-4190627_tcm127-2750223-32.png",
   },
@@ -142,6 +151,7 @@ const cards = [
     title: "Cloud Solutions",
     content: <SkeletonFour />,
     className: "md:col-span-2",
+    href: "/cloud-solutions",
     thumbnail:
       "https://stl.tech/wp-content/uploads/2021/11/cloud-computing.jpg",
   },
@@ -150,6 +160,7 @@ const cards = [
     title: "AMC Services",
     content: <SkeletonFive />,
     className: "md:col-span-2",
+    href: "/amc-services",
     thumbnail:
       "https://www.pbctoday.co.uk/news/wp-content/uploads/2025/09/iStock-2205274485-scaled.jpg",
   },
@@ -158,6 +169,7 @@ const cards = [
     title: "Managed Services",
     content: <SkeletonSix />,
     className: "col-span-1",
+    href: "/managed-services",
     thumbnail:
       "https://lh3.googleusercontent.com/proxy/WVbavyo5JJh0L7Kme89VVYx0WrpiXLvmRRjs4wvfjpwaM0I4wI9O1uNqS0q77wdS62fKEDmh9jeLYWrlsbnIbqV5840uvgqRdPRHncnCl7KRN0vq7w2Y9ue4uBU",
   },

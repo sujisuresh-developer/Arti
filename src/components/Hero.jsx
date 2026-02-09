@@ -10,13 +10,13 @@ const vendors = [
   { name: "Proofpoint", logo: "https://www.proofpoint.com/sites/default/files/pr/Proofpoint-logo-reg-K.jpg" },
   { name: "Mimecast", logo: "https://cybercompare.com/wp-content/uploads/2023/10/pd_mimecast_logo-1024x298.png" },
   { name: "Hewlett Packard", logo: "https://www.infosys.com/content/dam/infosys-web/en/about/images/hpe-logo.jpg",size: "large" },
-  { name: "VMware", logo: "https://generaltechnologies.co.in/assets/frontend/pages/img/brand_partner/vmware_1.png",size: "large" },
+  { name: "VMware", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQizSkzySNMILzBu5JOtktZvfW7BuogHuAB7A&s" },
   { name: "Dell Technologies", logo: "https://www.boardinfinity.com/blog/content/images/2025/02/Company-Blog-Creatives----2025-02-25T180208.318.png",size: "large" },
   { name: "Microsoft", logo: "https://image.pitchbook.com/m3KpejK5fM5YbfW4TlFQw4MgQHh1707480684076_200x200",size: "large" },
   { name: "Palo Alto Networks", logo: "https://www.paloaltonetworks.com/content/dam/pan/en_US/images/logos/brand/primary-company-logo/Parent-logo.png?imwidth=480",size: "large" },
   { name: "Acronis", logo: "https://www.codelattice.com/assets/img/acronis/acronis-og.jpg" },
   { name: "SonicWall", logo: "https://www.advantage.tech/wp-content/uploads/2023/07/Sonicwall-Brand-Logo.png",size: "large" },
-  { name: "3CX", logo: "https://www.commend.com/cMedia/temp/0/3/csm_logo-3cx-300x200_fd79e9f581.png",size: "large" },
+  { name: "3CX", logo: "https://uploads-ssl.webflow.com/5f9c23d3d16c8c72447ca60d/61bb5dfd7858b76a2d8e1faa_3CX%20Logo.jpg",size: "large" },
   { name: "Huawei", logo: "https://media.business-humanrights.org/media/images/Huawei-Logo.2e16d0ba.fill-1200x630.png",size: "large" },
   { name: "Cisco", logo: "https://i0.wp.com/martinexsa.com/wp-content/uploads/2017/09/Cisco-logo.png?fit=271%2C190&ssl=1",size: "large" },
   { name: "Nutanix", logo: "https://generaltechnologies.co.in/assets/frontend/pages/img/brand_partner/nutanix_logo.png",size: "large" },
@@ -24,7 +24,7 @@ const vendors = [
   { name: "Kaspersky", logo: "https://assets.dealmela.com/stores/kaspersky.png",size: "large" },
   { name: "F5", logo: "https://www.bdata.com.hk/uploads/f5.png" },
   { name: "Microsoft Azure", logo: "https://miro.medium.com/v2/resize:fit:1200/1*nzsbJWmPOvKI9yeBGHe2uA.png",size: "large" },
-  { name: "Ivanti", logo: "https://www.nutanix.com/partners/technology-alliances/ivanti/_jcr_content/root/container/componentContainer/container_mosaic_685/item0/2mosaic_1/image_copy.coreimg.png/1685443179376/logo-ivanti.png",size: "large" },
+  { name: "Ivanti", logo: "https://cdn-1.webcatalog.io/catalog/ivanti/ivanti-social-preview.png?v=1727416919549",size: "large" },
 ];
 const VendorScroll = () => (
   <section className="w-full bg-white py-8 overflow-hidden">
@@ -34,10 +34,17 @@ const VendorScroll = () => (
   key={i}
   src={v.logo}
   alt={v.name}
-  className={`
-    object-contain opacity-90
-    ${v.size === "large" ? "h-20 sm:h-20 xl:h-24" : "h-10 sm:h-12"}
-  `}
+ className={`
+  object-contain opacity-90
+  ${
+    v.name === "Sophos" || v.name === "Aruba" ||v.name==="Microsoft"||v.name==="Ivanti"
+      ? "h-26 sm:h-24 xl:h-28"
+      : v.size === "large"
+      ? "h-20 sm:h-20 xl:h-24"
+      : "h-10 sm:h-12"
+  }
+`}
+
 />
 
       ))}

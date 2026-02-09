@@ -14,7 +14,7 @@ import LayoutGridDemo from '../components/layout-grid-demo'
 import GlowSection from '../components/GlowSection'
 //import { FocusCards } from '../components/ui/focus-cards'
 import TrustedSection from '../components/TrustedSection'
-import QuotePage from '../components/QuotePage'
+//import QuotePage from '../components/QuotePage'
 import Connect from '../components/Connect'
 import IndustriesPlatformSection from '../components/IndustriesPlatformSection'
 
@@ -33,7 +33,7 @@ function Home({openContact}) {
       <Hero />
       <GlowSection />
       <WhyChooseUs />
-      <QuotePage />
+      
       <section className="relative z-20 pointer-events-auto -mt-30 w-full">
         <LayoutGridDemo />
       </section>
