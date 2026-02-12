@@ -18,7 +18,7 @@ const logos = [
   logo8,
 ];
 
-const LogoScroll = () => {
+const Logos = () => {
   return (
     <section className="bg-[#fdfdfd] py-25 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -27,7 +27,7 @@ const LogoScroll = () => {
 
         <div className="relative overflow-hidden">
           {/* TRACK */}
-          <div className="flex items-center gap-12 whitespace-nowrap animate-logo-scroll">
+          <div className="flex items-center gap-12 whitespace-nowrap animate-logos-scrolling">
             
             {/* LOGOS */}
             {logos.concat(logos).map((logo, index) => (
@@ -51,4 +51,4 @@ const LogoScroll = () => {
   );
 };
 
-export default LogoScroll;
+export default Logos;

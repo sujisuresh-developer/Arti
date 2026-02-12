@@ -1,34 +1,68 @@
+import React from "react";
 import LaserFlow from "./LaserFlow";
+import sophos from "../assets/Sophos1.png";
+import fortinet from "../assets/Fortinet.png";
+import checkpoint from "../assets/check-point.png";
+import aruba from "../assets/Aruba.png";
+import veeam from "../assets/veeam.png";
+import trend from "../assets/Trend_Micro.png";
+import proofpoint from "../assets/Proofpoint.jpg";
+import mimecast from "../assets/mimecast.png";
+ import hp from "../assets/Hewlett.png";
+import vmware from "../assets/vmware.png";
+import dell from "../assets/dell.png";
+import microsoft from "../assets/microsoft.png";
+import paloalto from "../assets/PaloAltoNetworks.png";
+import acronis from "../assets/Acronis.png";
+import sonicwall from "../assets/SonicWall.png";
+import cx3 from "../assets/3CX.png";
+import huawei from "../assets/Huawei.png";
+import cisco from "../assets/Cisco.png";
+import nutanix from "../assets/Nutanix.png";
+import eset from "../assets/ESET.png";
+import kaspersky from "../assets/kaspersky.png";
+import f5 from "../assets/f5.png";
+import azure from "../assets/microsoft.png";
+import ivanti from "../assets/Ivanti.png";
+
 
 const vendors = [
-  { name: "Sophos", logo: "https://interworks.com/wp-content/uploads/2017/09/Sophos-ATC-LogoSQ.png",size: "large" },
-  { name: "Fortinet", logo: "https://www.proofpoint.com/sites/default/files/pr/Proofpoint-logo-reg-K.jpg" },
-  { name: "Check Point", logo: "https://www.eplus.com/images/default-source/authors/check-point-2024-logo-color.png?sfvrsn=69ac24b1_1",size: "large" },
-  { name: "Aruba", logo: "https://interworks.com/wp-content/uploads/2017/09/Aruba.png" ,size: "large"},
-  { name: "Veeam", logo: "https://securityaffairs.com/wp-content/uploads/2023/03/veeam-software-vector-logo.png" },
-  { name: "Trend Micro", logo: "https://upload.wikimedia.org/wikipedia/en/7/7f/Trend_Micro_Logo_2023.png" },
-  { name: "Proofpoint", logo: "https://www.proofpoint.com/sites/default/files/pr/Proofpoint-logo-reg-K.jpg" },
-  { name: "Mimecast", logo: "https://cybercompare.com/wp-content/uploads/2023/10/pd_mimecast_logo-1024x298.png" },
-  { name: "Hewlett Packard", logo: "https://www.infosys.com/content/dam/infosys-web/en/about/images/hpe-logo.jpg",size: "large" },
-  { name: "VMware", logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQizSkzySNMILzBu5JOtktZvfW7BuogHuAB7A&s" },
-  { name: "Dell Technologies", logo: "https://www.boardinfinity.com/blog/content/images/2025/02/Company-Blog-Creatives----2025-02-25T180208.318.png",size: "large" },
-  { name: "Microsoft", logo: "https://image.pitchbook.com/m3KpejK5fM5YbfW4TlFQw4MgQHh1707480684076_200x200",size: "large" },
-  { name: "Palo Alto Networks", logo: "https://www.paloaltonetworks.com/content/dam/pan/en_US/images/logos/brand/primary-company-logo/Parent-logo.png?imwidth=480",size: "large" },
-  { name: "Acronis", logo: "https://www.codelattice.com/assets/img/acronis/acronis-og.jpg" },
-  { name: "SonicWall", logo: "https://www.advantage.tech/wp-content/uploads/2023/07/Sonicwall-Brand-Logo.png",size: "large" },
-  { name: "3CX", logo: "https://uploads-ssl.webflow.com/5f9c23d3d16c8c72447ca60d/61bb5dfd7858b76a2d8e1faa_3CX%20Logo.jpg",size: "large" },
-  { name: "Huawei", logo: "https://media.business-humanrights.org/media/images/Huawei-Logo.2e16d0ba.fill-1200x630.png",size: "large" },
-  { name: "Cisco", logo: "https://i0.wp.com/martinexsa.com/wp-content/uploads/2017/09/Cisco-logo.png?fit=271%2C190&ssl=1",size: "large" },
-  { name: "Nutanix", logo: "https://generaltechnologies.co.in/assets/frontend/pages/img/brand_partner/nutanix_logo.png",size: "large" },
-  { name: "ESET", logo: "https://interworks.com/wp-content/uploads/2017/09/ESET-Logo_Web_Transparent.png",size: "large" },
-  { name: "Kaspersky", logo: "https://assets.dealmela.com/stores/kaspersky.png",size: "large" },
-  { name: "F5", logo: "https://www.bdata.com.hk/uploads/f5.png" },
-  { name: "Microsoft Azure", logo: "https://miro.medium.com/v2/resize:fit:1200/1*nzsbJWmPOvKI9yeBGHe2uA.png",size: "large" },
-  { name: "Ivanti", logo: "https://cdn-1.webcatalog.io/catalog/ivanti/ivanti-social-preview.png?v=1727416919549",size: "large" },
+  { name: "Sophos", logo: sophos, size: "large" },
+  { name: "Fortinet", logo: fortinet },
+  { name: "Check Point", logo: checkpoint, size: "large" },
+  { name: "Aruba", logo: aruba, size: "large" },
+  { name: "Veeam", logo: veeam },
+  { name: "Trend Micro", logo: trend },
+  { name: "Proofpoint", logo: proofpoint },
+  { name: "Mimecast", logo: mimecast },
+  { name: "Hewlett Packard", logo: hp},
+  { name: "VMware", logo: vmware },
+  { name: "Dell Technologies", logo: dell, size: "large" },
+  { name: "Microsoft", logo: microsoft, size: "large" },
+  { name: "Palo Alto Networks", logo: paloalto},
+  { name: "Acronis", logo: acronis },
+  { name: "SonicWall", logo: sonicwall},
+  { name: "3CX", logo: cx3 },
+  { name: "Huawei", logo: huawei, size: "large" },
+  { name: "Cisco", logo: cisco},
+  { name: "Nutanix", logo: nutanix, size: "large" },
+  { name: "ESET", logo: eset,size: "large" },
+  { name: "Kaspersky", logo: kaspersky, size: "large" },
+  { name: "F5", logo: f5 },
+  { name: "Microsoft Azure", logo: azure, size: "large" },
+  { name: "Ivanti", logo: ivanti },
 ];
+
 const VendorScroll = () => (
   <section className="w-full bg-white py-8 overflow-hidden">
-    <div className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max">
+    <div
+  className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max"
+  onMouseEnter={(e) => e.currentTarget.style.animationPlayState = "paused"}
+  onMouseLeave={(e) => e.currentTarget.style.animationPlayState = "running"}
+  onTouchStart={(e) => e.currentTarget.style.animationPlayState = "paused"}
+  onTouchEnd={(e) => e.currentTarget.style.animationPlayState = "running"}
+>
+
       {[...vendors, ...vendors].map((v, i) => (
         <img
   key={i}
@@ -37,13 +71,26 @@ const VendorScroll = () => (
  className={`
   object-contain opacity-90
   ${
-    v.name === "Sophos" || v.name === "Aruba" ||v.name==="Microsoft"||v.name==="Ivanti"
+    v.name === "Sophos" ||
+    v.name === "Aruba" ||
+    v.name === "Microsoft"
       ? "h-26 sm:h-24 xl:h-28"
+
+      // Decrease these specific logos
+      : v.name === "Fortinet" ||
+        v.name === "Palo Alto Networks" ||
+        v.name === "SonicWall"
+      ? "h-18 sm:h-16 xl:h-6"
+
+      // Normal large
       : v.size === "large"
       ? "h-20 sm:h-20 xl:h-24"
+
+      // Default small
       : "h-10 sm:h-12"
   }
 `}
+
 
 />
 
@@ -64,7 +111,7 @@ const Hero = () => {
           bg-black
         "
       >
-        {/* 🔵 MOBILE BLUE EFFECT */}
+        {/* MOBILE BLUE EFFECT */}
         <div className="absolute inset-0 sm:hidden z-0">
           {/* Gradient base */}
           <div className="absolute inset-0 bg-gradient-to-br from-black via-[#0a1a3a] to-black" />
@@ -141,6 +188,8 @@ const Hero = () => {
           </p>
         </div>
       </section>
+
+      
 
       {/* ================= VENDORS AFTER HERO ================= */}
       <VendorScroll />

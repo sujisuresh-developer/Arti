@@ -4,8 +4,48 @@ import { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronDown, Mail, Instagram, Twitter, Facebook } from "lucide-react";
 import Meteors from "./ui/meteors";
+import { useState } from "react";
+
 
 const ContactModal = ({ open, onClose }) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    service: "",
+    message: ""
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { name, email, service, message } = formData;
+
+    const whatsappMessage = `
+New Enquiry from Website
+
+Name: ${name}
+Email: ${email}
+Service: ${service}
+Message: ${message}
+  `;
+
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+
+    const phoneNumber = "919876543210"; // Replace with your number
+
+    window.open(
+      `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
+      "_blank"
+    );
+  };
+
   // Prevent body scroll when modal is open
   useEffect(() => {
     if (open) {
@@ -20,7 +60,7 @@ const ContactModal = ({ open, onClose }) => {
     <AnimatePresence>
       {open && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6">
-          
+
           {/* BACKDROP BLUR & DARKENING */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -43,7 +83,7 @@ const ContactModal = ({ open, onClose }) => {
               max-h-[90vh] flex flex-col
             "
           >
-         
+
             <div className="absolute inset-0 z-0 pointer-events-none opacity-50">
               <Meteors number={20} />
             </div>
@@ -59,7 +99,7 @@ const ContactModal = ({ open, onClose }) => {
             {/* SCROLLABLE CONTENT AREA */}
             <div className="relative z-10 overflow-y-auto custom-scrollbar">
               <div className="grid grid-cols-1 lg:grid-cols-5 min-h-[500px]">
-                
+
                 {/* --- LEFT: INFO SECTION (2 cols) --- */}
                 <div className="lg:col-span-2 bg-zinc-900/40 p-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-white/5">
                   <div>
@@ -67,7 +107,7 @@ const ContactModal = ({ open, onClose }) => {
                       Let’s Talk
                     </h2>
                     <p className="mt-4 text-zinc-400 text-sm leading-relaxed">
-                      Have a big idea or a business to scale? 
+                      Have a big idea or a business to scale?
                       We help enterprises build future-ready infrastructure.
                     </p>
                   </div>
@@ -83,24 +123,42 @@ const ContactModal = ({ open, onClose }) => {
                     </div>
 
                     {/* Socials */}
-                   
+
                   </div>
                 </div>
 
                 {/* --- RIGHT: FORM SECTION (3 cols) --- */}
                 <div className="lg:col-span-3 p-8 md:p-10 flex flex-col justify-center">
                   <form className="space-y-5">
-                    
+
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                      <InputGroup label="Name" placeholder="John Doe" />
-                      <InputGroup label="Email" placeholder="john@example.com" type="email" />
+                      <InputGroup
+                        label="Name"
+                        placeholder="John Doe"
+                        name="name"
+                        value={formData.name}
+                        onChange={handleChange}
+                      />
+
+                      <InputGroup
+                        label="Email"
+                        placeholder="john@example.com"
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleChange}
+                      />
+
                     </div>
 
                     {/* Custom Select */}
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-zinc-300">Service Interest</label>
                       <div className="relative">
-                        <select className="w-full bg-zinc-900/50 border border-white/10 rounded-lg px-4 py-3 text-zinc-200 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 appearance-none transition-all cursor-pointer">
+                        <select name="service"
+                          value={formData.service}
+                          onChange={handleChange}
+                          className="w-full bg-zinc-900/50 border border-white/10 rounded-lg px-4 py-3 text-zinc-200 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 appearance-none transition-all cursor-pointer">
                           <option className="bg-zinc-900 text-zinc-400">Select a Service</option>
                           <option className="bg-zinc-900">Infrastructure Solutions</option>
                           <option className="bg-zinc-900">Cyber Security</option>
@@ -114,6 +172,9 @@ const ContactModal = ({ open, onClose }) => {
                     <div className="space-y-1.5">
                       <label className="text-sm font-medium text-zinc-300">Message</label>
                       <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
                         rows="4"
                         placeholder="Tell us about your project..."
                         className="w-full bg-zinc-900/50 border border-white/10 rounded-lg px-4 py-3 text-zinc-200 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all resize-none"
@@ -122,6 +183,7 @@ const ContactModal = ({ open, onClose }) => {
 
                     <button
                       type="submit"
+                      onClick={handleSubmit}
                       className="w-full py-3.5 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all transform hover:-translate-y-0.5"
                     >
                       Send Message
@@ -140,16 +202,20 @@ const ContactModal = ({ open, onClose }) => {
 
 // --- Reusable Small Components ---
 
-const InputGroup = ({ label, placeholder, type = "text" }) => (
+const InputGroup = ({ label, placeholder, type = "text", name, value, onChange }) => (
   <div className="space-y-1.5">
     <label className="text-sm font-medium text-zinc-300">{label}</label>
     <input
       type={type}
+      name={name}
+      value={value}
+      onChange={onChange}
       placeholder={placeholder}
       className="w-full bg-zinc-900/50 border border-white/10 rounded-lg px-4 py-3 text-zinc-200 outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all placeholder:text-zinc-600"
     />
   </div>
 );
+
 
 
 

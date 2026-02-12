@@ -22,7 +22,7 @@ const logos = [
 
 const LogoScroll = () => {
   return (
-    <section className="bg-[#fdfdfd] py-25 overflow-hidden">
+    <section className="bg-[#fdfdfd] py-25 overflow-hidden mt-15">
       <div className="w-full mx-auto px-6">
 
         <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight text-center mb-12">

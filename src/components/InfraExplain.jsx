@@ -60,6 +60,7 @@ export default function InfraExplain() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
               className="
+               hidden md:block
                  absolute
   left-[calc(50%+220px)]
   w-[360px]

@@ -42,8 +42,25 @@
 }
 
 .animate-logo-scroll {
-  animation: logo-scroll 25s linear infinite;
+  animation: logo-scroll 10s linear infinite;
 }
+
+
+
+@keyframes logos-scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+
+.animate-logos-scrolling {
+  animation: logos-scrolling 10s linear infinite;}
+
 @keyframes meteor {
   0% {
     transform: rotate(215deg) translateX(0);

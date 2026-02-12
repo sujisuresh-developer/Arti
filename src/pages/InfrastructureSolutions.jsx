@@ -14,7 +14,7 @@ function InfrastructureSolutions() {
       <Header />
 
       {/* HERO SECTION */}
-      <section className="relative w-full min-h-screen bg-black overflow-hidden flex items-center justify-center">
+      <section className="relative w-full min-h-screen bg-black overflow-hidden flex items-center justify-center px-4">
 
         {/* PIXEL BLAST BACKGROUND */}
         <div className="absolute inset-0 z-0">
@@ -39,25 +39,21 @@ function InfrastructureSolutions() {
           />
         </div>
 
-        {/* DARK OVERLAY */}
-        {/* <div className="absolute inset-0 bg-black/60 z-10" /> */}
-
         {/* HERO CONTENT */}
-        <div className="relative z-20 flex flex-col items-center justify-center text-center px-5 max-w-5xl">
+        <div className="relative z-20 flex flex-col items-center justify-center text-center w-full max-w-5xl pt-24 sm:pt-28 md:pt-0">
 
           {/* HEADING */}
           <h1
             className="
               text-white font-extrabold
-              leading-snug
-              text-lg
+              leading-tight
+              text-2xl
               sm:text-4xl
               md:text-5xl
               lg:text-5xl
               xl:text-6xl
-              max-w-[95vw]
-              break-words
-              mt-5
+              max-w-full
+              px-2
             "
           >
             <TextGenerateEffectDemo
@@ -68,12 +64,13 @@ function InfrastructureSolutions() {
           {/* SUBTITLE */}
           <p
             className="
-              mt-4
-              text-[11px]
-              sm:text-sm
+              mt-6
+              text-sm
+              sm:text-base
               md:text-base
               text-gray-300
               max-w-xl
+              px-3
             "
           >
             We design and implement secure, scalable IT infrastructure — from
