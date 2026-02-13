@@ -59,7 +59,7 @@ const VendorScroll = () => (
   className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max"
   onMouseEnter={(e) => e.currentTarget.style.animationPlayState = "paused"}
   onMouseLeave={(e) => e.currentTarget.style.animationPlayState = "running"}
-  onTouchStart={(e) => e.currentTarget.style.animationPlayState = "paused"}
+  onTouchStart={(e) => e.currentTarget.style.animationPlayState = "paused"} 
   onTouchEnd={(e) => e.currentTarget.style.animationPlayState = "running"}
 >
 
@@ -79,8 +79,8 @@ const VendorScroll = () => (
       // Decrease these specific logos
       : v.name === "Fortinet" ||
         v.name === "Palo Alto Networks" ||
-        v.name === "SonicWall"
-      ? "h-18 sm:h-16 xl:h-6"
+        v.name === "SonicWall"||v.name==="kaspersky"
+      ? "h-6 sm:h-6 xl:h-6"
 
       // Normal large
       : v.size === "large"
