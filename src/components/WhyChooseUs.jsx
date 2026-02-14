@@ -58,8 +58,9 @@ const WhyChooseUs = () => {
   </span>
 </h2>
             <p className="mt-6 text-lg text-slate-600 leading-relaxed">
-              We're not just another IT provider — we're your strategic technology
-              partner committed to your long-term success.
+              With over <strong>14 years</strong> of industry experience, we are a <strong>trusted IT Solutions provider operating 
+under the esteemed Manchi Group.</strong>
+Our expertise spans over a wide range of technology services tailored to meet the evolving needs of business across sectors. Backed by a decade of innovation and client success, we have proudly earned multiple industry awards for excellence in service, reliability and innovation. At our core, we are committed to delivering smart, scalable and secure IT solutions that drive growth and digital transformation.
             </p>
           </motion.div>
         </div>

@@ -36,6 +36,13 @@ const industries = [
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JFyVMUGB2hCmAhFXOdCydqzgsCHd2BAzEA&s",
     icon: TrendingUp,
   },
+   {
+    title: "Construction and Manufacturing",
+    desc: "Scalable cloud architecture and DevOps for high-growth technology companies.",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2JFyVMUGB2hCmAhFXOdCydqzgsCHd2BAzEA&s",
+    icon: TrendingUp,
+  },
 ];
 
 const IndustriesWeServe = () => {

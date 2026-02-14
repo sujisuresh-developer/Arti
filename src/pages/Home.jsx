@@ -53,7 +53,7 @@ function Home({openContact}) {
     </h2>
 
     <a
-      href="https://wa.me/919876543210?text=Hello%20I%20am%20interested%20in%20your%20services"
+      href="https://wa.me/971522076531?text=Hello%20I%20am%20interested%20in%20your%20services"
 
       target="_blank"
       rel="noopener noreferrer"

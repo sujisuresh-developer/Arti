@@ -20,7 +20,7 @@ const GlowSection = () => {
         <div className="animate-fadeInUp">
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
-            Glow your User
+            Your Growth.Our Technology
           </h2>
 
           <p className="mt-6 text-gray-600 max-w-lg text-base sm:text-lg leading-relaxed">

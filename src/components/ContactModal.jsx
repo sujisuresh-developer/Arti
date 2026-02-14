@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ChevronDown, Mail, Instagram, Twitter, Facebook } from "lucide-react";
 import Meteors from "./ui/meteors";
 import { useState } from "react";
+import {  Phone, MapPin } from "lucide-react";
 
 
 const ContactModal = ({ open, onClose }) => {
@@ -38,7 +39,7 @@ Message: ${message}
 
     const encodedMessage = encodeURIComponent(whatsappMessage);
 
-    const phoneNumber = "919876543210"; // Replace with your number
+    const phoneNumber = "971522076531"; // Replace with your number
 
     window.open(
       `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
@@ -112,19 +113,45 @@ Message: ${message}
                     </p>
                   </div>
 
-                  <div className="mt-10 space-y-8">
-                    {/* Contact Details */}
-                    <div>
-                      <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-500 mb-2">Contact</h4>
-                      <a href="mailto:info@artiflex.com" className="flex items-center gap-2 text-zinc-200 hover:text-blue-400 transition-colors">
-                        <Mail size={16} />
-                        info@artiflex.com
-                      </a>
-                    </div>
+      <div className="mt-8 space-y-8">
+  <div>
+    <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-500 mb-4">
+      Contact
+    </h4>
 
-                    {/* Socials */}
+    {/* Email */}
+    <a
+      href="mailto:Info@artiflexit.com"
+      className="flex items-center gap-2 text-zinc-200 hover:text-blue-400 transition-colors mb-3"
+    >
+      <Mail size={16} className="text-white" />
+      Info@artiflexit.com
+    </a>
 
-                  </div>
+    {/* Phone */}
+    <a
+      href="tel:+971558086462"
+      className="flex items-center gap-2 text-zinc-200 hover:text-blue-400 transition-colors mb-3"
+    >
+      <Phone size={16} className="text-white" />
+      +971 558086462
+    </a>
+
+    {/* Address */}
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Malik+Saeed+Suhail+Saeed+Bin+Daliwi+Al-Kutbi+Bardab+First+Commercial+Center+4"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="flex items-start gap-2 text-zinc-200 hover:text-blue-400 transition-colors"
+    >
+      <MapPin size={26} className="text-white mt-1" />
+      <span className="leading-relaxed">
+        Malik Saeed Suhail Saeed Bin Daliwi Al-Kutbi –
+        Bardab – First Commercial Center 4
+      </span>
+    </a>
+  </div>
+</div>
                 </div>
 
                 {/* --- RIGHT: FORM SECTION (3 cols) --- */}

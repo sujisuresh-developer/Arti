@@ -13,7 +13,7 @@ export default function AboutContentSection() {
           <p className="mt-6 text-neutral-600 leading-relaxed text-base md:text-lg">
             At <strong>Artiflex</strong>, we are committed to delivering high quality, innovative
             IT solutions that fuel business growth and long-term success. With
-            over <strong>15 years</strong> of industry experience, we have established
+            over <strong>14 years</strong> of industry experience, we have established
             ourselves as a trusted technology partner to organizations around
             the world.
             We specialize in crafting custom software and IT solutions tailored

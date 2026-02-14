@@ -53,6 +53,18 @@ const industries = [
       "Cost-optimized infrastructure",
     ],
   },
+  {
+  title: "Construction and Manufacturing",
+desc: "Robust IT infrastructure and secure digital solutions tailored for construction and manufacturing enterprises to enhance operational efficiency, safety, and scalability.",
+image: "https://media.istockphoto.com/id/916414144/photo/industry4-0-and-iot-factory-automation-system-ai.jpg?s=612x612&w=0&k=20&c=GGwkueOj8tE7y2eW_3UPu8rv5gQqbR8rLoQUXICafX4=",
+stat: "99.99% Uptime",
+points: [
+  "Secure industrial network architecture",
+  "IoT & smart factory integration",
+  "High-availability server infrastructure",
+  "Cybersecurity for operational technology (OT)",
+],
+},
 ];
 
 export default function IndustriesPlatformSection() {
