@@ -21,27 +21,49 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    const { name, email, service, message } = formData;
+  const { name, email, service, message } = formData;
 
-    const whatsappMessage = `
-New Enquiry from Artiflex IT Website
+  // 🔴 Validation
+  if (!name.trim()) {
+    alert("Please enter your name.");
+    return;
+  }
 
+  if (!email.trim()) {
+    alert("Please enter your email.");
+    return;
+  }
+
+  if (!service || service === "Select a Service") {
+    alert("Please select a service.");
+    return;
+  }
+
+  // Optional: basic email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  const whatsappMessage = `
+New Enquiry from ArtiFlexIT Website
 Name: ${name}
 Email: ${email}
 Service: ${service}
 Message: ${message}
-    `;
+  `;
 
-    const encodedMessage = encodeURIComponent(whatsappMessage);
+  const encodedMessage = encodeURIComponent(whatsappMessage);
 
-    window.open(
-      `https://wa.me/971522076531?text=${encodedMessage}`,
-      "_blank"
-    );
-  };
+  window.open(
+    `https://wa.me/971522076531?text=${encodedMessage}`,
+    "_blank"
+  );
+};
 
   return (
     <>

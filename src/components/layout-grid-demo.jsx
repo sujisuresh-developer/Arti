@@ -6,7 +6,9 @@ import { useNavigate } from "react-router-dom";
 import inf from "../assets/3d.jpg";
 import secure from "../assets/secure.jpg";
 import apps from "../assets/apps.jpg";
-import clouds from "../assets/clouds.jpg";
+import cloudComput from "../assets/cloudComputing.jpg";
+import amcService from "../assets/AmcService.jpg";
+import managed from "../assets/Managed.jpg";
 
 
 
@@ -157,7 +159,7 @@ const cards = [
     className: "md:col-span-2",
     href: "/cloud-solutions",
     thumbnail:
-      "https://stl.tech/wp-content/uploads/2021/11/cloud-computing.jpg",
+      cloudComput,
   },
   {
     id: 5,
@@ -166,7 +168,7 @@ const cards = [
     className: "md:col-span-2",
     href: "/amc-services",
     thumbnail:
-      "https://media.istockphoto.com/id/2179880282/photo/businessman-hands-hold-global-hosting-technology-server-management-cloud-storage-uptime.jpg?s=612x612&w=0&k=20&c=HqlqJpsXHSXyb_1f5h236gFJg9UAfHqnGVmjTDMXMDA=",
+      amcService,
   },
   {
     id: 6,
@@ -175,6 +177,6 @@ const cards = [
     className: "col-span-1",
     href: "/managed-services",
     thumbnail:
-      "https://lh3.googleusercontent.com/proxy/WVbavyo5JJh0L7Kme89VVYx0WrpiXLvmRRjs4wvfjpwaM0I4wI9O1uNqS0q77wdS62fKEDmh9jeLYWrlsbnIbqV5840uvgqRdPRHncnCl7KRN0vq7w2Y9ue4uBU",
+      managed,
   },
 ];

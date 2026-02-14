@@ -10,6 +10,12 @@ import manage from "../assets/manage.jpg"
 import amc from "../assets/amc.jpg"
 import FloatingLines from "../components/FloatingLines"
 import TextGenerateEffectDemo from "../components/text-generate-effect-demo"
+import faq1 from "../assets/faq1.jpg"
+import faq2 from "../assets/faq2.png"
+import faq3 from "../assets/faq3.png"
+import faq4 from "../assets/faq4.jpeg"
+import faq5 from "../assets/faq5.avif"
+
 
 
 
@@ -18,7 +24,7 @@ import TextGenerateEffectDemo from "../components/text-generate-effect-demo"
 const faqData = [
   {
     title: "IT Infrastructure Optimization",
-    image: "https://ixpanseteknoloji.com/sites/default/files/styles/wide/public/2025-06/veri-merkezi-optimizasyonu-akilli-altyapilarla-maliyetleri-azaltin-verimliligi-artirin_0.jpg?itok=6DCYO-d_"
+    image: faq1
     ,
     desc: "Optimizing your IT infrastructure is key to ensuring seamless business operations.",
     faqs: [
@@ -28,7 +34,7 @@ const faqData = [
   },
   {
     title: "Cyber Security Solutions",
-    image: "https://media.licdn.com/dms/image/v2/D5612AQFfb5T727sQZQ/article-cover_image-shrink_720_1280/B56ZrtmxZKLIAI-/0/1764922957321?e=2147483647&v=beta&t=I1qQhdFm5_hP-2TLGXrwKbtDPvrejpmjHpLHkzzSEcc",
+    image: faq2,
     desc: "Cyber threats are constantly evolving—your defense strategy should too.",
     faqs: [
       { q: "How do Cyber Security Solutions protect my business?", a: "By identifying vulnerabilities, monitoring threats in real time, and implementing proactive controls." },
@@ -37,7 +43,7 @@ const faqData = [
   },
   {
     title: "Application Security",
-    image: "https://www.theclintoncourier.net/wp-content/uploads/2024/10/From-automation-to-data-analysis-learn-how-IT-optimization-boosts-efficiency-and-drives-success-in-the-digital-age.png",
+    image: faq3,
     desc: "Applications are critical assets but also prime targets for cyber threats.",
     faqs: [
       { q: "How do you secure applications throughout development?", a: "We embed security into the development lifecycle using secure coding, testing, and monitoring." },
@@ -55,7 +61,7 @@ const faqData = [
   },
   {
     title: "Managed Services",
-    image: "https://nixsoftech.in/wp-content/uploads/2024/08/The-Future-of-IT-Managed-Services-Trends-and-Innovations-in-2024.jpeg",
+    image: faq4,
     desc: "Expert guidance is essential for strategic growth and IT stability.",
     faqs: [
       { q: "How do Managed Services help growth?", a: "Through continuous IT oversight, planning, and expert support." },
@@ -64,7 +70,7 @@ const faqData = [
   },
   {
     title: "AMC Services",
-    image: "https://img.freepik.com/premium-photo/dynamic-logo-concept-showcasing-ais-influence-business_1222399-81198.jpg?semt=ais_hybrid&w=740&q=80",
+    image: faq5,
     desc: "Comprehensive IT support and maintenance to ensure business continuity.",
     faqs: [
       { q: "What does AMC include?", a: "Monitoring, maintenance, updates, and disaster recovery." },

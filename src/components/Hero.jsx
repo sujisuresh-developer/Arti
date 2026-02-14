@@ -8,7 +8,7 @@ import veeam from "../assets/veeam.png";
 import trend from "../assets/Trend_Micro.png";
 import proofpoint from "../assets/Proofpoint.jpg";
 import mimecast from "../assets/mimecast.png";
- import hp from "../assets/Hewlett.png";
+import hp from "../assets/Hewlett.png";
 import vmware from "../assets/vmware.png";
 import dell from "../assets/dell.png";
 import microsoft from "../assets/microsoft.png";
@@ -26,6 +26,10 @@ import azure from "../assets/microsoft.png";
 import ivanti from "../assets/Ivanti.png";
 
 
+
+import { useRef, useState } from "react";
+
+
 const vendors = [
   { name: "Sophos", logo: sophos, size: "large" },
   { name: "Fortinet", logo: fortinet },
@@ -35,69 +39,98 @@ const vendors = [
   { name: "Trend Micro", logo: trend },
   { name: "Proofpoint", logo: proofpoint },
   { name: "Mimecast", logo: mimecast },
-  { name: "Hewlett Packard", logo: hp},
+  { name: "Hewlett Packard", logo: hp },
   { name: "VMware", logo: vmware },
   { name: "Dell Technologies", logo: dell, size: "large" },
   { name: "Microsoft", logo: microsoft, size: "large" },
-  { name: "Palo Alto Networks", logo: paloalto},
+  { name: "Palo Alto Networks", logo: paloalto },
   { name: "Acronis", logo: acronis },
-  { name: "SonicWall", logo: sonicwall},
+  { name: "SonicWall", logo: sonicwall },
   { name: "3CX", logo: cx3 },
   { name: "Huawei", logo: huawei, size: "large" },
-  { name: "Cisco", logo: cisco},
+  { name: "Cisco", logo: cisco },
   { name: "Nutanix", logo: nutanix, size: "large" },
-  { name: "ESET", logo: eset,size: "large" },
+  { name: "ESET", logo: eset, size: "large" },
   { name: "Kaspersky", logo: kaspersky, size: "large" },
   { name: "F5", logo: f5 },
   { name: "Microsoft Azure", logo: azure, size: "large" },
   { name: "Ivanti", logo: ivanti },
 ];
 
-const VendorScroll = () => (
-  <section className="w-full bg-white py-8 overflow-hidden">
-    <div
-  className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max"
-  onMouseEnter={(e) => e.currentTarget.style.animationPlayState = "paused"}
-  onMouseLeave={(e) => e.currentTarget.style.animationPlayState = "running"}
-  onTouchStart={(e) => e.currentTarget.style.animationPlayState = "paused"} 
-  onTouchEnd={(e) => e.currentTarget.style.animationPlayState = "running"}
->
+const VendorScroll = () => {
 
-      {[...vendors, ...vendors].map((v, i) => (
-        <img
-  key={i}
-  src={v.logo}
-  alt={v.name}
- className={`
-  object-contain opacity-90
-  ${
-    v.name === "Sophos" ||
-    v.name === "Aruba" ||
-    v.name === "Microsoft"
-      ? "h-26 sm:h-24 xl:h-28"
+  const scrollRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
 
-      // Decrease these specific logos
-      : v.name === "Fortinet" ||
-        v.name === "Palo Alto Networks" ||
-        v.name === "SonicWall"||v.name==="kaspersky"
-      ? "h-6 sm:h-6 xl:h-6"
+  const handleMouseDown = (e) => {
+    const slider = scrollRef.current;
+    setIsDragging(true);
+    setStartX(e.pageX - slider.offsetLeft);
+    setScrollLeft(slider.scrollLeft);
+  };
 
-      // Normal large
-      : v.size === "large"
-      ? "h-20 sm:h-20 xl:h-24"
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const slider = scrollRef.current;
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1.5;
+    slider.scrollLeft = scrollLeft - walk;
+  };
 
-      // Default small
-      : "h-10 sm:h-12"
-  }
-`}
+  const handleMouseUp = () => {
+    setIsDragging(false);
+  };
 
-
-/>
-
-      ))}
-    </div>
-  </section>
-);
+  return (
+    <section className="w-full bg-white py-8 overflow-y-hidden">
+      <div
+        ref={scrollRef}
+        className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max cursor-grab"
+        onMouseEnter={(e) => {
+          e.currentTarget.style.animationPlayState = "paused";
+        }}
+        onMouseLeave={(e) => {
+          e.currentTarget.style.animationPlayState = "running";
+          setIsDragging(false);
+        }}
+        onTouchStart={(e) => {
+          e.currentTarget.style.animationPlayState = "paused";
+        }}
+        onTouchEnd={(e) => {
+          e.currentTarget.style.animationPlayState = "running";
+          setIsDragging(false);
+        }}
+      >
+        {[...vendors, ...vendors].map((v, i) => (
+          <img
+            key={i}
+            src={v.logo}
+            alt={v.name}
+            className={`
+              object-contain opacity-90
+              ${v.name === "Sophos" ||
+                v.name === "Aruba" ||
+                v.name === "Microsoft"
+                ? "h-26 sm:h-24 xl:h-28"
+                : v.name === "Fortinet" ||
+                  v.name === "Palo Alto Networks" ||
+                  v.name === "SonicWall" 
+                 
+                  ? "h-6 sm:h-6 xl:h-6"
+                  : v.size === "large"
+                    ? "h-20 sm:h-20 xl:h-24"
+                    : "h-10 sm:h-12"
+              }
+            `}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
 
 const Hero = () => {
   return (
@@ -189,7 +222,7 @@ const Hero = () => {
         </div>
       </section>
 
-      
+
 
       {/* ================= VENDORS AFTER HERO ================= */}
       <VendorScroll />

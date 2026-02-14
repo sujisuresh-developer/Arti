@@ -76,7 +76,7 @@ export const InfiniteMovingCards = ({
           >
             {/* QUOTE BOX */}
             <div className="absolute -top-5 left-6">
-              <div className="h-10 w-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-lg">
+              <div className="h-10 w-10 rounded-xl bg-[#02AEEC] flex items-center justify-center shadow-lg">
                 <span className="text-white text-xl leading-none">❝</span>
               </div>
             </div>

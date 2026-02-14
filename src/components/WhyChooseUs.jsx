@@ -2,31 +2,35 @@ import React from "react";
 import { Target, Layers, Users, Award } from "lucide-react";
 import { motion } from "framer-motion";
 import { FocusCards } from "./ui/focus-cards"; // Assuming you have this component
+import why1 from "../assets/why1.jpg";
+import why2 from "../assets/why2.webp";
+import why3 from "../assets/why3.jpg";
+import why4 from "../assets/why4.webp";
 
 const features = [
   {
     icon: Target,
     title: "Tailored IT Solutions",
     desc: "Custom-built infrastructure and services designed specifically for your business size, industry, and growth objectives.",
-    image: "https://media.istockphoto.com/id/502462262/photo/cloud-computing.jpg?s=612x612&w=0&k=20&c=mNq94Zu3RXr9QIsW7kUMe9BedXPV_62lmOxCcqJhI0s=",
+    image: why1,
   },
   {
     icon: Layers,
     title: "Secure & Scalable Frameworks",
     desc: "Future-ready architecture that grows with your business while maintaining the highest security standards.",
-    image: "https://itbrief.com.au/uploads/story/2025/10/31/Samsung_Knox_Protect.webp",
+    image: why2,
   },
   {
     icon: Users,
     title: "Dedicated Technology Partner",
     desc: "A committed team working as an extension of your organization, understanding your unique challenges.",
-    image: "https://microwaresolutions.com/wp-content/uploads/2024/11/OEM-Technology-Partners.jpg",
+    image: why3,
   },
   {
     icon: Award,
     title: "Proven Track Record",
     desc: "500+ successful implementations across global enterprises with 99.9% uptime and client satisfaction.",
-    image: "https://imarat.com.pk/wp-content/uploads/2024/08/Reviewing-Developer-Profiles-and-Track-Records-for-Real-Estate.jpg.webp",
+    image: why4,
   },
 ];
 

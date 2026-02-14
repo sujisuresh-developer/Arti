@@ -57,9 +57,9 @@ function Home({openContact}) {
 
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block mt-10 px-10 py-4 bg-blue-600 text-white rounded-xl 
+      className="inline-block mt-10 px-10 py-4 bg-[#02AEEC] text-white rounded-xl 
                  text-lg font-semibold 
-                 hover:bg-blue-800 transition duration-300"
+                 hover:bg-blue-600 transition duration-300"
     >
       TALK TO US
     </a>

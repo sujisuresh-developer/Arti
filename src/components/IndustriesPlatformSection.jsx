@@ -3,12 +3,16 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check } from "lucide-react";
-
+import energy from "../assets/energy.avif";
+import finance from "../assets/financial.avif"
+import health from "../assets/health.avif";
+import enterprise from "../assets/enterprise.avif";
+import construct  from "../assets/const.jpg";
 const industries = [
   {
     title: "Energy & Utilities",
     desc: "Smart grid management and secure operational technology infrastructure for energy providers.",
-    image: "https://images.unsplash.com/photo-1758797899821-46e9aa667409?w=1200&auto=format&fit=crop&q=60",
+    image: energy,
     stat: "99.99% Uptime",
     points: [
       "Secure OT & SCADA environments",
@@ -20,7 +24,7 @@ const industries = [
   {
     title: "Financial Services",
     desc: "Compliance-ready infrastructure and advanced security for banking and fintech operations.",
-    image: "https://plus.unsplash.com/premium_photo-1673208585690-fe33159386bd?w=1200&auto=format&fit=crop&q=60",
+    image: finance,
     stat: "ISO 27001 Ready",
     points: [
       "Track cost & margin in real time",
@@ -32,7 +36,7 @@ const industries = [
   {
     title: "Healthcare",
     desc: "HIPAA-compliant systems ensuring patient data security and seamless healthcare delivery.",
-    image: "https://images.unsplash.com/photo-1606206873764-fd15e242df52?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNhbCUyMHRlY2hub2xvZ3l8ZW58MHx8MHx8fDA%3D",
+    image: health,
     stat: "HIPAA Compliant",
     points: [
       "Patient data protection",
@@ -44,7 +48,7 @@ const industries = [
   {
     title: "Enterprise & SaaS",
     desc: "Scalable cloud architecture and DevOps for high-growth technology companies.",
-    image: "https://plus.unsplash.com/premium_photo-1680509034814-e733c5f873ac?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c29mdHdhcmUlMjBhcyUyMGElMjBzZXJ2aWNlfGVufDB8fDB8fHww",
+    image: enterprise,
     stat: "Zero Latency",
     points: [
       "Cloud-native scalability",
@@ -56,7 +60,7 @@ const industries = [
   {
   title: "Construction and Manufacturing",
 desc: "Robust IT infrastructure and secure digital solutions tailored for construction and manufacturing enterprises to enhance operational efficiency, safety, and scalability.",
-image: "https://media.istockphoto.com/id/916414144/photo/industry4-0-and-iot-factory-automation-system-ai.jpg?s=612x612&w=0&k=20&c=GGwkueOj8tE7y2eW_3UPu8rv5gQqbR8rLoQUXICafX4=",
+image: construct,
 stat: "99.99% Uptime",
 points: [
   "Secure industrial network architecture",
@@ -115,7 +119,7 @@ export default function IndustriesPlatformSection() {
               {active === idx && (
                 <motion.div
                   layoutId="activeTab"
-                  className="absolute inset-0 bg-blue-600 rounded-full"
+                  className="absolute inset-0 bg-[#02AEEC] rounded-full"
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
               )}

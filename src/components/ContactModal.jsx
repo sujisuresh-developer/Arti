@@ -23,29 +23,49 @@ const ContactModal = ({ open, onClose }) => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+ const handleSubmit = (e) => {
+  e.preventDefault();
 
-    const { name, email, service, message } = formData;
+  const { name, email, service, message } = formData;
 
-    const whatsappMessage = `
+  //  Validation
+  if (!name.trim()) {
+    alert("Please enter your name.");
+    return;
+  }
+
+  if (!email.trim()) {
+    alert("Please enter your email.");
+    return;
+  }
+
+  if (!service || service === "Select a Service") {
+    alert("Please select a service.");
+    return;
+  }
+
+  //  basic email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  const whatsappMessage = `
 New Enquiry from Website
-
 Name: ${name}
 Email: ${email}
 Service: ${service}
 Message: ${message}
   `;
 
-    const encodedMessage = encodeURIComponent(whatsappMessage);
+  const encodedMessage = encodeURIComponent(whatsappMessage);
 
-    const phoneNumber = "971522076531"; // Replace with your number
-
-    window.open(
-      `https://wa.me/${phoneNumber}?text=${encodedMessage}`,
-      "_blank"
-    );
-  };
+  window.open(
+    `https://wa.me/971522076531?text=${encodedMessage}`,
+    "_blank"
+  );
+};
 
   // Prevent body scroll when modal is open
   useEffect(() => {
@@ -158,7 +178,7 @@ Message: ${message}
                 <div className="lg:col-span-3 p-8 md:p-10 flex flex-col justify-center">
                   <form className="space-y-5">
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5 ">
                       <InputGroup
                         label="Name"
                         placeholder="John Doe"
@@ -170,7 +190,7 @@ Message: ${message}
                       <InputGroup
                         label="Email"
                         placeholder="john@example.com"
-                        type="email"
+                        type="email" required
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
