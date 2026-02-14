@@ -31,21 +31,28 @@ const LogoScroll = () => {
 
         <div className="relative overflow-hidden">
           {/* TRACK */}
-          <div className="flex items-center gap-12 whitespace-nowrap animate-logo-scroll">
+          <div className="flex items-center gap-12 whitespace-nowrap animate-logo-scroll w-max">
             
             {/* LOGOS */}
-            {logos.concat(logos).map((logo, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center min-w-[160px]"
-              >
-                <img
-                  src={logo}
-                  alt="Client logo"
-                  className="h-30 object-contain"
-                />
-              </div>
-            ))}
+                {logos.concat(logos).map((logo, index) => (
+           <div
+             key={index}
+             className="flex items-center justify-center min-w-[160px]"
+           >
+             <img
+               src={logo}
+               alt="Client logo"
+               className={`
+                 object-contain
+                 ${
+                   logo === logo6 || logo === logo3||logo === sophos
+                     ? "h-13"     // smaller logos
+                     : "h-30"     // default size
+                 }
+               `}
+             />
+           </div>
+         ))}
 
           </div>
         </div>

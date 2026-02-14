@@ -172,7 +172,7 @@ const VendorsAutoScroll = () => (
       : v.name === "Fortinet" ||
         v.name === "Palo Alto Networks" ||
         v.name === "SonicWall"
-      ? "h-18 sm:h-16 xl:h-6"
+      ? "h-6 sm:h-6 xl:h-6"
 
       // Normal large
       : v.size === "large"

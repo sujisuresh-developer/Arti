@@ -42,7 +42,7 @@
 }
 
 .animate-logo-scroll {
-  animation: logo-scroll 10s linear infinite;
+  animation: logo-scroll 20s linear infinite;
 }
 
 
@@ -59,7 +59,7 @@
 
 
 .animate-logos-scrolling {
-  animation: logos-scrolling 10s linear infinite;}
+  animation: logos-scrolling 20s linear infinite;}
 
 @keyframes meteor {
   0% {

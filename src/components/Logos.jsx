@@ -20,28 +20,35 @@ const logos = [
 
 const Logos = () => {
   return (
-    <section className="bg-[#fdfdfd] py-25 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="bg-[#fdfdfd] py-25 overflow-hidden w-full">
+      <div className="w-full mx-auto px-6">
 
         
 
         <div className="relative overflow-hidden">
           {/* TRACK */}
-          <div className="flex items-center gap-12 whitespace-nowrap animate-logos-scrolling">
+          <div className="flex items-center gap-12 whitespace-nowrap animate-logos-scrolling w-max">
             
             {/* LOGOS */}
-            {logos.concat(logos).map((logo, index) => (
-              <div
-                key={index}
-                className="flex items-center justify-center min-w-[160px]"
-              >
-                <img
-                  src={logo}
-                  alt="Client logo"
-                  className="h-30 object-contain"
-                />
-              </div>
-            ))}
+           {logos.concat(logos).map((logo, index) => (
+  <div
+    key={index}
+    className="flex items-center justify-center min-w-[160px]"
+  >
+    <img
+      src={logo}
+      alt="Client logo"
+      className={`
+        object-contain
+        ${
+          logo === logo6 || logo === logo3
+            ? "h-13"     // smaller logos
+            : "h-30"     // default size
+        }
+      `}
+    />
+  </div>
+))}
 
           </div>
         </div>

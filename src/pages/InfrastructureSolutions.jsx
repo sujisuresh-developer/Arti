@@ -57,7 +57,7 @@ function InfrastructureSolutions() {
             "
           >
             <TextGenerateEffectDemo
-              words="Future-Ready Infrastructure Solutions."
+              words="Future Ready Technology Platforms"
             />
           </h1>
 
