@@ -23,7 +23,7 @@ function CloudSolutions() {
                     <PixelBlast
                         variant="square"
                         pixelSize={4}
-                        color="#7a53fa"
+                        color="#02AEEC"
                         patternScale={2}
                         patternDensity={1}
                         pixelSizeJitter={0}
@@ -56,7 +56,7 @@ function CloudSolutions() {
               xl:text-7xl"
                     >
                         <TextGenerateEffectDemo
-                            words="Cloud Solutions Designed for Security."
+                            words="Cloud Solutions Designed For Security."
 
                         />
                     </h1>

@@ -43,7 +43,7 @@ const AboutUsSection = () => {
             2xl:text-8xl"
           >
             <TextGenerateEffectDemo
-              words="About ArtiflexIT your technology innovation partner."
+              words="About ArtiflexIT Your Technology Innovation Partner."
             />
           </h1>
 

@@ -21,7 +21,7 @@ function InfrastructureSolutions() {
           <PixelBlast
             variant="square"
             pixelSize={4}
-            color="#7a53fa"
+            color="#02AEEC"
             patternScale={2}
             patternDensity={1}
             pixelSizeJitter={0}

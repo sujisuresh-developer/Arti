@@ -22,7 +22,7 @@ function ApplicationSecuritySolutions() {
                     <PixelBlast
                         variant="square"
                         pixelSize={4}
-                        color="#7a53fa"
+                        color="#02AEEC"
                         patternScale={2}
                         patternDensity={1}
                         pixelSizeJitter={0}
@@ -55,7 +55,7 @@ function ApplicationSecuritySolutions() {
               xl:text-7xl"
                     >
                         <TextGenerateEffectDemo
-                            words="Built-In Security for Every Application."
+                            words="Built-In Security For Every Application."
                         />
                     </h1>
 

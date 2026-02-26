@@ -22,7 +22,7 @@ function CyberSecuritySolutions() {
           <PixelBlast
             variant="square"
             pixelSize={4}
-            color="#7a53fa"
+            color="#02AEEC"
             patternScale={2}
             patternDensity={1}
             pixelSizeJitter={0}
@@ -55,7 +55,7 @@ function CyberSecuritySolutions() {
             xl:text-7xl"
           >
             <TextGenerateEffectDemo
-              words="Smarter Security for a Digital World."
+              words="Smarter Security For a Digital World."
             />
           </h1>
 
