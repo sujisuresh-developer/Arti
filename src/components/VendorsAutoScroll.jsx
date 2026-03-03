@@ -112,7 +112,7 @@ import huawei from "../assets/Huawei.png";
 import cisco from "../assets/Resize/Cisco.png";
 import nutanix from "../assets/Resize/Nutanix.png";
 import eset from "../assets/Resize/ESET.png";
-import kaspersky from "../assets/Resize/Kaspersky1.png";
+import kaspersky from "../assets/Resize/kaspersky1.png";
 import f5 from "../assets/Resize/f5.png";
 import azure from "../assets/Resize/Microsoft_Azure.png";
 import ivanti from "../assets/Resize/Ivanti.png";
