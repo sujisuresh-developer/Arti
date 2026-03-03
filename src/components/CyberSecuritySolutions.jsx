@@ -8,6 +8,7 @@ import TextGenerateEffectDemo from "../components/text-generate-effect-demo";
 //import InfraExplain from "../components/InfraExplain"
 import CyberSecurityWhyChooseUs from "./CyberSecurityWhyChooseUs";
 import Logos from "../components/Logos";
+import LogoScroll from "./LogoScroll";
 
 function CyberSecuritySolutions() {
   return (
@@ -73,7 +74,7 @@ function CyberSecuritySolutions() {
       </section>
 
      <CyberSecurityWhyChooseUs/>
-     <Logos/>
+     <LogoScroll/>
 
       <Footer />
     </>

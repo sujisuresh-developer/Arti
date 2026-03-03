@@ -1,12 +1,11 @@
-import dub from "../assets/dub.png";
-import logo28 from "../assets/28.png";
-import logo3 from "../assets/idAIdoQlaN_1766401349277.png";
-import logo4 from "../assets/idIu5Lf4Sf_1766399953051.png";
-import nbtc from "../assets/nbtc.png";
-import logo6 from "../assets/idMNWTiY7c_logos.png";
-import shaw from "../assets/shaw.jpeg";
-import logo8 from "../assets/LnW7oU12lP7gNmfZJtUdl05IXcB1736410981931_200x200.png";
-import sophos from "../assets/sophos.png";
+import dub from "../assets/Resize/dub.png";
+import logo28 from "../assets/Resize/tiger.png";
+import logo3 from "../assets/Resize/al ghandi auto.png";
+import logo4 from "../assets/Resize/alnasr.png";
+import nbtc from "../assets/Resize/nbtc.png";
+import logo6 from "../assets/Resize/giordano.png";
+import shaw from "../assets/Resize/shaw.png";
+import logo8 from "../assets/Resize/acc.png";
 
 const logos = [
   dub,
@@ -16,14 +15,13 @@ const logos = [
   nbtc,
   logo6,
   shaw,
-  logo8,
-  sophos
+  logo8
 ];
 
 const LogoScroll = () => {
   return (
-    <section className="bg-[#fdfdfd] py-25 overflow-hidden mt-15">
-      <div className="w-full mx-auto px-6">
+    <section className="bg-blue-400 py-25 overflow-hidden mt-15 ">
+      <div className="w-full mx-auto px-6 ">
 
         <h2 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight text-center mb-12">
           Our Clients
@@ -44,11 +42,7 @@ const LogoScroll = () => {
                alt="Client logo"
                className={`
                  object-contain
-                 ${
-                   logo === logo6 || logo === logo3||logo === sophos
-                     ? "h-13"     // smaller logos
-                     : "h-30"     // default size
-                 }
+                  h-10 sm:h-18 md:h-18
                `}
              />
            </div>

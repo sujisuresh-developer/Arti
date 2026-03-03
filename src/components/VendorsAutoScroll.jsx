@@ -92,61 +92,61 @@
 
 // export default VendorsAutoScroll;
 import React from 'react'
-import sophos from "../assets/Sophos1.png";
-import fortinet from "../assets/Fortinet.png";
-import checkpoint from "../assets/check-point.png";
+import sophos from "../assets/Resize/sophos.png";
+import fortinet from "../assets/Resize/Fortinet.png";
+import checkpoint from "../assets/Resize/Check-Point-2024-logo-color.png";
 import aruba from "../assets/Aruba.png";
-import veeam from "../assets/veeam.png";
-import trend from "../assets/Trend_Micro.png";
-import proofpoint from "../assets/Proofpoint.jpg";
-import mimecast from "../assets/mimecast.png";
- import hp from "../assets/Hewlett.png";
-import vmware from "../assets/vmware.png";
-import dell from "../assets/dell.png";
-import microsoft from "../assets/microsoft.png";
-import paloalto from "../assets/PaloAltoNetworks.png";
-import acronis from "../assets/Acronis.png";
-import sonicwall from "../assets/SonicWall.png";
-import cx3 from "../assets/3CX.png";
+import veeam from "../assets/Resize/veeam.png";
+import trend from "../assets/Resize/Trend_Micro.png";
+import proofpoint from "../assets/Resize/Proofpoint.jpg.png";
+import mimecast from "../assets/Resize/mimecast.png";
+import hp from "../assets/Resize/Hewlett.png";
+import vmware from "../assets/Resize/vmware.png";
+import dell from "../assets/Resize/Dell_Logo.png";
+import microsoft from "../assets/Resize/microsoft.png";
+import paloalto from "../assets/Resize/PaloAltoNetworks.png";
+import acronis from "../assets/Resize/Acronis.png";
+import sonicwall from "../assets/Resize/SonicWall.png";
+import cx3 from "../assets/Resize/3CX.png";
 import huawei from "../assets/Huawei.png";
-import cisco from "../assets/Cisco.png";
-import nutanix from "../assets/Nutanix.png";
-import eset from "../assets/ESET.png";
-import kaspersky from "../assets/kaspersky.png";
-import f5 from "../assets/f5.png";
-import azure from "../assets/microsoft.png";
-import ivanti from "../assets/Ivanti.png";
+import cisco from "../assets/Resize/Cisco.png";
+import nutanix from "../assets/Resize/Nutanix.png";
+import eset from "../assets/Resize/ESET.png";
+import kaspersky from "../assets/Resize/Kaspersky (1).png";
+import f5 from "../assets/Resize/f5.png";
+import azure from "../assets/Resize/Microsoft_Azure.png";
+import ivanti from "../assets/Resize/Ivanti.png";
 
 
 const vendors = [
-  { name: "Sophos", logo: sophos, size: "large" },
+  { name: "Sophos", logo: sophos },
   { name: "Fortinet", logo: fortinet },
-  { name: "Check Point", logo: checkpoint, size: "large" },
-  { name: "Aruba", logo: aruba, size: "large" },
+  { name: "Check Point", logo: checkpoint },
+  { name: "Aruba", logo: aruba },
   { name: "Veeam", logo: veeam },
   { name: "Trend Micro", logo: trend },
   { name: "Proofpoint", logo: proofpoint },
   { name: "Mimecast", logo: mimecast },
-  { name: "Hewlett Packard", logo: hp},
+  { name: "Hewlett Packard", logo: hp },
   { name: "VMware", logo: vmware },
-  { name: "Dell Technologies", logo: dell, size: "large" },
-  { name: "Microsoft", logo: microsoft, size: "large" },
-  { name: "Palo Alto Networks", logo: paloalto},
+  { name: "Dell Technologies", logo: dell },
+  { name: "Microsoft", logo: microsoft},
+  { name: "Palo Alto Networks", logo: paloalto },
   { name: "Acronis", logo: acronis },
-  { name: "SonicWall", logo: sonicwall},
+  { name: "SonicWall", logo: sonicwall },
   { name: "3CX", logo: cx3 },
-  { name: "Huawei", logo: huawei, size: "large" },
-  { name: "Cisco", logo: cisco},
-  { name: "Nutanix", logo: nutanix, size: "large" },
-  { name: "ESET", logo: eset,size: "large" },
-  { name: "Kaspersky", logo: kaspersky, size: "large" },
+  { name: "Huawei", logo: huawei},
+  { name: "Cisco", logo: cisco },
+  { name: "Nutanix", logo: nutanix},
+  { name: "ESET", logo: eset },
+  { name: "Kaspersky", logo: kaspersky},
   { name: "F5", logo: f5 },
-  { name: "Microsoft Azure", logo: azure, size: "large" },
+  { name: "Microsoft Azure", logo: azure},
   { name: "Ivanti", logo: ivanti },
 ];
 
 const VendorsAutoScroll = () => (
-  <section className="w-full bg-white py-8 overflow-hidden">
+  <section className="w-full bg-blue-400 py-8 overflow-hidden">
      <div className="text-center mb-20 px-6">
             <h1 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
             Technology Partners           </h1>
@@ -156,35 +156,20 @@ const VendorsAutoScroll = () => (
           </div>
     <div className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max">
       {[...vendors, ...vendors].map((v, i) => (
-        <img
-  key={i}
-  src={v.logo}
-  alt={v.name}
- className={`
-  object-contain opacity-90
-  ${
-    v.name === "Sophos" ||
-    v.name === "Aruba" ||
-    v.name === "Microsoft"
-      ? "h-26 sm:h-24 xl:h-28"
+ <img
+    key={i}
+    src={v.logo}
+    alt={v.name}
+    className={`
+      object-contain opacity-90
+      ${
+        v.name === "Huawei" || v.name === "Aruba"
+          ? "h-25 sm:h-24 xl:h-28"
+          : "h-10 sm:h-18 xl:h-10"
+      }
+    `}
 
-      // Decrease these specific logos
-      : v.name === "Fortinet" ||
-        v.name === "Palo Alto Networks" ||
-        v.name === "SonicWall"
-      ? "h-6 sm:h-6 xl:h-6"
-
-      // Normal large
-      : v.size === "large"
-      ? "h-20 sm:h-20 xl:h-24"
-
-      // Default small
-      : "h-10 sm:h-12"
-  }
-`}
-
-
-/>
+  />
 
       ))}
     </div>

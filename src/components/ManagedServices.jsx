@@ -10,6 +10,7 @@ import Logos from "../components/Logos";
 
 
 import ManageExplain from "./ManageExplain";
+import LogoScroll from "./LogoScroll";
 
 function ManagedServices() {
     return (
@@ -78,7 +79,7 @@ while maximizing reliability and performance.
             </section>
 
             <ManageExplain />
-            <Logos/>
+            <LogoScroll />
 
             <Footer />
         </>

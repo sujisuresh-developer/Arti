@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import logo from "../assets/final.png"
+import logo from "../assets/Resize/artiflexit logo.png";
 
 const Footer = () => {
   return (

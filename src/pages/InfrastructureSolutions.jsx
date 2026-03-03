@@ -7,6 +7,7 @@ import InfraExplain from "../components/InfraExplain";
 import PixelBlast from "../components/PixelBlast";
 import TextGenerateEffectDemo from "../components/text-generate-effect-demo";
 import Logos from "../components/Logos";
+import LogoScroll from "../components/LogoScroll";
 
 function InfrastructureSolutions() {
   return (
@@ -82,7 +83,7 @@ function InfrastructureSolutions() {
 
       {/* CONTENT */}
       <InfraExplain />
-      <Logos />
+      <LogoScroll />
 
       <Footer />
     </>

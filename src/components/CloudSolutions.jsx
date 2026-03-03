@@ -9,6 +9,7 @@ import Logos from "../components/Logos";
 
 
 import CloudExplain from "./CloudExplain";
+import LogoScroll from "./LogoScroll";
 
 function CloudSolutions() {
     return (
@@ -74,7 +75,7 @@ and multi-cloud environments.
             </section>
 
             <CloudExplain />
-            <Logos/>
+            <LogoScroll/>
 
             <Footer />
         </>

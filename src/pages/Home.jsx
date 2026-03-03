@@ -72,7 +72,7 @@ function Home({openContact}) {
 
      
       <LogoScroll />
-     <Footer openContact={openContact} />
+     <Footer openContact={openContact}  />
     </>
   )
 }

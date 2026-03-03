@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
 
-import logo from "../assets/final.png";
+import logo from "../assets/Resize/artiflexit logo.png";
 import ContactModal from "./ContactModal";
 import ContactButton from "./ContactButton";
 
@@ -55,13 +55,15 @@ const Header = () => {
           <div className="flex justify-between items-center px-4 py-3 md:px-6 md:py-3">
 
             {/* --- LOGO --- */}
-            <Link to="/" className="flex items-center gap-2 group">
-              <img
-                src={logo}
-                alt="Artiflex IT"
-                className="h-15 w-auto md:h-18 object-contain"
-              />
-            </Link>
+          <Link to="/" className="flex items-center">
+  <div className="bg-white rounded-xl shadow-md px-5 py-2 flex items-center justify-center ">
+    <img
+      src={logo}
+      alt="Artiflex IT"
+      className="h-12 md:h-16 object-contain"
+    />
+  </div>
+</Link>
 
             {/* --- DESKTOP NAVIGATION --- */}
             <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">

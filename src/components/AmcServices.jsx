@@ -7,6 +7,7 @@ import PixelBlast from "../components/PixelBlast";
 import TextGenerateEffectDemo from "../components/text-generate-effect-demo";
 import AmcExplain from "../components/AmcExplain"
 import Logos from "../components/Logos";
+import LogoScroll from "./LogoScroll";
 
 
 function AmcServices() {
@@ -76,7 +77,7 @@ stability, and predictable IT operations.
       </section>
 
      <AmcExplain/>
-     <Logos/>
+     <LogoScroll/>
 
       <Footer />
     </>

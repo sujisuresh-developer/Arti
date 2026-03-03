@@ -8,6 +8,7 @@ import TextGenerateEffectDemo from "../components/text-generate-effect-demo";
 
 import AppliExplain from "./AppliExplain";
 import Logos from "../components/Logos";
+import LogoScroll from "./LogoScroll";
 
 function ApplicationSecuritySolutions() {
     return (
@@ -72,7 +73,7 @@ function ApplicationSecuritySolutions() {
             </section>
 
             <AppliExplain />
-            <Logos/>
+            <LogoScroll/>
 
             <Footer />
         </>
