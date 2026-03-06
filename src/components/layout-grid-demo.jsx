@@ -49,6 +49,12 @@ const SkeletonOne = () => (
     <p className="text-neutral-200">
       Build robust, scalable network architectures that power enterprise operations.
     </p>
+    <button
+        onClick={() => navigate("/infrastructure-solutions")}
+        className="mt-4 px-5 py-2 rounded-full bg-[#02AEEC] text-white text-sm font-semibold hover:bg-blue-700 transition"
+      >
+        Learn More →
+      </button>
   </div>
 );
 
@@ -63,6 +69,12 @@ const SkeletonTwo = () => (
     <p className="text-neutral-200">
       Comprehensive threat protection and monitoring.
     </p>
+    <button
+  onClick={() => navigate("/cyber-security-solutions")}
+  className="mt-4 px-5 py-2 rounded-full bg-[#02AEEC] text-white text-sm font-semibold hover:bg-blue-700 transition"
+>
+  Learn More →
+</button>
   </div>
 );
 
@@ -77,6 +89,12 @@ const SkeletonThree = () => (
     <p className="text-neutral-200">
       End-to-end security for applications.
     </p>
+    <button
+  onClick={() => navigate("/application-security-solutions")}
+  className="mt-4 px-5 py-2 rounded-full bg-[#02AEEC] text-white text-sm font-semibold hover:bg-blue-700 transition"
+>
+  Learn More →
+</button>
   </div>
 );
 
@@ -91,6 +109,12 @@ const SkeletonFour = () => (
     <p className="text-neutral-200">
       Cloud migration and optimization services.
     </p>
+    <button
+  onClick={() => navigate("/cloud-solutions")}
+  className="mt-4 px-5 py-2 rounded-full bg-[#02AEEC] text-white text-sm font-semibold hover:bg-blue-700 transition"
+>
+  Learn More →
+</button>
   </div>
 );
 
@@ -105,6 +129,12 @@ const SkeletonFive = () => (
     <p className="text-neutral-200">
       Proactive annual maintenance services.
     </p>
+    <button
+  onClick={() => navigate("/amc-services")}
+  className="mt-4 px-5 py-2 rounded-full bg-[#02AEEC] text-white text-sm font-semibold hover:bg-blue-700 transition"
+>
+  Learn More →
+</button>
   </div>
 );
 
@@ -119,6 +149,12 @@ const SkeletonSix = () => (
     <p className="text-neutral-200">
       24/7 IT support and monitoring.
     </p>
+    <button
+  onClick={() => navigate("/managed-services")}
+  className="mt-4 px-5 py-2 rounded-full bg-[#02AEEC] text-white text-sm font-semibold hover:bg-blue-700 transition"
+>
+  Learn More →
+</button>
   </div>
 );
 
