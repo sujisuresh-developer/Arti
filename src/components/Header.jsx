@@ -43,83 +43,83 @@ const Header = () => {
       <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
 
       {/* HEADER WRAPPER */}
-     <header className="fixed top-0 left-0 w-full z-50 flex justify-center mt-6">
- <div className="flex items-center justify-between w-full max-w-7xl px-6 lg:px-24">
+      <header className="fixed top-0 left-0 w-full z-50 flex justify-center mt-6">
+        <div className="flex items-center justify-between w-full max-w-7xl px-6 lg:px-24  mx-auto">
 
-   
-  {/* --- LOGO PILL --- */}
-<Link to="/" className="flex items-center">
-  <Link to="/" className="flex items-center">
-  <div className="bg-white rounded-full shadow-lg px-6 py-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl">
-    <img
-      src={logo}
-      alt="Artiflex IT"
-      className="h-12 md:h-14 object-contain transition-transform duration-300 group-hover:scale-110"
-    />
-  </div>
-</Link>
-</Link>
 
-    {/* --- NAVIGATION PILL --- */}
-    <div className="bg-white rounded-full shadow-lg border border-white/40 px-6 py-3">
-      <div className="flex items-center gap-8">
-
-        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-          <Link to="/"   className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
->
-Home</Link>
-          <Link to="/about"   className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
->
-About</Link>
-          <Link to="/partner" className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
->
-Partners</Link>
-
-          {/* Desktop Services Dropdown */}
-          <div className="relative group">
-            <button className="flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
-              Services <ChevronDown size={14} />
-            </button>
-
-            {/* Dropdown Panel */}
-            <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
-              <div className="w-64 bg-white rounded-xl shadow-xl border border-slate-100 p-2 overflow-hidden">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.name}
-                    to={link.path}
-                    className="block px-4 py-2.5 text-sm text-slate-600 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                  >
-                    {link.name}
-                  </Link>
-                ))}
+          {/* --- LOGO PILL --- */}
+          <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center">
+              <div className="bg-white rounded-full shadow-lg px-6 py-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <img
+                  src={logo}
+                  alt="Artiflex IT"
+                  className="h-12 md:h-14 object-contain transition-transform duration-300 group-hover:scale-110"
+                />
               </div>
+            </Link>
+          </Link>
+
+          {/* --- NAVIGATION PILL --- */}
+          <div className="bg-white rounded-full shadow-lg border border-white/40 px-6 py-3 transition-all duration-300 hover:scale-105 hover:shadow-xl">
+            <div className="flex items-center gap-8">
+
+              <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700 ">
+                <Link to="/" className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  Home</Link>
+                <Link to="/about" className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  About</Link>
+                <Link to="/partner" className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  Partners</Link>
+
+                {/* Desktop Services Dropdown */}
+                <div className="relative group">
+                  <button className="flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
+                    Services <ChevronDown size={14} />
+                  </button>
+
+                  {/* Dropdown Panel */}
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
+                    <div className="w-64 bg-white rounded-xl shadow-xl border border-slate-100 p-2 overflow-hidden">
+                      {navLinks.map((link) => (
+                        <Link
+                          key={link.name}
+                          to={link.path}
+                          className="block px-4 py-2.5 text-sm text-slate-600 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                        >
+                          {link.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+
+                <Link to="/faq" className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+                >
+                  FAQ</Link>
+
+                <div className="pl-2">
+                  <ContactButton onClick={() => setContactOpen(true)} />
+                </div>
+              </nav>
+
+              {/* MOBILE HAMBURGER */}
+              <button
+                className="md:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-full transition-colors"
+                onClick={() => setMobileOpen(true)}
+                aria-label="Open Menu"
+              >
+                <Menu size={24} />
+              </button>
+
             </div>
           </div>
 
-          <Link to="/faq"   className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
->
-FAQ</Link>
-
-          <div className="pl-2">
-            <ContactButton onClick={() => setContactOpen(true)} />
-          </div>
-        </nav>
-
-        {/* MOBILE HAMBURGER */}
-        <button
-          className="md:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-full transition-colors"
-          onClick={() => setMobileOpen(true)}
-          aria-label="Open Menu"
-        >
-          <Menu size={24} />
-        </button>
-
-      </div>
-    </div>
-
-  </div>
-</header>
+        </div>
+      </header>
 
       {/* ============================================== */}
       {/* MOBILE SIDE DRAWER                */}
@@ -145,16 +145,16 @@ FAQ</Link>
               className="fixed top-0 right-0 h-full w-[85%] max-w-sm bg-white z-[70] shadow-2xl overflow-y-auto"
             >
               <div className="p-6 flex flex-col h-full">
-                
+
                 {/* Header inside Drawer */}
                 <div className="flex justify-between items-center mb-8">
-                   <span className="text-lg font-bold text-slate-900">Menu</span>
-                   <button 
-                     onClick={() => setMobileOpen(false)}
-                     className="p-2 rounded-full bg-slate-100 text-slate-600 hover:bg-red-50 hover:text-red-500 transition-colors"
-                   >
-                     <X size={20} />
-                   </button>
+                  <span className="text-lg font-bold text-slate-900">Menu</span>
+                  <button
+                    onClick={() => setMobileOpen(false)}
+                    className="p-2 rounded-full bg-slate-100 text-slate-600 hover:bg-red-50 hover:text-red-500 transition-colors"
+                  >
+                    <X size={20} />
+                  </button>
                 </div>
 
                 {/* Navigation Links */}
@@ -176,7 +176,7 @@ FAQ</Link>
                         <ChevronDown size={18} />
                       </motion.span>
                     </button>
-                    
+
                     <AnimatePresence>
                       {servicesOpen && (
                         <motion.div
@@ -194,7 +194,7 @@ FAQ</Link>
                                 className="px-6 py-3 text-sm text-slate-600 border-l-2 border-transparent hover:border-blue-500 hover:bg-blue-50/50 hover:text-blue-600 transition-all flex items-center justify-between group"
                               >
                                 {link.name}
-                                <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0"/>
+                                <ChevronRight size={14} className="opacity-0 group-hover:opacity-100 transition-opacity transform -translate-x-2 group-hover:translate-x-0" />
                               </Link>
                             ))}
                           </div>
@@ -217,7 +217,7 @@ FAQ</Link>
                   >
                     Contact Us
                   </button>
-                  
+
                   <p className="mt-4 text-center text-xs text-slate-400">
                     © Artiflex IT Solutions
                   </p>
