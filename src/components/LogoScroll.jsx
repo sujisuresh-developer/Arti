@@ -21,7 +21,7 @@ const logos = [
 
 const LogoScroll = () => {
   return (
-    <section className="bg-black py-25 overflow-hidden mt-15">
+    <section className="bg-black py-25 overflow-hidden ">
       <div className="w-full mx-auto px-6">
 
         {/* Heading */}

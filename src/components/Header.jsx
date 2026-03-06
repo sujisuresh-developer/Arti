@@ -44,27 +44,36 @@ const Header = () => {
 
       {/* HEADER WRAPPER */}
      <header className="fixed top-0 left-0 w-full z-50 flex justify-center mt-6">
-  <div className="flex items-center gap-6">
+ <div className="flex items-center justify-between w-full max-w-7xl px-6 lg:px-24">
 
-    {/* --- LOGO PILL --- */}
-    <Link to="/" className="flex items-center">
-      <div className="bg-white rounded-full shadow-lg px-6 py-3 flex items-center justify-center">
-        <img
-          src={logo}
-          alt="Artiflex IT"
-          className="h-12 md:h-14 object-contain"
-        />
-      </div>
-    </Link>
+   
+  {/* --- LOGO PILL --- */}
+<Link to="/" className="flex items-center">
+  <Link to="/" className="flex items-center">
+  <div className="bg-white rounded-full shadow-lg px-6 py-3 flex items-center justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl">
+    <img
+      src={logo}
+      alt="Artiflex IT"
+      className="h-12 md:h-14 object-contain transition-transform duration-300 group-hover:scale-110"
+    />
+  </div>
+</Link>
+</Link>
 
     {/* --- NAVIGATION PILL --- */}
     <div className="bg-white rounded-full shadow-lg border border-white/40 px-6 py-3">
       <div className="flex items-center gap-8">
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-          <Link to="/" className="hover:text-blue-600 transition-colors">Home</Link>
-          <Link to="/about" className="hover:text-blue-600 transition-colors">About</Link>
-          <Link to="/partner" className="hover:text-blue-600 transition-colors">Partners</Link>
+          <Link to="/"   className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+>
+Home</Link>
+          <Link to="/about"   className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+>
+About</Link>
+          <Link to="/partner" className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+>
+Partners</Link>
 
           {/* Desktop Services Dropdown */}
           <div className="relative group">
@@ -88,7 +97,9 @@ const Header = () => {
             </div>
           </div>
 
-          <Link to="/faq" className="hover:text-blue-600 transition-colors">FAQ</Link>
+          <Link to="/faq"   className="relative hover:text-blue-600 transition-colors duration-300 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-all after:duration-300 hover:after:w-full"
+>
+FAQ</Link>
 
           <div className="pl-2">
             <ContactButton onClick={() => setContactOpen(true)} />
