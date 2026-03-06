@@ -12,6 +12,7 @@ import Page from './pages/Page'
 import CloudSolutions from './components/CloudSolutions'
 import ManagedServices from './components/ManagedServices'
 import AmcServices from './components/AmcServices'
+import Partners from './components/Partners'
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
          <Route path="/managed-services" element={<ManagedServices />} />
           <Route path="/amc-services" element={<AmcServices/>} />
 
+
+<Route path='/partner' element={<Partners/>}/>
        <Route path='/contact' element={<Contact/>}/>
        <Route path='/faq' element={<FAQ/>}/>
        <Route path='/page' element={<Page/>}/>

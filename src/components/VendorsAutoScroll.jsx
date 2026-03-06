@@ -146,36 +146,45 @@ const vendors = [
 ];
 
 const VendorsAutoScroll = () => (
-  <section className="w-full bg-blue-400 py-8 overflow-hidden">
-     <div className="text-center mb-20 px-6">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
-            Technology Partners           </h1>
-         <p className="mt-4 text-gray-600">
-                      Trusted global vendors powering our solutions
-             </p>
-          </div>
-    <div className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max">
-      {[...vendors, ...vendors].map((v, i) => (
- <img
-    key={i}
-    src={v.logo}
-    alt={v.name}
-    className={`
-      object-contain opacity-90
-      ${
-        v.name === "Huawei" || v.name === "Aruba"
-          ? "h-25 sm:h-24 xl:h-28"
-          : "h-10 sm:h-18 xl:h-10"
-      }
-    `}
+  <section className="w-full bg-black py-20 overflow-hidden">
 
-  />
-
-      ))}
+    {/* HEADING (UNCHANGED) */}
+    <div className="text-center mb-14 px-6">
+      <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+        Technology Partners
+      </h1>
+      <p className="mt-4 text-gray-300">
+        Trusted global vendors powering our solutions
+      </p>
     </div>
+
+    {/* WHITE LOGO STRIP */}
+    <div className="bg-white py-10 overflow-hidden">
+      <div className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max">
+
+        {[...vendors, ...vendors].map((v, i) => (
+          <img
+            key={i}
+            src={v.logo}
+            alt={v.name}
+            className={`
+              object-contain opacity-90
+              ${
+                v.name === "Huawei" || v.name === "Aruba"
+                  ? "h-25 sm:h-24 xl:h-28"
+                  : "h-10 sm:h-18 xl:h-10"
+              }
+            `}
+          />
+        ))}
+
+      </div>
+    </div>
+
   </section>
 );
 
+export default VendorsAutoScroll;
 
 
- export default VendorsAutoScroll;
+

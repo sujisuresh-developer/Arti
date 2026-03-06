@@ -43,73 +43,72 @@ const Header = () => {
       <ContactModal open={contactOpen} onClose={() => setContactOpen(false)} />
 
       {/* HEADER WRAPPER */}
-      <header className="fixed top-0 left-0 w-full z-50 mt-0 md:mt-0 ">
-        <div
-          className="
-            max-w-full mx-auto
-            bg-white
-             shadow-lg border border-white/40
-            transition-all duration-300
-          "
-        >
-          <div className="flex justify-between items-center px-4 py-3 md:px-6 md:py-3">
+     <header className="fixed top-0 left-0 w-full z-50 flex justify-center mt-6">
+  <div className="flex items-center gap-6">
 
-            {/* --- LOGO --- */}
-          <Link to="/" className="flex items-center">
-  <div className="bg-white rounded-xl shadow-md px-5 py-2 flex items-center justify-center ">
-    <img
-      src={logo}
-      alt="Artiflex IT"
-      className="h-12 md:h-16 object-contain"
-    />
-  </div>
-</Link>
+    {/* --- LOGO PILL --- */}
+    <Link to="/" className="flex items-center">
+      <div className="bg-white rounded-full shadow-lg px-6 py-3 flex items-center justify-center">
+        <img
+          src={logo}
+          alt="Artiflex IT"
+          className="h-12 md:h-14 object-contain"
+        />
+      </div>
+    </Link>
 
-            {/* --- DESKTOP NAVIGATION --- */}
-            <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
-              <Link to="/" className="hover:text-blue-600 transition-colors">Home</Link>
-              <Link to="/about" className="hover:text-blue-600 transition-colors">About</Link>
+    {/* --- NAVIGATION PILL --- */}
+    <div className="bg-white rounded-full shadow-lg border border-white/40 px-6 py-3">
+      <div className="flex items-center gap-8">
 
-              {/* Desktop Services Dropdown */}
-              <div className="relative group">
-                <button className="flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
-                  Services <ChevronDown size={14} />
-                </button>
-                
-                {/* Dropdown Panel */}
-                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
-                  <div className="w-64 bg-white rounded-xl shadow-xl border border-slate-100 p-2 overflow-hidden">
-                    {navLinks.map((link) => (
-                      <Link
-                        key={link.name}
-                        to={link.path}
-                        className="block px-4 py-2.5 text-sm text-slate-600 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
-                      >
-                        {link.name}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
+        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-700">
+          <Link to="/" className="hover:text-blue-600 transition-colors">Home</Link>
+          <Link to="/about" className="hover:text-blue-600 transition-colors">About</Link>
+          <Link to="/partner" className="hover:text-blue-600 transition-colors">Partners</Link>
 
-              <Link to="/faq" className="hover:text-blue-600 transition-colors">FAQ</Link>
-              
-              <div className="pl-2">
-                <ContactButton onClick={() => setContactOpen(true)} />
-              </div>
-            </nav>
-
-            {/* --- MOBILE HAMBURGER --- */}
-            <button
-              className="md:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-full transition-colors"
-              onClick={() => setMobileOpen(true)}
-              aria-label="Open Menu"
-            >
-              <Menu size={24} />
+          {/* Desktop Services Dropdown */}
+          <div className="relative group">
+            <button className="flex items-center gap-1 hover:text-blue-600 transition-colors py-2">
+              Services <ChevronDown size={14} />
             </button>
+
+            {/* Dropdown Panel */}
+            <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform group-hover:translate-y-0 translate-y-2">
+              <div className="w-64 bg-white rounded-xl shadow-xl border border-slate-100 p-2 overflow-hidden">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    className="block px-4 py-2.5 text-sm text-slate-600 rounded-lg hover:bg-blue-50 hover:text-blue-600 transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-      </header>
+
+          <Link to="/faq" className="hover:text-blue-600 transition-colors">FAQ</Link>
+
+          <div className="pl-2">
+            <ContactButton onClick={() => setContactOpen(true)} />
+          </div>
+        </nav>
+
+        {/* MOBILE HAMBURGER */}
+        <button
+          className="md:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-full transition-colors"
+          onClick={() => setMobileOpen(true)}
+          aria-label="Open Menu"
+        >
+          <Menu size={24} />
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+</header>
 
       {/* ============================================== */}
       {/* MOBILE SIDE DRAWER                */}

@@ -1,5 +1,6 @@
 import React from "react";
 import LaserFlow from "./LaserFlow";
+import { motion } from "framer-motion";
 import sophos from "../assets/Resize/sophos.png";
 import fortinet from "../assets/Resize/Fortinet.png";
 import checkpoint from "../assets/Resize/Check-Point-2024-logo-color.png";
@@ -85,7 +86,7 @@ const VendorScroll = () => {
   };
 
   return (
-    <section className="w-full bg-blue-400 py-8 overflow-y-hidden mt-10">
+    <section className="w-full bg-white py-8 overflow-y-hidden ">
       <div
         ref={scrollRef}
         className="flex items-center gap-14 whitespace-nowrap animate-vendors px-6 w-max cursor-grab"
@@ -121,6 +122,15 @@ const VendorScroll = () => {
   />
 ))}
       </div>
+       <motion.div
+           initial={{ scaleX: 0 }}
+           whileInView={{ scaleX: 1 }}
+           viewport={{ once: true }}
+           transition={{ duration: 0.8, delay: 0.2 }}
+           className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] my-14"
+        >
+          <div className="h-2 bg-gradient-to-r from-blue-400 via-blue-600 to-blue-400 shadow-lg shadow-blue-500/20" />
+        </motion.div>
     </section>
   );
 };
